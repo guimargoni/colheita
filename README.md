@@ -8,7 +8,7 @@ A modern social farming game inspired by the *feeling* of classic Orkut-era farm
 
 **Foundation / pre-production.**
 
-G0.1 bootstrap and G0.2 audit are implemented locally. Godot 4.7.2 stable / GDScript boots without third-party art or backend configuration. Human acceptance and visual direction approval remain pending.
+G0.1 bootstrap and G0.2 audit are implemented locally. Godot 4.7.2 stable / GDScript boots without third-party art or backend configuration. The director has technically accepted G0.1 and G0.2; visual direction and asset license review remain pending.
 
 ## Start here
 
@@ -47,6 +47,10 @@ G0.1 bootstrap and G0.2 audit are implemented locally. Godot 4.7.2 stable / GDSc
 - [Asset audit report](docs/ASSET_AUDIT_REPORT.md)
 - [License evidence and unresolved permissions](docs/ASSET_LICENSE_RECORD.md)
 - [All changed files, commands and checks](docs/G0_EXECUTION_RECORD.md)
+- [Foundation direction review and commit record](docs/FOUNDATION_DIRECTION_REVIEW.md)
+- [Audio direction](docs/AUDIO_DIRECTION.md)
+- [Live operations and events](docs/LIVE_OPS.md)
+- [Monetization and economy](docs/MONETIZATION_ECONOMY.md)
 
 The three original archives remain byte-identical. Their presence in repository history predates this audit and carries redistribution risk. Extraction and contact sheets stay local and ignored; no third-party art is in game/assets/.
 
