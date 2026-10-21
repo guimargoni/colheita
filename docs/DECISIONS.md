@@ -58,3 +58,10 @@ Status: accepted implementation boundary, 2026-10-21
 G0.1 uses Godot 4.7.2 stable, Compatibility renderer, a neutral boot screen, one composition autoload and one minimal content service. No gameplay, network backend, platform SDK, fake economy or G0.3 scene is implemented. Additional services wait for actual consumers.
 
 G0.2 extractions and contact sheets stay ignored under `.local/asset_audit/`, outside Godot. Original tracked archives are preserved byte-for-byte; their pre-existing repository/history redistribution risk is documented. No art is promoted to runtime. Visual grades are recommendations, not creative approval or legal clearance. Maeve FREE scope and SnowHex conflicting terms remain unresolved. Direction approval belongs to the human creative director. No gates are skipped.
+
+## ADR-009 — G0.3 direction comparison, without art approval
+Status: accepted scope; final direction pending creative director, 2026-10-21
+
+The director explicitly authorized G0.3 as an A/B comparison after technically accepting G0.1/G0.2. The earlier G0.1/G0.2 boundary is historical; it does not imply G0.3 approval. A uses a consistent 2:1 isometric ground projection; B uses a front-facing oblique projection. Both use the same small fixture and original procedural placeholders, without importing unresolved-license packs. A shared renderer permits a controlled projection comparison; it is not a committed production art pipeline.
+
+The menu/HUD, preview panels, camera, decorative animation and plot inspection exist only for art-direction evaluation. No authoritative economy, planting, inventory, animal production, multiplayer, monetization or event implementation is authorized. Audio is deferred. G0.3 stays unapproved until the director evaluates composition/readability on desktop and portrait and chooses a direction or requests changes. No G1 work is started.

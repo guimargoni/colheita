@@ -1,4 +1,4 @@
-# Local development — G0.1 / G0.2
+# Local development — foundation
 
 Use Godot **4.7.2 stable**, standard build (GDScript; no .NET). This exact installed version was validated. Runtime has no addons or third-party dependencies. Python 3.12+ is used only for repository checks. Asset audit additionally requires Pillow 12.3.0 and system `tar` with RAR support (Windows tar works here).
 
@@ -12,7 +12,7 @@ $python = 'C:\Users\guilh\.cache\codex-runtimes\codex-primary-runtime\dependenci
 
 On other machines install Python and Godot, then use `./tools/check.ps1 -Godot 'path/to/godot' -Python python`. CI uses the same script, a pinned stable engine and Python 3.12. It does not download asset packs or require Pillow. Backend checks are deferred because there is no backend implementation in these gates.
 
-To open manually: start Godot project manager, choose **Import**, select `game/project.godot`, choose **Edit**, then **F6** on `scenes/boot/boot.tscn` or **F5** to run the project. Expect Foundation ready · local and the G0 notice. Debugger must show zero script errors. Resize the window and verify centered readable text. No farm scene/gameplay is implemented.
+To open manually: start Godot project manager, choose **Import**, select `game/project.godot`, choose **Edit**, then **F5** for the G0.3 comparison menu. The earlier bootstrap remains available with **F6** on `scenes/boot/boot.tscn`. Debugger must show zero script errors. No gameplay is implemented. See `G0_3_TEST_GUIDE.md` for both visual proposals, exact portrait/desktop commands, controls and captures; creative approval is pending.
 
 Config is optional: copy `game/config/local.example.cfg` to `game/config/local.cfg`. No configuration or connection is needed to boot. The only setting is the environment label. Never put credentials in client configuration. Services are composed in `autoload/app.gd`; only the content boundary exists. Add auth/network/economy services at their authorized gates, behind `scripts/services` and `scripts/api`, with no fake client authority.
 

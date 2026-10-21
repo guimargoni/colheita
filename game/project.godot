@@ -3,16 +3,18 @@ config_version=5
 
 [application]
 config/name="Colheita - Foundation"
-run/main_scene="res://scenes/boot/boot.tscn"
+run/main_scene="res://scenes/comparison/comparison_menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [autoload]
 App="*res://autoload/app.gd"
 
 [display]
-window/size/viewport_width=960
-window/size/viewport_height=540
-window/stretch/mode="canvas_items"
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="disabled"
 
 [rendering]
 renderer/rendering_method="gl_compatibility"
@@ -21,3 +23,6 @@ textures/default_filters/use_nearest_mipmap_filter=false
 textures/canvas_textures/default_texture_filter=0
 
 environment/defaults/default_clear_color=Color(0.06, 0.09, 0.08, 1)
+
+[input_devices]
+pointing/emulate_mouse_from_touch=true

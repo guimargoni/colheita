@@ -32,7 +32,9 @@ Acceptance:
 - no asset reaches shipping folder without license status.
 
 ### G0.3 Visual prototype
-Build one farm screen using the best coherent asset subset.
+Current director-authorized scope: compare two executable farm screens before choosing the final direction: A, classic modernized isometric; B, premium oblique/top-down. Both have 16 initial plots, the same curated farm elements, a comparison menu, static HUD and mouse/touch camera navigation. Use original placeholders where asset licensing remains unresolved. No definitive gameplay systems.
+
+Delivery: `G0_3_VISUAL_COMPARISON.md` and `G0_3_TEST_GUIDE.md`; exact desktop 1920×1080 and portrait 1080×1920 captures are reproducible locally. G0.3 remains awaiting creative-director acceptance, not automatically passed by technical checks.
 
 Acceptance:
 - camera/scale looks good at 1080p and common phone aspect;

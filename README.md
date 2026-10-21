@@ -8,7 +8,7 @@ A modern social farming game inspired by the *feeling* of classic Orkut-era farm
 
 **Foundation / pre-production.**
 
-G0.1 bootstrap and G0.2 audit are implemented locally. Godot 4.7.2 stable / GDScript boots without third-party art or backend configuration. The director has technically accepted G0.1 and G0.2; visual direction and asset license review remain pending.
+G0.1 and G0.2 are technically accepted. G0.3 now provides executable isometric and oblique visual studies for creative review. Godot 4.7.2 stable / GDScript runs without third-party art or backend configuration. Visual direction and asset licenses remain unapproved.
 
 ## Start here
 
@@ -41,6 +41,14 @@ G0.1 bootstrap and G0.2 audit are implemented locally. Godot 4.7.2 stable / GDSc
 - Desktop development with touch-safe UX
 - Steam / Android as leading release candidates; iOS supported by the same core architecture
 
+## G0.3 visual comparison — awaiting creative approval
+
+- [Comparison, estimated costs and limitations](docs/G0_3_VISUAL_COMPARISON.md)
+- [Exact run commands, controls and review checklist](docs/G0_3_TEST_GUIDE.md)
+- [Files, commands and technical validation](docs/G0_3_EXECUTION_RECORD.md)
+- F5 opens the comparison menu; A and B are also separate scenes under `game/scenes/comparison/`.
+- Original procedural placeholders only; generated captures remain local under `.local/g0_3/`.
+
 ## G0.1 / G0.2 delivery
 
 - [Open, run, test and review contact sheets](docs/DEVELOPMENT.md)
@@ -54,4 +62,4 @@ G0.1 bootstrap and G0.2 audit are implemented locally. Godot 4.7.2 stable / GDSc
 
 The three original archives remain byte-identical. Their presence in repository history predates this audit and carries redistribution risk. Extraction and contact sheets stay local and ignored; no third-party art is in game/assets/.
 
-Work stops here. G0.3 and G1 have not started. See [ROADMAP.md](docs/ROADMAP.md) for later gates; no later work is authorized by this delivery.
+G0.3 is prepared for the creative director, not approved. G1 has not started. See [ROADMAP.md](docs/ROADMAP.md); no later gate is authorized by this delivery.
