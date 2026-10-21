@@ -1,0 +1,11 @@
+.godot/
+.local/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+game/config/local.cfg
+assets_source/
+*.rar
+*.zip

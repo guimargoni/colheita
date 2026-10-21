@@ -8,7 +8,7 @@ A modern social farming game inspired by the *feeling* of classic Orkut-era farm
 
 **Foundation / pre-production.**
 
-The repository currently contains source asset packs plus the design and architecture foundation for AI-assisted development.
+G0.1 bootstrap and G0.2 audit are implemented locally. Godot 4.7.2 stable / GDScript boots without third-party art or backend configuration. Human acceptance and visual direction approval remain pending.
 
 ## Start here
 
@@ -41,14 +41,13 @@ The repository currently contains source asset packs plus the design and archite
 - Desktop development with touch-safe UX
 - Steam / Android as leading release candidates; iOS supported by the same core architecture
 
-## Next gate
+## G0.1 / G0.2 delivery
 
-**G0 — Foundation**
+- [Open, run, test and review contact sheets](docs/DEVELOPMENT.md)
+- [Asset audit report](docs/ASSET_AUDIT_REPORT.md)
+- [License evidence and unresolved permissions](docs/ASSET_LICENSE_RECORD.md)
+- [All changed files, commands and checks](docs/G0_EXECUTION_RECORD.md)
 
-1. Bootstrap the Godot project.
-2. Audit/unpack the supplied art packs.
-3. Generate contact sheets and approve the visual subset.
-4. Build a single polished farm-screen visual prototype.
-5. Establish backend dev environment and CI.
+The three original archives remain byte-identical. Their presence in repository history predates this audit and carries redistribution risk. Extraction and contact sheets stay local and ignored; no third-party art is in game/assets/.
 
-See [ROADMAP.md](docs/ROADMAP.md) for acceptance criteria.
+Work stops here. G0.3 and G1 have not started. See [ROADMAP.md](docs/ROADMAP.md) for later gates; no later work is authorized by this delivery.

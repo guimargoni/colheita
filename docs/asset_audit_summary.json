@@ -1,0 +1,36 @@
+{
+  "files": 6158,
+  "graphics": 5946,
+  "by_pack": {
+    "Farm RPG FREE 16x16 - Tiny Asset Pack.rar": 15,
+    "Harvest Sumer Free Ver. Pack.rar": 8,
+    "Super Pixel Effects Gigapack (Free Version) v3.1.0.zip": 5923
+  },
+  "by_category": {
+    "characters": 2,
+    "animals": 5,
+    "decorations": 5,
+    "buildings": 1,
+    "trees": 2,
+    "terrain": 5,
+    "crops": 1,
+    "particles_vfx/leaves": 1,
+    "reference": 1,
+    "particles_vfx/Explosions": 198,
+    "particles_vfx/Fantasy Spells": 472,
+    "particles_vfx/Fire": 88,
+    "particles_vfx/Impacts": 148,
+    "particles_vfx/Lightning": 110,
+    "particles_vfx/Magic Bursts": 486,
+    "particles_vfx/Sci-fi": 292,
+    "particles_vfx/Smoke Bursts": 158,
+    "particles_vfx/Splatters": 74,
+    "ui_icons": 3897
+  },
+  "grades": {
+    "B": 4698,
+    "A": 13,
+    "C": 1235
+  },
+  "contact_sheets": 42
+}
