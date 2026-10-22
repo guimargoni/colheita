@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scope": "G0.4 session-only interaction demo, never an authoritative save",
+  "demo_growth_seconds": 9.0,
+  "seeds": [
+    {"id":"demo.strawberry", "name":"Morango", "species":0},
+    {"id":"demo.carrot", "name":"Cenoura", "species":1},
+    {"id":"demo.cabbage", "name":"Repolho", "species":2}
+  ],
+  "initial_states": ["mature","mature","empty","empty","mature","needs_water","empty","growing","mature","needs_water","needs_water","empty","mature","growing","needs_water","empty"]
+}
