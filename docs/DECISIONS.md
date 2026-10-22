@@ -1,5 +1,24 @@
 # Architecture & Product Decisions
 
+## ADR-010 — Preserve approved G0.4 interaction, authorize G0.5 art study
+
+Status: director-authorized scope, 2026-10-22; G0.5 artistic approval pending.
+
+The G0.5 brief explicitly chooses modernized isometric A and direct G0.4 interaction.
+The previous procedural art, UI and synthesized audio remain placeholders.
+Preserve G0.4 in its own checkpoint commit before extending it. G0.5 is a small
+four-plot art sample, not a reduction of the intended initial sixteen plots or
+authorization to implement G1. It reuses the session-only simulation and gesture
+arbiter, without economy, persistence, server or multiplayer.
+
+Existing packs lack sufficient runtime clearance; use original AI-assisted outputs
+with exact prompts, hashes, service terms and human review status. Never train on
+packs or present geometry/synth as final production art/audio. The tool available
+produces raster art but no mastered music; use the brief's permitted audio
+specification fallback and silent missing-stream integration. Art/release approval
+remains human. Missing UX_GAME_FEEL/FARM_VISUAL_SCALE are recorded as absent,
+not inferred as approved documents. No gate after G0.5 is started.
+
 ## ADR-001 — Godot 4 + GDScript
 Status: accepted
 

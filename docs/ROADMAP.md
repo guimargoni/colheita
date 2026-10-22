@@ -41,6 +41,15 @@ Acceptance:
 - crop plot is readable;
 - basic UI direction approved by creative director.
 
+### Director-authorized pre-production extensions (G0, 2026-10-22)
+
+G0.4 preserves the selected A direction and direct local interactions; its art,
+UI and synth audio are placeholders. Technical checkpoint: `G0_4_EXECUTION_RECORD.md`.
+G0.5 establishes Art Bible and a four-plot authored sprite sample, UI Kit, audio
+production specification and real desktop/mobile comparison. See
+`G0_5_QUALITY_REPORT.md`. Artistic/release approval remains with the director.
+These extensions do not authorize G1 or production economy/multiplayer.
+
 ## Phase 1 — Farm Core
 
 ### G1.1 Plot interaction

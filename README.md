@@ -8,7 +8,12 @@ A modern social farming game inspired by the *feeling* of classic Orkut-era farm
 
 **Foundation / pre-production.**
 
-G0.1 and G0.2 are technically accepted. G0.3 now provides executable isometric and oblique visual studies for creative review. Godot 4.7.2 stable / GDScript runs without third-party art or backend configuration. Visual direction and asset licenses remain unapproved.
+G0.1/G0.2 are technically accepted. The director selected direction A and the G0.4 direct interaction prototype. **G0.5 is an executable four-plot art sample awaiting artistic review**, with original AI-assisted sprites, UI Kit and seasonal concept; no final audio, production economy or multiplayer. Godot 4.7.2 stable / GDScript, no backend setup. F5 opens G0.5; earlier scenes remain available. Source-pack licenses remain unresolved.
+
+- [G0.5 test guide and capture commands](docs/G0_5_TEST_GUIDE.md)
+- [Art Bible](docs/ART_BIBLE.md), [quality and limitations](docs/G0_5_QUALITY_REPORT.md)
+- [Original runtime provenance](docs/G0_5_ASSET_PROVENANCE.md)
+- [Art](docs/ART_PRODUCTION_PLAN.md) and [audio production plans](docs/AUDIO_PRODUCTION_PLAN.md)
 
 ## Start here
 

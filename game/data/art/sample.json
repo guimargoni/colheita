@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "study.g05.courtyard",
+  "regions": {
+    "house": [15, 50, 540, 535],
+    "tree": [560, 80, 440, 510],
+    "fence": [1010, 285, 516, 310],
+    "grass": [10, 675, 510, 300],
+    "path": [520, 675, 500, 300],
+    "flowers": [1020, 670, 500, 310]
+  },
+  "initial_states": ["mature", "mature", "empty", "needs_water"],
+  "seed_indices": [0, 1, 0, 1]
+}

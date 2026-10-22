@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "scope": "Runtime originals; source-pack CSV remains quarantined",
+  "assets": [
+    {
+      "id": "art.g05.environment.v1",
+      "file_path": "game/assets/art/g05/environment_atlas_v1.png",
+      "sha256": "ed942e755f74eebc697a22769e86fa2ac8f1573ae1684931db0f34a676de1b95",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "ART_REVIEW",
+      "visual_grade": "B",
+      "origin": "Original AI-assisted output; textual brief only; no pack inputs",
+      "author": "AI-generated with OpenAI imagegen, art direction for project owner",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-22",
+      "prompt": "docs/G0_5_ART_PROMPTS.json#environment",
+      "license_record": "docs/G0_5_ASSET_PROVENANCE.md",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_GAME_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "attribution": "Disclose AI origin; no third-party pack attribution applies",
+      "release_approved": false
+    },
+    {
+      "id": "art.g05.crops.v1",
+      "file_path": "game/assets/art/g05/crops_atlas_v1.png",
+      "sha256": "6f368fd8171354abc5702609e5e84ba536ae96ca07762750d3704d662efd0e1a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "ART_REVIEW",
+      "visual_grade": "B",
+      "origin": "Original AI-assisted output; textual brief only; no pack inputs",
+      "author": "AI-generated with OpenAI imagegen, art direction for project owner",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-22",
+      "prompt": "docs/G0_5_ART_PROMPTS.json#crops",
+      "license_record": "docs/G0_5_ASSET_PROVENANCE.md",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_GAME_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "attribution": "Disclose AI origin; no third-party pack attribution applies",
+      "release_approved": false
+    },
+    {
+      "id": "art.g05.animals.v1",
+      "file_path": "game/assets/art/g05/animals_atlas_v1.png",
+      "sha256": "2869c6cce9d8e3176c7e64412a6ab508e05cb511cf51f381504c6e58b5db016d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "ART_REVIEW",
+      "visual_grade": "B",
+      "origin": "Original AI-assisted output; textual brief only; no pack inputs",
+      "author": "AI-generated with OpenAI imagegen, art direction for project owner",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-22",
+      "prompt": "docs/G0_5_ART_PROMPTS.json#animals",
+      "license_record": "docs/G0_5_ASSET_PROVENANCE.md",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_GAME_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "attribution": "Disclose AI origin; no third-party pack attribution applies",
+      "release_approved": false
+    },
+    {
+      "id": "art.g05.ui.v1",
+      "file_path": "game/assets/art/g05/ui_atlas_v1.png",
+      "sha256": "60ea04d41bbcdbc509d81c305cb12a46c9b6d3c3bcae1c57f9f8e1bf9e0ceae6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "ART_REVIEW",
+      "visual_grade": "B",
+      "origin": "Original AI-assisted output; textual brief only; no pack inputs",
+      "author": "AI-generated with OpenAI imagegen, art direction for project owner",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-22",
+      "prompt": "docs/G0_5_UI_PROMPT.json#ui",
+      "license_record": "docs/G0_5_ASSET_PROVENANCE.md",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_GAME_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "attribution": "Disclose AI origin; no third-party pack attribution applies",
+      "release_approved": false
+    },
+    {
+      "id": "art.g05.terrain.v1",
+      "file_path": "game/assets/art/g05/terrain_atlas_v1.png",
+      "sha256": "ce76d6223a86c228551231326b3e8b45a956f7e2fe5c0c04cf3a79a0bc8fd3dd",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "status": "ART_REVIEW",
+      "visual_grade": "B",
+      "origin": "Original AI-assisted output; textual brief only; no pack inputs",
+      "author": "AI-generated with OpenAI imagegen, art direction for project owner",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-22",
+      "prompt": "docs/G0_5_TERRAIN_PROMPT.json#terrain",
+      "license_record": "docs/G0_5_ASSET_PROVENANCE.md",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_GAME_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "attribution": "Disclose AI origin; no third-party pack attribution applies",
+      "release_approved": false
+    }
+  ]
+}

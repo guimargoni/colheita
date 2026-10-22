@@ -14,7 +14,30 @@ def check(value, message):
 required = ['autoload','scenes/boot','scenes/farm','scenes/social','scenes/shop','scenes/inventory','scenes/profile','scenes/settings','scripts/domain','scripts/services','scripts/api','scripts/ui','scripts/utils','data/crops','data/animals','data/items','data/levels','data/quests','assets/art','assets/audio','assets/fonts','tests']
 for folder in required: check((ROOT/'game'/folder).is_dir(), 'Missing game/'+folder)
 for folder in ['migrations','functions','seed']: check((ROOT/'backend/supabase'/folder).is_dir(), 'Missing backend '+folder)
-for p in (ROOT/'game/assets').rglob('*'): check(not p.is_file() or p.name == '.gitkeep', 'Unapproved runtime asset: '+str(p))
+runtime_path = ROOT/'docs/runtime_assets_manifest.json'
+runtime = json.loads(runtime_path.read_text(encoding='utf-8')) if runtime_path.exists() else {'assets': []}
+allowed = set()
+for asset in runtime['assets']:
+    path = asset['file_path']
+    check(path.startswith('game/assets/art/g05/') and '..' not in Path(path).parts, 'Invalid runtime path')
+    check(asset['status'] == 'ART_REVIEW' and not asset['release_approved'], 'Unexpected art promotion')
+    check(asset['origin'].startswith('Original AI-assisted'), 'Original provenance required')
+    check((ROOT/asset['license_record']).is_file(), 'Missing runtime license record')
+    prompt_path, prompt_key = asset['prompt'].split('#')
+    prompt_source = ROOT/prompt_path
+    check(prompt_source.is_file(), 'Missing generation prompt file')
+    if prompt_source.is_file():
+        check(bool(json.loads(prompt_source.read_text(encoding='utf-8')).get(prompt_key)), 'Missing generation prompt: '+asset['id'])
+    source = ROOT/path
+    check(source.is_file(), 'Missing runtime file: '+path)
+    if source.is_file():
+        data = source.read_bytes()
+        check(hashlib.sha256(data).hexdigest()==asset['sha256'], 'Runtime hash changed: '+path)
+        check(data[:8] == b'\x89PNG\r\n\x1a\n', 'Runtime asset is not PNG')
+        check([int.from_bytes(data[16:20],'big'),int.from_bytes(data[20:24],'big')]==asset['dimensions'], 'Runtime dimensions changed')
+    allowed.update([path,path+'.import'])
+for p in (ROOT/'game/assets').rglob('*'):
+    check(not p.is_file() or p.name == '.gitkeep' or p.relative_to(ROOT).as_posix() in allowed, 'Unapproved runtime asset: '+str(p))
 rows = list(csv.DictReader((ROOT/'docs/assets_manifest.csv').open(encoding='utf-8-sig')))
 fields = ['source_pack','source_url','author','license_name','license_text_location','commercial_use_allowed','attribution_required','redistribution_allowed','modification_allowed','file_path','category','dimensions','tile_size','animation_frames','visual_grade','intended_use','notes']
 check(bool(rows), 'Empty manifest')

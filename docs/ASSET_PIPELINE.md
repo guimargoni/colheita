@@ -113,4 +113,12 @@ May be used for original production where licensing/platform terms permit. Gener
 Never ask an image model to reproduce a proprietary original Colheita Feliz asset exactly.
 
 ## Legal note
+
+G0.5: source-pack inventory remains `assets_manifest.csv`, entirely quarantined.
+New original runtime outputs are tracked in `runtime_assets_manifest.json` with
+hashes, origin, terms and review status. See `G0_5_ASSET_PROVENANCE.md` and
+`ART_BIBLE.md`. No source-pack clearance is implied by these original additions.
+The repository checker allows only recorded files and Godot import metadata;
+original art is never automatically promoted to release approval.
+
 “Free” in a filename is not proof of commercial licensing. Record the actual license/source before release use.

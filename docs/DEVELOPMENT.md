@@ -1,5 +1,10 @@
 # Local development — foundation
 
+Current entry point (G0.5): Import `game/project.godot`, then F5 opens the four-plot
+art study. See `G0_5_TEST_GUIDE.md` for desktop/mobile, controls, captures and UI Kit.
+Earlier scene instructions below are historical; G0.3/G0.4 still run with F6 on
+their respective scenes. This is a session-only prototype, not production gameplay.
+
 Use Godot **4.7.2 stable**, standard build (GDScript; no .NET). This exact installed version was validated. Runtime has no addons or third-party dependencies. Python 3.12+ is used only for repository checks. Asset audit additionally requires Pillow 12.3.0 and system `tar` with RAR support (Windows tar works here).
 
 From the repository root (`D:\Projetos\ColheitaFelizProMax\colheita` on the audited machine):

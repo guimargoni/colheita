@@ -10,6 +10,7 @@ try {
         @("--headless", "--path", "game", "--script", "res://tests/run_tests.gd"),
         @("--headless", "--path", "game", "--script", "res://tests/comparison_tests.gd"),
         @("--headless", "--path", "game", "--script", "res://tests/experience_tests.gd"),
+        @("--headless", "--path", "game", "--script", "res://tests/art_tests.gd"),
         @("--headless", "--path", "game", "--quit-after", "3")
     )
     foreach ($step in $steps) {

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "NOT_PRODUCED",
+  "music_day": {"path": "", "bus": "Music", "loop": true},
+  "ambient_farm": {"path": "", "bus": "Ambient", "loop": true},
+  "plant": {"path": "", "bus": "SFX", "variants": 3},
+  "water": {"path": "", "bus": "SFX", "variants": 3},
+  "harvest": {"path": "", "bus": "SFX", "variants": 4},
+  "reward": {"path": "", "bus": "SFX", "variants": 3},
+  "button": {"path": "", "bus": "UI", "variants": 3}
+}
