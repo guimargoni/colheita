@@ -1,5 +1,25 @@
 # Direção e produção sonora — G0.5
 
+## Revisão G0.5-R — Fazenda Viva
+
+Direção vigente: acolhedora, natural, suave e memorável. Todos os sons atuais
+são PLACEHOLDER ou NOT_PRODUCED; nenhum APPROVED ou candidato final. Inventário
+por cue/origem/licença/status em `audio_catalog_g05r.csv`; não existem arquivos
+de áudio final em `game/assets/audio/`. Sons de animais ainda não produzidos:
+galinha em pequenos clucks ocasionais (não loop contínuo), cão com respiração/
+farejo e reação gentil, sem latido a cada ação. Vozes animais espaçadas 8–20 s
+como proposta de mix, sujeita a escuta; nunca mascarar rega/colheita.
+
+76 BPM, Ré maior e instrumentação abaixo são brief de composição, não uma trilha
+aprovada. Produzir motivo original com silêncio e variação, sem imitar músicas.
+Separar música/vento/aves/animais/SFX/UI em buses e manter headroom. Pausas
+ambientais e camadas de intensidade baixa evitam sensação de áudio genérico.
+Transições futuras dia/noite/visita com crossfade 2–4 s, sem reinício ao abrir UI;
+retomar após background móvel com fade curto, respeitando mute. São especificações
+de produção, não funcionalidades já prontas. Revisão 20 min em fone/telefone/
+caixas, checar loop, fadiga e clipping; cada master precisa termo de embedding,
+autor, fonte, hash e medição. Ausência atual permanece em silêncio no laboratório.
+
 Status: **áudio final não produzido**. Não havia ferramenta de composição/master
 musical disponível nesta sessão. A alternativa autorizada no pedido é este brief
 executável de produção e pontos de integração; os tons do G0.4 não são trilha final.

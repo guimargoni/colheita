@@ -1,5 +1,13 @@
 # Produção artística — primeira amostra
 
+## Revisão G0.5-R
+
+O plano abaixo preserva o orçamento histórico da amostra G0.5, sem aprovação
+artística. A direção vigente é Cozy Pixel Art — Fazenda Viva, consolidada na
+Art Bible 0.2. Aplicação futura segue `G0_5R_IMPLEMENTATION_PLAN.md` e a matriz
+`G0_5R_ASSET_MATRIX.csv`. Escala/projeção/modularidade devem passar por piloto
+antes de redesenhar famílias inteiras. Não substituir todos os sprites agora.
+
 2026-10-22. Escopo fechado: um pátio, casa, árvore, cerca, quatro canteiros,
 cenoura/morango, galinha/cachorro, FX, UI Kit e conceito Abóbora Amaldiçoada.
 Não expandir catálogo antes de avaliação do diretor.
@@ -37,7 +45,7 @@ Estimativa de esforço humano, não orçamento cotado: dia = 6 h produtivas.
 | Limpar densidade, contornos, alpha e grama | 2–3 dias | 0,5 dia | matriz comum, gramado calmo |
 | Normalizar cultura/base/sombras | 1–2 dias | 0,5 dia | 4 estados sem salto de pivô |
 | Galinha e cão: volume, pés, loop | 1,5–3 dias | 0,5 dia | <=1 px de wobble |
-| Transformar 4 FX em ciclos de 4–6 frames | 1–2 dias | 0,5 dia | resposta legível sem bloquear |
+| Desenhar ciclos FX conforme gesto e timing | 1–2 dias | 0,5 dia | resposta legível sem bloquear |
 | UI: bordas, fonte, contraste e ícones | 1–2 dias | 1 dia | mobile sem cortes e >=44 dp |
 | Halloween, brilho e colheita especial | 0,5–1 dia | 0,25 dia | identidade sazonal consistente |
 | QA físico e proveniência de release | 0,5 dia | 1–2 dias | direitos e aparelhos registrados |

@@ -1,0 +1,582 @@
+{
+  "schema_version": 1,
+  "status": "HUMAN_REVIEW_PENDING",
+  "direction": "Cozy Pixel Art — Fazenda Viva",
+  "projection": {
+    "tile": [
+      32,
+      16
+    ],
+    "character_height": 32,
+    "height_unit": "source_pixel",
+    "legacy_g05_ratio": 4
+  },
+  "assets": [
+    {
+      "id": "visual.character",
+      "category": "character",
+      "logical_canvas": [
+        32,
+        48
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "pivot": [
+        16,
+        44
+      ],
+      "visual_bounds": [
+        0,
+        12,
+        32,
+        34
+      ],
+      "reference_height": 32,
+      "snap_points": [
+        {
+          "name": "feet",
+          "position": [
+            0,
+            0
+          ]
+        },
+        {
+          "name": "hand",
+          "position": [
+            -8,
+            -18
+          ]
+        }
+      ],
+      "shadow": {
+        "offset": [
+          0,
+          0
+        ],
+        "opacity": 0.22
+      },
+      "interaction": {
+        "type": "inspection_only",
+        "min_touch_dp": 48
+      },
+      "directions": [
+        "south_east",
+        "south_west",
+        "north_east",
+        "north_west"
+      ],
+      "animation": {
+        "status": "NOT_PRODUCED",
+        "frames": [],
+        "alignment_verified": false
+      },
+      "allowed_presentation_scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "skin_contract": "cozy.iso.v1",
+      "status": "PROPOSED",
+      "release_approved": false
+    },
+    {
+      "id": "visual.dog",
+      "category": "guardian",
+      "logical_canvas": [
+        32,
+        32
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "pivot": [
+        16,
+        28
+      ],
+      "visual_bounds": [
+        4,
+        8,
+        24,
+        24
+      ],
+      "reference_height": 20,
+      "snap_points": [
+        {
+          "name": "feet",
+          "position": [
+            0,
+            0
+          ]
+        }
+      ],
+      "shadow": {
+        "offset": [
+          3,
+          1
+        ],
+        "opacity": 0.22
+      },
+      "interaction": {
+        "type": "inspection_only",
+        "min_touch_dp": 48
+      },
+      "directions": [
+        "south_east",
+        "south_west"
+      ],
+      "animation": {
+        "status": "NOT_PRODUCED",
+        "frames": [],
+        "alignment_verified": false
+      },
+      "allowed_presentation_scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "skin_contract": "cozy.iso.v1",
+      "status": "PROPOSED",
+      "release_approved": false
+    },
+    {
+      "id": "visual.chicken",
+      "category": "animal",
+      "logical_canvas": [
+        24,
+        24
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "pivot": [
+        12,
+        20
+      ],
+      "visual_bounds": [
+        4,
+        8,
+        16,
+        14
+      ],
+      "reference_height": 12,
+      "snap_points": [
+        {
+          "name": "feet",
+          "position": [
+            0,
+            0
+          ]
+        }
+      ],
+      "shadow": {
+        "offset": [
+          2,
+          1
+        ],
+        "opacity": 0.22
+      },
+      "interaction": {
+        "type": "inspection_only",
+        "min_touch_dp": 48
+      },
+      "directions": [
+        "south_east",
+        "south_west"
+      ],
+      "animation": {
+        "status": "NOT_PRODUCED",
+        "frames": [],
+        "alignment_verified": false
+      },
+      "allowed_presentation_scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "skin_contract": "cozy.iso.v1",
+      "status": "PROPOSED",
+      "release_approved": false
+    },
+    {
+      "id": "visual.tree",
+      "category": "vegetation",
+      "logical_canvas": [
+        96,
+        112
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "pivot": [
+        48,
+        96
+      ],
+      "visual_bounds": [
+        12,
+        16,
+        72,
+        88
+      ],
+      "reference_height": 80,
+      "snap_points": [
+        {
+          "name": "root",
+          "position": [
+            0,
+            0
+          ]
+        }
+      ],
+      "shadow": {
+        "offset": [
+          8,
+          4
+        ],
+        "opacity": 0.22
+      },
+      "interaction": {
+        "type": "inspection_only",
+        "min_touch_dp": 48
+      },
+      "directions": [
+        "fixed"
+      ],
+      "animation": {
+        "status": "NOT_PRODUCED",
+        "frames": [],
+        "alignment_verified": false
+      },
+      "allowed_presentation_scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "skin_contract": "cozy.iso.v1",
+      "status": "PROPOSED",
+      "release_approved": false
+    },
+    {
+      "id": "visual.house",
+      "category": "building",
+      "logical_canvas": [
+        160,
+        176
+      ],
+      "footprint": [
+        4,
+        4
+      ],
+      "pivot": [
+        80,
+        136
+      ],
+      "visual_bounds": [
+        16,
+        40,
+        128,
+        128
+      ],
+      "reference_height": 96,
+      "snap_points": [
+        {
+          "name": "door",
+          "position": [
+            -14,
+            -12
+          ]
+        },
+        {
+          "name": "path",
+          "position": [
+            -14,
+            4
+          ]
+        }
+      ],
+      "shadow": {
+        "offset": [
+          12,
+          6
+        ],
+        "opacity": 0.22
+      },
+      "interaction": {
+        "type": "inspection_only",
+        "min_touch_dp": 48
+      },
+      "directions": [
+        "south_east"
+      ],
+      "animation": {
+        "status": "NOT_PRODUCED",
+        "frames": [],
+        "alignment_verified": false
+      },
+      "allowed_presentation_scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "skin_contract": "cozy.iso.v1",
+      "status": "PROPOSED",
+      "release_approved": false,
+      "door_height_range": [
+        42,
+        51
+      ]
+    },
+    {
+      "id": "visual.fence",
+      "category": "decoration",
+      "logical_canvas": [
+        48,
+        40
+      ],
+      "footprint": [
+        1,
+        0
+      ],
+      "pivot": [
+        24,
+        30
+      ],
+      "visual_bounds": [
+        0,
+        12,
+        48,
+        22
+      ],
+      "reference_height": 18,
+      "snap_points": [
+        {
+          "name": "edge_a",
+          "position": [
+            -16,
+            -8
+          ]
+        },
+        {
+          "name": "edge_b",
+          "position": [
+            16,
+            8
+          ]
+        }
+      ],
+      "shadow": {
+        "offset": [
+          3,
+          2
+        ],
+        "opacity": 0.22
+      },
+      "interaction": {
+        "type": "inspection_only",
+        "min_touch_dp": 48
+      },
+      "directions": [
+        "edge_x",
+        "edge_y"
+      ],
+      "animation": {
+        "status": "NOT_PRODUCED",
+        "frames": [],
+        "alignment_verified": false
+      },
+      "allowed_presentation_scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "skin_contract": "cozy.iso.v1",
+      "status": "PROPOSED",
+      "release_approved": false
+    },
+    {
+      "id": "visual.plot",
+      "category": "plot",
+      "logical_canvas": [
+        72,
+        64
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "pivot": [
+        36,
+        48
+      ],
+      "visual_bounds": [
+        4,
+        0,
+        64,
+        64
+      ],
+      "reference_height": 0,
+      "snap_points": [
+        {
+          "name": "north",
+          "position": [
+            0,
+            -16
+          ]
+        },
+        {
+          "name": "east",
+          "position": [
+            32,
+            0
+          ]
+        },
+        {
+          "name": "south",
+          "position": [
+            0,
+            16
+          ]
+        },
+        {
+          "name": "west",
+          "position": [
+            -32,
+            0
+          ]
+        },
+        {
+          "name": "crop_0",
+          "position": [
+            0,
+            -8
+          ]
+        },
+        {
+          "name": "crop_1",
+          "position": [
+            16,
+            0
+          ]
+        },
+        {
+          "name": "crop_2",
+          "position": [
+            0,
+            8
+          ]
+        },
+        {
+          "name": "crop_3",
+          "position": [
+            -16,
+            0
+          ]
+        }
+      ],
+      "shadow": {
+        "offset": [
+          2,
+          1
+        ],
+        "opacity": 0.22
+      },
+      "interaction": {
+        "type": "footprint_diamond",
+        "min_touch_dp": 48
+      },
+      "directions": [
+        "fixed"
+      ],
+      "animation": {
+        "status": "NOT_PRODUCED",
+        "frames": [],
+        "alignment_verified": false
+      },
+      "allowed_presentation_scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "skin_contract": "cozy.iso.v1",
+      "status": "PROPOSED",
+      "release_approved": false
+    }
+  ],
+  "skins": [
+    {
+      "id": "cozy.base",
+      "contract": "cozy.iso.v1",
+      "geometry_changes": false,
+      "status": "NOT_PRODUCED"
+    },
+    {
+      "id": "cozy.autumn",
+      "contract": "cozy.iso.v1",
+      "geometry_changes": false,
+      "status": "PALETTE_TEST_ONLY"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "compact",
+      "columns": 4,
+      "rows": 4,
+      "avenues": false
+    },
+    {
+      "id": "dense",
+      "columns": 8,
+      "rows": 8,
+      "avenues": false
+    },
+    {
+      "id": "avenues",
+      "columns": 12,
+      "rows": 12,
+      "avenues": true
+    }
+  ],
+  "final_plot_count": null,
+  "unlock_costs": null,
+  "initial_plot_count": null,
+  "legacy_preview_timing": {
+    "status": "TIMING_STUDY_ONLY",
+    "chicken_idle": [
+      1.1,
+      0.12,
+      0.55,
+      1.45
+    ],
+    "dog_attention": [
+      1.8,
+      0.3,
+      0.65,
+      0.12
+    ]
+  }
+}

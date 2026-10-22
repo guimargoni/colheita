@@ -1,137 +1,89 @@
-# Art Bible — Jardim do Sol / G0.5
+# Art Bible — Cozy Pixel Art · Fazenda Viva
 
-Versão 0.1, 2026-10-22. Direção A autorizada pelo diretor. **Padrões propostos
-para aprovação; nenhuma prancha gerada está aprovada como arte final.**
-G0.3/G0.4 continuam disponíveis; esta amostra não altera o catálogo do GDD.
+G0.5-R, revisão 0.2, 2026-10-22. Direção de trabalho estabelecida pelo usuário;
+**implementação final, sprites, UI e áudio continuam aguardando avaliação humana**.
+G0.5 foi aprovado tecnicamente, não artisticamente. Versão anterior preservada no
+Git em `11e5ab1:docs/ART_BIBLE.md`; suas medidas eram de um estudo legado.
 
-## Referência concreta
+## Referência e limites
 
-![Ambiente original em revisão](../game/assets/art/g05/environment_atlas_v1.png)
-![Culturas e conceito Halloween](../game/assets/art/g05/crops_atlas_v1.png)
-![Animais e efeitos](../game/assets/art/g05/animals_atlas_v1.png)
-![Pele de interface](../game/assets/art/g05/ui_atlas_v1.png)
+Mockup `Mockup_Colheita_Feliz_G05R.png` foi efetivamente analisado fora do
+repositório, no anexo/Temp informado pelo usuário. Registro e hash em
+`G0_5R_DIAGNOSIS.md`; cópia privada ignorada em `.local/g0_5r/`.
+Não é runtime asset, layout aprovado, sprite-sheet para recortar nem autorização
+de redistribuição. Suas etiquetas e números são referência, não regras de gameplay.
 
-São referências produzidas para este projeto, sem referência visual de packs
-ou reprodução do jogo histórico. Capturas executáveis: `.local/g0_5/index.html`,
-regeneráveis por `tools/capture_art.ps1`. Pranchas não substituem essas capturas.
+A direção combina silhuetas simples, arquitetura expressiva, vegetação em massas,
+cores naturais, volume claro e detalhe moderado. Evitar hiper-realismo, filigrana
+por toda superfície, ruído retro e mistura de densidades. Usar a referência para
+qualidade/proporção, sem reproduzir literalmente composição, UI ou obra comercial.
 
-## Projeção, escala e profundidade
+**Quatro canteiros são apenas a amostra histórica.** A fazenda deve acomodar dezenas
+de espaços, parcela inicialmente disponível, regiões bloqueadas e expansão/
+personalização. Quantidades inicial/final e custos permanecem sem decisão.
 
-Projeção ortográfica 2:1: `screen=(64*(x-y),32*(x+y)-altura)`.
-Tile-base lógico **128×64**. Não usar perspectiva convergente ou câmera rotativa.
-Pivô de chão no centro da base; altura cresce verticalmente. Ordenar entidades
-por x+y; evitar copa/casa sobre a área acionável dos canteiros.
+## Sistema visual único
 
-| Elemento | Meta em unidades lógicas | Demonstração atual |
-|---|---|---|
-| Canteiro | base 180×90, passo 1,8 tile | canvas 211×187, base ~190×95 |
-| Casa | largura 280–320, altura 280–320 | 300×300, ~3 tiles |
-| Árvore | largura 180–220, altura 230–270 | 208×247 |
-| Galinha | altura 56–68 | canvas 60×64 |
-| Cachorro | altura 88–104 | canvas 95×99 |
-| Cerca | altura dos postes 60–80 | peça de canto 260×156 |
+- Chão 2:1 com célula-fonte proposta 32×16; personagem de referência 32 px de altura.
+- Footprint, canvas, pivô, sombra, encaixe e interação separados em metadados.
+- Arte nova no canvas nativo, sem resize individual para remediar proporções.
+- Buffer de mundo com câmera arredondada, nearest e apresentação inteira.
+- Prédios/cercas/caminhos/canteiros usam a mesma malha; sem perspectiva convergente.
+- Casa expressiva de volumes simples e porta compatível com personagem.
+- Bordas e solo modulares separados das plantas; estados e skins não mudam hit map.
 
-Amostra de quatro canteiros é recorte de produção artística, não nova decisão
-de reduzir a fazenda inicial de aproximadamente 16 canteiros.
+Padrões completos: [escala](VISUAL_SCALE_STANDARD.md),
+[projeção/grade](PROJECTION_GRID_GUIDE.md), [canteiros](MODULAR_PLOTS_SPEC.md),
+[skins](SKIN_CONTRACTS.md), [animação](ANIMATION_GUIDE.md) e
+[UI/câmera](UX_FRAMING_STANDARD.md). Fonte estrutural proposta:
+`game/data/art/visual_standard.json`; não representa assets finais existentes.
 
-Meta de pixels: matriz lógica comum de 128 px/tile, agrupamentos de 1–3 px,
-contorno colorido 1–2 px nessa matriz. Nearest, mipmaps desligados. Na entrega
-atual os sprites vieram de atlas 1536×1024 e são reduzidos no motor: **a densidade
-ainda varia**, portanto não passam automaticamente na inspeção a 1×. Antes de
-release, normalizar em editor de pixels e revalidar pivôs, sem suavização.
-Zoom intermediário é permitido na avaliação; escala inteira é a referência de QA.
+## Paleta, luz e superfícies
 
-## Cor, luz e material
+Paleta de trabalho (seleção própria orientada pela referência, não amostragem
+de sprites comerciais): natureza #A4BD79/#5D995C/#277365; terra #AA734C/#D79553;
+reboco #F0D5A8; telha #C85537/#A13C31; estrutura #665A51; água/UI
+#56AAC7/#218AAD e acento #F2C34E; texto/contorno navy #203D4A, papel #FFF2D5.
+Validar contraste da UI em fundos reais antes de congelar códigos.
 
-| Papel | Cor |
-|---|---|
-| Contorno/solo profundo | #44392E / #80523A |
-| Folhagem | #4F7745 / #789C55 / #A4BA69 |
-| Reboco/papel | #F5E6BD / #FAF2D9 |
-| Telhado/cerâmica | #B96548 |
-| Madeira pintada/UI | #497F78 / #254C41 |
-| Recompensa e sol | #E6B35A |
+Luz superior esquerda, sombra para baixo/direita, 18–28% de opacidade, contato
+firme no solo. Três a cinco tons principais por material, contorno colorido
+1 px na matriz-fonte (2 px só onde silhueta exige). Sem brilho plástico geral.
+Saturação maior em frutos/ações; superfícies repetidas de baixo contraste.
 
-Luz do alto à esquerda; sombras para baixo/direita, comprimento de até 35% da
-altura do objeto, opacidade alvo 18–28%, verde/marrom escuro em vez de preto.
-As sombras atuais são embutidas e discretas; revisar uniformidade manualmente.
-Contorno externo mais escuro que a forma, sem preto puro generalizado. Três a
-cinco tons por material como meta; atlas atual tem antialias/mais tons e pede limpeza.
-Solo e telhado quentes; verde menos saturado no fundo; frutos e indicadores têm
-maior contraste. Canteiros devem se distinguir com brilho e silhueta, além da cor.
+Grama com poucas touceiras, sem flores uniformes por toda tile. Flores nas bordas,
+árvores com três massas de folhagem e tronco legível; copa não encobre canteiro ativo.
+Água futura azul/teal em camadas simples, reflexos contidos; frames conforme gesto,
+não número universal. Ainda não produzida. Estações/eventos repetem luz/projeção,
+alteram vegetação/ornamento; Halloween tem blink/brilho gentil sem sacrificar leitura.
 
-Vegetação: copas em massas legíveis, 3 tamanhos de folhas, flores concentradas
-em bordas. Grama quieta, sem centenas de pontos de atenção junto às culturas.
-O primeiro tile do atlas tem flores demais; foi preservado como referência e
-substituído no executável por textura original mais calma, `terrain_atlas_v1.png`.
-Esse fundo ainda pede inspeção de emendas e densidade antes de ser arte final.
-Água futura: borda clara, corpo teal de 3 tons, ciclo de 4 quadros/6 fps, sem
-espelho fotográfico; **água não produzida nesta amostra**.
+## Movimento, UI e som
 
-## Arquitetura, culturas e personagens
+Animação parte da intenção e contato, usa durações individuais e eventos ocasionais;
+sem escalar o corpo inteiro como substituto de respiração desenhada. Medir alpha,
+pivô, pés e volume por frame. Os animais G0.5 têm desvios ainda não corrigidos.
+FX curtos e não bloqueantes; opção de movimento reduzido.
 
-Casa: telha terracota, reboco creme, esquadrias teal, porta convidativa, vasos e
-assimetria controlada. Sem copiar plantas, fachadas ou marcas de jogos existentes.
-Cada novo prédio deve repetir materiais e direção de luz, variar função/silhueta.
+UI temática compacta: ícones simples, papel/navy/teal, acento dourado contido.
+Moeda/nível no topo, ferramentas contextuais embaixo, acessos secundários recolhíveis.
+Fonte de produção ainda por escolher; não copiar fonte/ícones da referência.
+Contraste alvo 4,5:1 para texto, foco visível, alvos 48 dp, safe-area real.
+Fazenda visível alvo >=80% desktop / >=75% mobile, fora modais temporários.
 
-Culturas: solo vazio, muda, crescimento e maturidade identificáveis em 1 s.
-Cenoura: ombros laranja + folhas altas; morango: fruto vermelho + flor branca.
-Solo vazio vem de uma única célula; nenhuma cultura deve deixar frutos ao colher.
-Na amostra existem três plantas por imagem, apesar do briefing de geração pedir
-quatro: divergência registrada, não corrigida desenhando formas sobre a prancha.
+Áudio acolhedor, natural, suave e memorável: produção e mix em
+`AUDIO_PRODUCTION_PLAN.md`. Todo synth atual é placeholder; não há trilha final.
 
-Animais: cabeça expressiva e pés claros. Galinha idle 4 quadros/2 fps, caminhar
-4/6 fps; cachorro atenção/idle 4/2 fps. Frames atuais têm pequenas mudanças de
-volume/posição e pedem revisão de animador; não declarar ciclos finais perfeitos.
-Movimento por código posiciona sprites, não substitui desenho de frames.
+## Aprovação e preparação
 
-Halloween: a mesma base de solo, mudas e fruto jovem; maduro com olhos teal,
-blink curto a cada 4 s e variação luminosa <8%. Colheita mistura folhas douradas
-e respingo teal. Não há evento, preço ou prêmio econômico. Estações futuras
-mudam vegetação/ornamentos, preservando contraste de estados e projeção.
+Laboratório isolado: `scenes/art/art_lab.tscn`, sem alterar entrada principal.
+Usa comparadores G0.5, régua, guias, layouts extensos e paleta técnica. Não apresenta
+arte reduzida nem linhas de debug como conteúdo final. UI da bancada não é o HUD final.
 
-## Animação e VFX
+Critérios humanos: escala humana/porta/animal coerente; nenhum salto de pivô;
+solo contínuo em adjacência; leitura de disponível/bloqueado/cultivo/vazio; 95%
+de acerto em 20 ações intencionais; zoom/pan sem ação acidental; contraste e conforto
+em aparelho real; origem/licença e identidade aprovadas por família.
 
-Respostas a plantar/regar/colher acontecem no mesmo gesto, sem aguardar efeito.
-VFX authored na quarta linha do atlas de animais: semente/terra, água, folhas/fruto,
-brilho. Duração 0,9 s, deslocamento vertical suave e fade; máximo 32 simultâneos.
-São sprites estáticos animados pelo motor, **não sequências finais de FX**.
-Brilho de recompensa é só feedback visual e não altera moedas/XP.
-Movimento reduzido congela animais/culturas e usa feedback sem deslocamento.
-
-## UI, tipografia e acessibilidade
-
-Botões teal primários, papel secundários, pressão mais escura, foco dourado,
-desabilitado sem interação. Usar nine-patch da prancha original, rótulos Godot
-reais e ícones próprios. Modal em papel com margem interna 36 px; tooltip em
-papel com texto escuro. No kit há todos os estados e cartão de semente.
-A fonte é a padrão embarcada do Godot para a avaliação (licença do motor);
-família tipográfica própria ainda não selecionada.
-
-Desktop: corpo 22–26 px, título 36–40; mobile 26–30 e título 38–40 no canvas
-1080 px. Espaçamentos 8/12/24/36. HUD fixo ocupa ~25% da altura em retrato,
-mapa disponível ~74%; não reduzir os mesmos componentes de desktop cegamente.
-Alvos móveis >=132 px no canvas 1080 (44 dp em simulação 3×). Validar dp real
-e safe-area em dispositivo; retrato em PC não comprova ergonomia física.
-Tooltip por hover/hold, teclado 1/2/3/Home/setas/Enter, foco sempre visível.
-Alvos de chão 196×140 lógicos, margens compartilhadas atribuídas ao centro mais
-próximo (uma ação possível por ponto); zoom permite aproximação.
-
-Critério WCAG de contraste proposto: texto comum >=4,5:1, elementos grandes e
-foco >=3:1. **Auditoria completa de contraste ainda pendente**, especialmente
-rótulos sobre gramado e disabled. Som nunca é a única informação. Texto/ícone,
-cor de solo, silhueta e inspeção acompanham cada estado.
-
-## Aprovação objetiva da primeira amostra
-
-1. Quatro canteiros distinguíveis, duas culturas reconhecidas sem legenda a 1×.
-2. 95% dos toques intencionais em teste humano de 20 ações acertam o alvo.
-3. Nenhum clique de câmera, pinch ou modal produz ação agrícola.
-4. Pivôs animais variam no máximo 1 px na escala-base entre quadros equivalentes.
-5. Nenhum corte de sprites, fringe opaco, texto cortado ou controles sobrepostos.
-6. Piso de 60 fps em hardware-alvo medido; sem travas em 100 ações consecutivas.
-7. Termos/proveniência de todo asset, incluindo fonte e áudio, revisados.
-8. Diretor aprova composição, carisma, densidade, UI e Halloween no executável.
-
-Atualmente 4, 6 e revisão completa de 5/7 dependem de trabalho/teste humano.
-O relatório separa evidência automatizada, limitações e aprovação artística.
+Matriz de destino: `G0_5R_ASSET_MATRIX.csv`. Etapas, custos e dependências:
+`G0_5R_IMPLEMENTATION_PLAN.md`. **Nenhuma substituição artística definitiva
+antes dessa validação. Não avançar para G1.**

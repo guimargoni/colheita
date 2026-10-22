@@ -1,5 +1,22 @@
 # Architecture & Product Decisions
 
+## ADR-011 — G0.5-R consolidation and expandable art contracts
+
+Status: user-authorized preparation; artistic implementation pending human review.
+
+Cozy Pixel Art — Fazenda Viva guides moderate detail and readable forms. The
+attached mockup is a direction reference, not a literal layout, runtime atlas or
+approval to replace current assets. Preserve all previous gates and main scene.
+Propose a native 32×16 projection/32px character standard in an isolated lab;
+the G0.5 128×64 geometry has a 4:1 bridge but old PNGs are not automatically
+normalized. No production sprites are replaced or promoted in this revision.
+
+Farm layout must support dozens of plots and future regions/skins. Access,
+cultivation and skin are separate. Final/initial counts and unlock costs stay
+undecided; lab loads are disposable QA fixtures, not product limits. The lab
+only inspects; no progression, unlock purchase or new gameplay is implemented.
+Stop at G0.5-R, await human validation, no G1 and no push.
+
 ## ADR-010 — Preserve approved G0.4 interaction, authorize G0.5 art study
 
 Status: director-authorized scope, 2026-10-22; G0.5 artistic approval pending.

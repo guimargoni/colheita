@@ -1,0 +1,11 @@
+id,origin,path_or_hook,license,status,next_action
+music.g04,Original synthesized prototype,game/scripts/audio/prototype_audio.gd::_music_loop,Original project code; no external recording,PLACEHOLDER,Compose and master original theme
+sfx.plant.g04,Original synthesized prototype,game/scripts/audio/prototype_audio.gd::_tone(plant),Original project code; no external recording,PLACEHOLDER,Produce tactile soil variations
+sfx.water.g04,Original synthesized prototype,game/scripts/audio/prototype_audio.gd::_tone(water),Original project code; no external recording,PLACEHOLDER,Record gentle water variations
+sfx.harvest.g04,Original synthesized prototype,game/scripts/audio/prototype_audio.gd::_tone(harvest),Original project code; no external recording,PLACEHOLDER,Produce foliage and organic pop
+ui.button.g04,Original synthesized prototype,game/scripts/audio/prototype_audio.gd::_tone(button),Original project code; no external recording,PLACEHOLDER,Produce paper or wood click
+music.day,No file,game/data/art/audio_slots.json::music_day,NOT_OBTAINED,NOT_PRODUCED,Compose licensed original master
+ambient.farm,No file,game/data/art/audio_slots.json::ambient_farm,NOT_OBTAINED,NOT_PRODUCED,Produce wind leaves and sparse birds
+sfx.reward,No file,game/data/art/audio_slots.json::reward,NOT_OBTAINED,NOT_PRODUCED,Produce restrained warm reward cue
+animal.chicken,No file,Planned integration only,NOT_OBTAINED,NOT_PRODUCED,Record or license chicken sounds
+animal.dog,No file,Planned integration only,NOT_OBTAINED,NOT_PRODUCED,Record or license dog reactions

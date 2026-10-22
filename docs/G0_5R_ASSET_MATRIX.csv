@@ -1,0 +1,27 @@
+id,source,license_status,action,reason,status
+house.g05,environment_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Reduce microdetail and redraw human door proportions; resizing alone is insufficient,ART_REVIEW
+tree.g05,environment_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Simplify foliage masses and standardize shadow and trunk anchor,ART_REVIEW
+fence.g05,environment_atlas_v1.png,Original output terms recorded; release review pending,Substituir,Corner illustration is not an edge kit with modular sockets,ART_REVIEW
+grass.diamond.g05,environment_atlas_v1.png,Original output terms recorded; release review pending,Substituir,Flowers and texture noise conflict with quiet repeated ground,ART_REVIEW
+path.g05,environment_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Normalize 32x16 projection and edge transitions,ART_REVIEW
+flowers.g05,environment_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Reserve accents for borders and reduce density,ART_REVIEW
+soil_crop.g05,crops_atlas_v1.png,Original output terms recorded; release review pending,Substituir,Embedded soil plus crop prevents true modular shared borders,ART_REVIEW
+carrot_strawberry.g05,crops_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Retain crop identity; redraw as plant-only stages on common sockets,ART_REVIEW
+pumpkin.g05,crops_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Retain event concept but normalize base and blink anchors,ART_REVIEW
+chicken.g05,animals_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Normalize silhouette feet and timing before final cycle,ART_REVIEW
+dog.g05,animals_atlas_v1.png,Original output terms recorded; release review pending,Ajustar,Reduce scale and unify outline density; remove frame volume jumps,ART_REVIEW
+vfx.g05,animals_atlas_v1.png,Original output terms recorded; release review pending,Manter provisoriamente,Static bursts only; authored timed sequences still needed,PLACEHOLDER
+ui.g05,ui_atlas_v1.png,Original output terms recorded; release review pending,Substituir,Excess ornament and fixed bars require compact component study,ART_REVIEW
+font.current,Godot bundled default font,Engine bundled notices; no new font file,Manter provisoriamente,Production typography still requires family selection and notice review,PLACEHOLDER
+terrain.g05,terrain_atlas_v1.png,Original output terms recorded; release review pending,Manter provisoriamente,Calmer than first grass but density and seams need native pixel pass,ART_REVIEW
+palette.projection,Original G0.5 concepts,Project-owned definitions,Reaproveitar,Warm rural materials and 2:1 direction survive; codes and grid revised,PROPOSED
+gesture.g04,Original GDScript,Project code,Reaproveitar,Keep tap drag hold pinch separation; adapt picker by stable IDs later,TECHNICAL_ONLY
+character.new,None,NOT_OBTAINED,Produzir do zero,Original human reference required to validate door and animal scale,NOT_PRODUCED
+modular_soil.new,None,NOT_OBTAINED,Produzir do zero,Separate soil border connections and crop sockets,NOT_PRODUCED
+water_bridge.new,None,NOT_OBTAINED,Produzir do zero,Original matching transitions and heights; not permission to copy mockup,NOT_PRODUCED
+skins.new,None,NOT_OBTAINED,Produzir do zero,Geometry-compatible seasonal families after pilot approval,NOT_PRODUCED
+audio.final,None,NOT_OBTAINED,Produzir do zero,No mastered final music ambience or animal files,NOT_PRODUCED
+maeve.pack,G0.2 inventory,UNKNOWN FREE scope,Manter provisoriamente,Quarantine only; not runtime source until written rights review,LICENSE_BLOCKED
+snowhex.pack,G0.2 inventory,Conflicting terms,Manter provisoriamente,Quarantine only; resolve noncommercial conflict,LICENSE_BLOCKED
+untied.pack,G0.2 inventory,Conditional license review pending,Manter provisoriamente,Quarantine; preserve attribution distribution and no-training restrictions,LICENSE_BLOCKED
+mockup.user,User attachment outside repository,Reference permission only; redistribution unverified,Reaproveitar,Direction reference only; never crop into shipping art or impose layout,REFERENCE_ONLY

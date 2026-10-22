@@ -50,6 +50,13 @@ production specification and real desktop/mobile comparison. See
 `G0_5_QUALITY_REPORT.md`. Artistic/release approval remains with the director.
 These extensions do not authorize G1 or production economy/multiplayer.
 
+G0.5-R consolidates Cozy Pixel Art — Fazenda Viva after the director withheld
+artistic approval. Deliver art contracts, scale/projection/modular plots/skins,
+animation and audio specifications plus an isolated inspection lab. The mockup
+does not fix layout or plot counts. Extensible farm/locked regions are visual QA
+only; no actual unlock/progression or definitive art replacement. Review the
+contracts and pilot plan before authorizing any further implementation.
+
 ## Phase 1 — Farm Core
 
 ### G1.1 Plot interaction

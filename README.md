@@ -17,6 +17,12 @@ G0.1/G0.2 are technically accepted. The director selected direction A and the G0
 
 ## Start here
 
+G0.5-R: [consolidated direction](docs/ART_BIBLE.md),
+[diagnosis](docs/G0_5R_DIAGNOSIS.md), [scale standard](docs/VISUAL_SCALE_STANDARD.md)
+and [lab/implementation plan](docs/G0_5R_IMPLEMENTATION_PLAN.md). F6 on
+`game/scenes/art/art_lab.tscn` opens the isolated expandable-grid inspection lab;
+F5 and all prior prototypes stay preserved. Artistic approval remains pending.
+
 - [AGENTS.md](AGENTS.md) — operating rules for Codex/AI contributors
 - [GDD](docs/GDD.md) — living game design document
 - [Technical Architecture](docs/TECHNICAL_ARCHITECTURE.md)

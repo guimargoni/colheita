@@ -1,5 +1,11 @@
 # Asset Pipeline and Audit
 
+G0.5-R adds the destination matrix `G0_5R_ASSET_MATRIX.csv`, audio catalog
+`audio_catalog_g05r.csv` and proposed metadata in `game/data/art/visual_standard.json`.
+These are review/production contracts, not new release approvals. Existing PNGs,
+hashes and license statuses remain unchanged. The user's mockup is an external
+reference, privately preserved under `.local/g0_5r/`, never runtime/source art.
+
 ## Goal
 Use every high-quality asset that genuinely helps the game while preserving a coherent visual language and legal clarity.
 
