@@ -64,6 +64,13 @@ F5 and all prior prototypes stay preserved. Artistic approval remains pending.
 - F5 opens the comparison menu; A and B are also separate scenes under `game/scenes/comparison/`.
 - Original procedural placeholders only; generated captures remain local under `.local/g0_3/`.
 
+## G0.6 — Fazenda Viva
+
+Independent four-plot reference: open `game/scenes/art/g06/g06.tscn` and press F6.
+[Review and limitations](docs/G06_REFINEMENT_REPORT.md), [grid/scale](docs/G06_GRID_SCALE.md),
+[manual tests and real PC/mobile captures](docs/G06_TEST_GUIDE.md). Conceptual style
+accepted; artistic finish pending human approval. F5 and prior scenes are preserved.
+
 ## G0.1 / G0.2 delivery
 
 - [Open, run, test and review contact sheets](docs/DEVELOPMENT.md)

@@ -1,5 +1,10 @@
 # Art Bible — Cozy Pixel Art · Fazenda Viva
 
+**Atualização G0.6, 2026-10-23:** o diretor aprovou conceitualmente esta direção
+após preferir a amostra v2. Isso fixa a linguagem de trabalho, não o aceite dos
+PNGs, áudio, UI final ou distribuição. A revisão G0.5-R abaixo fica preservada
+como histórico. Complementos atuais em `G06_GRID_SCALE.md` e `G06_REFINEMENT_REPORT.md`.
+
 G0.5-R, revisão 0.2, 2026-10-22. Direção de trabalho estabelecida pelo usuário;
 **implementação final, sprites, UI e áudio continuam aguardando avaliação humana**.
 G0.5 foi aprovado tecnicamente, não artisticamente. Versão anterior preservada no
@@ -87,3 +92,28 @@ em aparelho real; origem/licença e identidade aprovadas por família.
 Matriz de destino: `G0_5R_ASSET_MATRIX.csv`. Etapas, custos e dependências:
 `G0_5R_IMPLEMENTATION_PLAN.md`. **Nenhuma substituição artística definitiva
 antes dessa validação. Não avançar para G1.**
+
+## G0.6 — style lock conceitual e composição de referência
+
+Consolidar casa creme/telha quente/persiana teal, contorno colorido, vegetação em
+massas, frutos claros, UI navy/papel/ouro contido. As duas imagens fornecidas em
+2026-10-23 orientam camadas, caminhos conectados e organização ambiental, sem
+cópia literal ou uso de seus pixels. Manter construção central, horta organizada
+e cenário reconhecível no enquadramento normal, com respiro entre massas.
+
+Organização estrutural na malha; naturalidade em detalhes curados. Profundidade
+pelo contato de chão, vegetação sem cobrir canteiros, entrada da casa ligada ao
+caminho e cercas em arestas contínuas. A amostra segue com quatro canteiros;
+continua sem decidir contagem inicial/final da propriedade ou custos de expansão.
+
+Escala estilizada da rodada: referência humana 32 px; casa canvas 96×100, árvore
+64×80, conífera 38×68, cultura madura 20×18 e galinha 20×23. Galinha maior por
+legibilidade expressiva, não por proporção realista; mesma escala/pivô entre
+poses. Esse ajuste supera apenas a proposta histórica 10–13 px de galinha, sem
+alterar cenas ou contratos legados. Medidas/sockets/limitações em `G06_GRID_SCALE.md`.
+
+Não promover o estilo a biblioteca final: densidade nativa, alpha, contato,
+terminais e sombras precisam acabamento artístico. Não corrigir falhas com blur,
+senoide do animal inteiro ou geometria substituta. Áudio sintetizado continua
+placeholder histórico; nova cena usa somente slots aprovados e permanece em
+silêncio na ausência deles. **G0.6 artístico: PENDING HUMAN APPROVAL.**

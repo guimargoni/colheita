@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "g06.garden_kit_v1",
+      "file_path": "game/assets/art/g06/garden_kit_v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0104b3b17326844ac34a7245fd98af48375e02b498831a5fdbd36a73da6bfb30",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; original project art as style input only for kit and FX",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen, model identifier not exposed",
+      "created": "2026-10-23",
+      "license_record": "docs/G06_PROVENANCE.md",
+      "prompt": "docs/G06_PROMPTS.json#clean",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    },
+    {
+      "id": "g06.action_fx_v1",
+      "file_path": "game/assets/art/g06/action_fx_v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "161fe54fd5e637842a3e47194431c53ba53997cf6b1e049c00285808267ab8ff",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; original project art as style input only for kit and FX",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen, model identifier not exposed",
+      "created": "2026-10-23",
+      "license_record": "docs/G06_PROVENANCE.md",
+      "prompt": "docs/G06_PROMPTS.json#fx",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    },
+    {
+      "id": "g06.path_v2",
+      "file_path": "game/assets/art/g06/path_v2.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "cc063e7e5a24352514d2eff9a71be15d93dd669f7676d5280d88771d54000e8c",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; original project art as style input only for kit and FX",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen, model identifier not exposed",
+      "created": "2026-10-23",
+      "license_record": "docs/G06_PROVENANCE.md",
+      "prompt": "docs/G06_PROMPTS.json#path",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    }
+  ]
+}

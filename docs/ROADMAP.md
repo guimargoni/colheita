@@ -57,6 +57,16 @@ does not fix layout or plot counts. Extensible farm/locked regions are visual QA
 only; no actual unlock/progression or definitive art replacement. Review the
 contracts and pilot plan before authorizing any further implementation.
 
+### G0.6 — Style lock e cenário de referência
+
+Explicitamente autorizado em 2026-10-23 após preferência pela amostra v2.
+Cozy Pixel Art — Fazenda Viva aceita conceitualmente; acabamento artístico
+continua pendente. Cena independente `scenes/art/g06/g06.tscn`, quatro canteiros,
+grade/escala documentadas, casa conectada a caminhos, cercas, vegetação, animal
+legível, HUD e FX. Comparação real PC/retrato com v2 preservada. Relatório e
+critérios: `G06_REFINEMENT_REPORT.md`; guia: `G06_TEST_GUIDE.md`.
+Aceite técnico não aprova arte nem autoriza G1, fazenda completa ou economia.
+
 ## Phase 1 — Farm Core
 
 ### G1.1 Plot interaction

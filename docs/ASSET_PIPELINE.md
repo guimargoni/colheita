@@ -1,5 +1,11 @@
 # Asset Pipeline and Audit
 
+G0.6 acrescenta três outputs originais em `game/assets/art/g06/`, inventariados
+separadamente em `g06_assets_manifest.json`. Origem, reuso, materiais recusados e
+condições em `G06_PROVENANCE.md`; prompts completos em `G06_PROMPTS.json`. Nenhum
+asset foi aprovado para release. Inventário histórico dos três packs permanece
+intacto; capturas da nova cena ficam apenas em `.local/g06/`.
+
 Independent Cozy pilot v2: `pilot_assets_manifest.json` adds original review/candidate
 outputs without changing the historical inventories or their approvals. Prompts and
 terms are in `PILOT_V2_PROMPTS.json` / `PILOT_V2_PROVENANCE.md`. The checker validates

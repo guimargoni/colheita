@@ -1,5 +1,18 @@
 # Architecture & Product Decisions
 
+## ADR-013 — G0.6 conceptual style lock, isolated scenic refinement
+
+Status: director-approved conceptual direction, 2026-10-23; finish/release pending.
+
+The director preferred sample v2 and explicitly authorized G0.6. Cozy Pixel Art —
+Fazenda Viva becomes the conceptual reference. Build an independent four-plot
+scene with shared ground grid, connected paths/fence runs, stronger stylized
+animal scale, layered vegetation, responsive HUD and authored action FX. Preserve
+G0.4/G0.5/G0.5-R/v2, project entry and original image bytes. New references guide
+composition/quality only; no pixel copying or source-pack promotion. G0.6 may
+reuse safe local interaction/audio boundaries, without production economy, save,
+progression, multiplayer, full farm or G1. Artistic approval stays human; no push.
+
 ## ADR-012 — Independent Cozy art sample v2
 
 Status: user-authorized small art round, 2026-10-23; artistic approval pending.
