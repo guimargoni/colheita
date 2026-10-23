@@ -16,11 +16,16 @@ for folder in required: check((ROOT/'game'/folder).is_dir(), 'Missing game/'+fol
 for folder in ['migrations','functions','seed']: check((ROOT/'backend/supabase'/folder).is_dir(), 'Missing backend '+folder)
 runtime_path = ROOT/'docs/runtime_assets_manifest.json'
 runtime = json.loads(runtime_path.read_text(encoding='utf-8')) if runtime_path.exists() else {'assets': []}
+pilot_path = ROOT/'docs/pilot_assets_manifest.json'
+if pilot_path.exists():
+    runtime['assets'].extend(json.loads(pilot_path.read_text(encoding='utf-8'))['assets'])
 allowed = set()
 for asset in runtime['assets']:
     path = asset['file_path']
-    check(path.startswith('game/assets/art/g05/') and '..' not in Path(path).parts, 'Invalid runtime path')
-    check(asset['status'] == 'ART_REVIEW' and not asset['release_approved'], 'Unexpected art promotion')
+    is_pilot = path.startswith('game/assets/art/g05r_pilot/')
+    check((path.startswith('game/assets/art/g05/') or is_pilot) and '..' not in Path(path).parts, 'Invalid runtime path')
+    statuses = ['ART_REVIEW','FINAL_CANDIDATE'] if is_pilot else ['ART_REVIEW']
+    check(asset['status'] in statuses and not asset['release_approved'], 'Unexpected art promotion')
     check(asset['origin'].startswith('Original AI-assisted'), 'Original provenance required')
     check((ROOT/asset['license_record']).is_file(), 'Missing runtime license record')
     prompt_path, prompt_key = asset['prompt'].split('#')

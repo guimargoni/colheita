@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "pilot.v2.environment",
+      "file_path": "game/assets/art/g05r_pilot/environment_v1.png",
+      "sha256": "9fe0b30b26de9a3c0161457f28818229004b1bf4c4683af65abb9bc1b0732865",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; original textual brief; no third-party input art",
+      "author": "OpenAI imagegen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-23",
+      "license_record": "docs/PILOT_V2_PROVENANCE.md",
+      "prompt": "docs/PILOT_V2_PROMPTS.json#environment",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    },
+    {
+      "id": "pilot.v2.crops",
+      "file_path": "game/assets/art/g05r_pilot/crops_fx_v1.png",
+      "sha256": "f4043d665a59ab3d31426237c6c2f8008b5ecc9feeb136affd021986397ced5c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; original textual brief; no third-party input art",
+      "author": "OpenAI imagegen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-23",
+      "license_record": "docs/PILOT_V2_PROVENANCE.md",
+      "prompt": "docs/PILOT_V2_PROMPTS.json#crops",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    },
+    {
+      "id": "pilot.v2.ui",
+      "file_path": "game/assets/art/g05r_pilot/ui_v1.png",
+      "sha256": "9564380a4ccf897b27ea48d074ac95ecfcf0f88163ccac415cc655b0e5109f1e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "FINAL_CANDIDATE",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; original textual brief; no third-party input art",
+      "author": "OpenAI imagegen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-23",
+      "license_record": "docs/PILOT_V2_PROVENANCE.md",
+      "prompt": "docs/PILOT_V2_PROMPTS.json#ui",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    },
+    {
+      "id": "pilot.v2.tree",
+      "file_path": "game/assets/art/g05r_pilot/tree_v2.png",
+      "sha256": "54b7b4a0a1b28ac6d03474b4105b63fa4818cbb2c1f3c1488a3d47ffa60f36f3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; original textual brief; no third-party input art",
+      "author": "OpenAI imagegen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; model identifier not exposed",
+      "created": "2026-10-23",
+      "license_record": "docs/PILOT_V2_PROVENANCE.md",
+      "prompt": "docs/PILOT_V2_PROMPTS.json#tree",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    }
+  ]
+}

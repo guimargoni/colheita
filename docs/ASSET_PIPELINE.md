@@ -1,5 +1,10 @@
 # Asset Pipeline and Audit
 
+Independent Cozy pilot v2: `pilot_assets_manifest.json` adds original review/candidate
+outputs without changing the historical inventories or their approvals. Prompts and
+terms are in `PILOT_V2_PROMPTS.json` / `PILOT_V2_PROVENANCE.md`. The checker validates
+both runtime manifests; candidate status never implies `release_approved`.
+
 G0.5-R adds the destination matrix `G0_5R_ASSET_MATRIX.csv`, audio catalog
 `audio_catalog_g05r.csv` and proposed metadata in `game/data/art/visual_standard.json`.
 These are review/production contracts, not new release approvals. Existing PNGs,

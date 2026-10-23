@@ -1,5 +1,18 @@
 # Architecture & Product Decisions
 
+## ADR-012 — Independent Cozy art sample v2
+
+Status: user-authorized small art round, 2026-10-23; artistic approval pending.
+
+After G0.5-R the director explicitly authorized a new executable four-plot sample
+using its Art Bible. Implement a separate scene/branch, preserve all old gates,
+main scene and images. Use original generated sprites, separated soil/plants,
+authored harvest frames and a compact UI study. Reuse only compatible original
+grass and existing local gesture/simulation code. No actual economy, expansion,
+persistence, multiplayer or G1. Record generation/import limitations honestly;
+the generator did not deliver certified native pixel grids. Do not replace
+production art or promote source packs. Await human evaluation; no push.
+
 ## ADR-011 — G0.5-R consolidation and expandable art contracts
 
 Status: user-authorized preparation; artistic implementation pending human review.

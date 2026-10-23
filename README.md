@@ -17,6 +17,10 @@ G0.1/G0.2 are technically accepted. The director selected direction A and the G0
 
 ## Start here
 
+New independent Cozy art sample v2: F6 on `game/scenes/art/pilot/pilot.tscn`.
+[Review/limitations](docs/PILOT_V2_REVIEW.md), [test guide](docs/PILOT_V2_TEST_GUIDE.md).
+Prior G0.4/G0.5/G0.5-R and the F5 entry remain unchanged. No final art approval.
+
 G0.5-R: [consolidated direction](docs/ART_BIBLE.md),
 [diagnosis](docs/G0_5R_DIAGNOSIS.md), [scale standard](docs/VISUAL_SCALE_STANDARD.md)
 and [lab/implementation plan](docs/G0_5R_IMPLEMENTATION_PLAN.md). F6 on
