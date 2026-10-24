@@ -376,3 +376,12 @@ Prefer computing elapsed timer state on access instead of updating every crop ev
 A million growing crops must not mean a million ticking server jobs.
 
 Store timestamps and derive state when queried or acted upon.
+
+## G1.1 local development implementation — 2026-10-24
+
+Director-authorized, isolated scene behind `FarmService` snapshot/command boundary.
+Local provider and injectable clock support tests; timestamps, seed consumption,
+product credit and idempotency receipt persist together. No new backend exists.
+Server authority requirements above are unchanged. See `G11_ARCHITECTURE.md` for
+schema, IO/error behavior, single-writer limitation and future remote integration.
+These saves are not authoritative offline production gameplay or online saves.

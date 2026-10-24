@@ -1,5 +1,24 @@
 # Architecture & Product Decisions
 
+## ADR-014 — Authorize G1.1 local development farming only
+
+Status: explicitly authorized by director, 2026-10-24; human validation pending.
+
+The G1.1 brief supersedes historical stop-at-G0 instructions solely for this slice.
+Implement timestamp growth, three editable crops, seeds/products, minimal harvest,
+versioned local persistence, injectable clock and duplicate-command protection.
+The explicitly requested minimal harvest/inventory cycle is part of G1.1 even
+though the original roadmap listed full care/harvest in G1.2. It does not authorize
+G1.2, definitive economy/progression, G1.3, monetization or G2.
+
+Use an isolated scene and branch from G0.6; preserve all earlier gates and main
+entry. Device clock/save are untrusted development only, behind FarmService;
+future server remains authoritative. No fake security. Fertilizers are definitions
+and pure bounded previews, no application/price/offer. Four plots are a fixture,
+not a cap. Closer shared plot borders and coherent path replacement are recorded
+art debts, nonblocking for G1.1. Wheat may use disclosed placeholder foliage until
+original art exists. No source-pack promotion, new release approval or push.
+
 ## ADR-013 — G0.6 conceptual style lock, isolated scenic refinement
 
 Status: director-approved conceptual direction, 2026-10-23; finish/release pending.

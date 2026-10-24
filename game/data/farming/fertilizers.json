@@ -1,0 +1,11 @@
+{
+  "schema_version":1,
+  "status":"MODEL_ONLY_NOT_BALANCED_NOT_APPLICABLE",
+  "limits":{"max_total_acceleration":null,"minimum_growth_seconds":null,"max_uses_per_cycle":null},
+  "items":[
+    {"id":"fertilizer.common","name":"Comum","reduction_fraction":null,"scope":"owner","price":null},
+    {"id":"fertilizer.fast","name":"Rápido","reduction_fraction":null,"scope":"owner","price":null},
+    {"id":"fertilizer.super","name":"Superfertilizante","reduction_fraction":null,"scope":"owner","price":null},
+    {"id":"fertilizer.social","name":"Social","reduction_fraction":null,"scope":"friend","price":null}
+  ]
+}

@@ -3,6 +3,13 @@
 Status: living document  
 Version: 0.1 — foundation
 
+G1.1 development addendum, 2026-10-24 (ADR-014): director authorizes a local-only
+development farming slice with three crops, timestamp growth, seed/product stock,
+minimal harvest and persistence. This is not production offline authority or
+permission for definitive economy/social/care. Provisional values and known art
+debts: `G11_CONTENT_AND_ART.md`; boundaries: `G11_ARCHITECTURE.md`. Future online
+rules below stay authoritative on the server. No coins/XP or monetization grants.
+
 ## 1. High concept
 A modern social farming game built around the simple pleasure of planting and decorating, plus the mischievous social loop that made classic social farm games memorable: visiting friends, helping them, meddling with crops, attempting to steal a small portion of ripe produce, and defending your own farm with pets.
 

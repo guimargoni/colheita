@@ -1,0 +1,12 @@
+{
+  "schema_version":1,
+  "farm_id":"farm.local.dev",
+  "owner_id":"owner.local.dev",
+  "initial_seeds":{"crop.carrot":12,"crop.strawberry":12,"crop.wheat":12},
+  "plots":[
+    {"id":"plot.0.0","grid":[0,0],"locked":false,"region_id":"home"},
+    {"id":"plot.3.0","grid":[3,0],"locked":false,"region_id":"home"},
+    {"id":"plot.0.3","grid":[0,3],"locked":false,"region_id":"home"},
+    {"id":"plot.3.3","grid":[3,3],"locked":false,"region_id":"home"}
+  ]
+}

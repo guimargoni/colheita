@@ -77,6 +77,13 @@ Aceite técnico não aprova arte nem autoriza G1, fazenda completa ou economia.
 - server-time abstraction;
 - visual feedback.
 
+Director extension 2026-10-24 (ADR-014): also include the explicitly requested
+minimal seeds → timestamp growth → harvest → product stock cycle, local DEV
+save and injectable clock. Three crops, future fertilizer model only, no care/
+economy/multiplayer progression. Scene `scenes/farm/g11/farm.tscn`, docs
+`G11_ARCHITECTURE.md` / `G11_TEST_GUIDE.md`. Local time is not anti-cheat.
+This does not authorize G1.2/G1.3/G2. Await human validation of this slice.
+
 ### G1.2 Care + harvest
 - watering;
 - weeds/pests;

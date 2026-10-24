@@ -1,5 +1,11 @@
 # ColheitaFeliz — codename
 
+G1.1 local development: open `game/scenes/farm/g11/farm.tscn` and press F6 for
+three crops, timestamp growth, saved seeds/products and direct harvest.
+[Manual tests](docs/G11_TEST_GUIDE.md), [architecture and limitations](docs/G11_ARCHITECTURE.md),
+[provisional content/art](docs/G11_CONTENT_AND_ART.md). F5 and all G0 scenes stay
+preserved. Local time/save are not anti-cheat or production online authority.
+
 A modern social farming game inspired by the *feeling* of classic Orkut-era farm games: plant, wait, harvest, decorate, visit friends, help them, cause harmless trouble, try to steal a little produce, and let farm guardians protect what is yours.
 
 > **Important:** this is an original project. The working name is a codename. We are not reproducing proprietary code, artwork, branding, text, sounds or UI from the historical game.
