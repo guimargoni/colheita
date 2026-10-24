@@ -2,7 +2,10 @@
 
 2026-10-24. Base limpa `f6b265f`, branch `feature/g1-2-crop-care`.
 G1.1 aceito pelo diretor no novo briefing. Autorização exclusiva G1.2 em ADR-015.
-**G1.2 técnico: PASS. G1.2 experiência: PENDING HUMAN APPROVAL.**
+**G1.2 técnico: PASS. Mecânicas G1.2: VALIDADAS PELO DIRETOR em 2026-10-24.**
+Escopo e pendências: [registro de validação humana](G12_HUMAN_APPROVAL.md).
+A aprovação das mecânicas não aprova acabamento artístico, áudio final,
+teste em celular físico ou segurança online.
 
 ## Implementação
 
@@ -84,6 +87,7 @@ de balanceamento. 18 capturas reais de Godot em 1920×1080 e 1080×1920.
 
 Sem blocker local. Não é certificado de desempenho Android nem teste em celular
 físico. Sprites/FX e áudio final aguardam produção/revisão, detalhados em
-`G12_ART_AND_AUDIO.md`. Reavaliação de parâmetros e experiência permanece humana.
+`G12_ART_AND_AUDIO.md`. Mecânicas aceitas conforme registro humano; parâmetros
+continuam provisórios, sem aprovação de balanceamento definitivo.
 Não iniciado G1.3/G2: sem economia completa, pagamentos, premium, amigos, roubos
 ou expansão. Não avançar automaticamente após esta entrega.

@@ -4,7 +4,12 @@
 G1.1 validado pelo diretor no briefing; ADR-015 autoriza somente G1.2.
 Nenhuma alteração prévia não commitada encontrada. Sem merge, conflitos ou push.
 
-**G1.2 técnico: PASS. G1.2 experiência: PENDING HUMAN APPROVAL.**
+**Estado histórico na entrega: G1.2 técnico PASS; experiência aguardava aprovação.**
+
+Adendo de 2026-10-24: o diretor validou as mecânicas do estado `5300061`.
+O [registro de aprovação](G12_HUMAN_APPROVAL.md) delimita esse aceite e o marco
+Git. Acabamento artístico, áudio final, celular físico e segurança online
+continuam pendentes. As verificações abaixo são as da entrega original.
 
 ## Arquivos criados
 
@@ -107,7 +112,8 @@ assets G0.5/v2/G0.6, módulos domain/services/ui farming, prototype, renderer G1
 catálogos G1.1, dados art e testes G1.1: sem diferenças. Os novos arquivos estão
 isolados e a documentação/checks são as únicas alterações históricas listadas.
 
-Sem blocker de execução local. Pendente: revisão humana de experiência/parâmetros,
+Na entrega original, sem blocker de execução local. Pendências então registradas
+(para o aceite posterior das mecânicas, consulte o adendo acima): experiência/parâmetros,
 sprite native-pixel QA, animação específica de cuidados, masters de áudio, trigo/
 morango, bordas adjacentes/caminho e teste de celular real. Servidor/anti-cheat/
 concorrência online continuam não implementados, conforme limite do pedido.

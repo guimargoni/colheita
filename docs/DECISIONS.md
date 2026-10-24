@@ -1,8 +1,23 @@
 # Architecture & Product Decisions
 
+## ADR-016 — Preserve human-approved G1.2 mechanics milestone
+
+Status: accepted by explicit director instruction, 2026-10-24.
+
+Record human validation of G1.2 mechanics at implementation commit `5300061`.
+Preserve runtime unchanged and create local annotated tag
+`milestone/g1.2-mechanics-approved` on the documentation acceptance commit.
+See `G12_HUMAN_APPROVAL.md` for scope and historical test evidence.
+
+This acceptance excludes artistic finish, final audio, physical mobile testing
+and online security. Asset review/release flags and licensing restrictions remain
+unchanged. Balance is provisional, local saves/time remain untrusted and no
+production release or new gate is authorized. No push or changes to earlier gates.
+
 ## ADR-015 — G1.2 care systems and discoverable contextual growth
 
-Status: explicitly authorized 2026-10-24 after director validated G1.1; experience pending.
+Status: authorized 2026-10-24 after G1.1 validation; G1.2 mechanics subsequently
+human validated on the same date, within the exclusions in ADR-016.
 
 Implement owner-local watering, bounded scheduled weeds/pests, recovery, three
 functional fertilizers and the reserved disabled Fertilizer of Love. Add a single

@@ -80,4 +80,7 @@ parecem opcionais. Áudio final ausente; FX específicos ainda provisórios. Tri
 morango têm pendências visuais herdadas. Não apagar/editar save enquanto aberto.
 Se houver falha, a UI bloqueia mutações e não redefine a fazenda automaticamente.
 
-**G1.2 experiência: PENDING HUMAN APPROVAL. Não avançar para G1.3 ou G2.**
+**Mecânicas G1.2 validadas pelo diretor em 2026-10-24.**
+Consulte o [registro do marco aprovado](G12_HUMAN_APPROVAL.md). Acabamento artístico,
+áudio final, teste em celular físico e segurança online continuam pendentes.
+Não avançar para G1.3 ou G2 sem nova orientação.

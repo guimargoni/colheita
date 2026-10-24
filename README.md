@@ -5,6 +5,8 @@ scene (requires installed Godot 4 stable). [How to play](docs/G12_TEST_GUIDE.md)
 [technical report](docs/G12_TECHNICAL_REPORT.md), [balance](docs/G12_BALANCE.md),
 [art/audio review](docs/G12_ART_AND_AUDIO.md). HTML galleries contain screenshots,
 not the interactive game. G1.1 and all previous scenes/saves remain preserved.
+[G1.2 mechanics: human-approved milestone](docs/G12_HUMAN_APPROVAL.md), 2026-10-24.
+Artistic finish, final audio, physical mobile testing and online security remain pending.
 
 G1.1 local development: open `game/scenes/farm/g11/farm.tscn` and press F6 for
 three crops, timestamp growth, saved seeds/products and direct harvest.
