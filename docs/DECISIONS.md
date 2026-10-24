@@ -1,5 +1,23 @@
 # Architecture & Product Decisions
 
+## ADR-018 — Historical integration and G1.4 land expansion only
+
+Status: explicitly authorized 2026-10-24; director accepts G1.3 functionality.
+
+Preserve G0–G1.3 runtime/saves and record the G1.3 milestone. Selectively import
+historical audit and emotional pillars from remote foundation/game-design at
+`1d1dd8e`; no indiscriminate merge or replacement of later implementations/docs.
+Source and reconciliation: `G14_HISTORICAL_INTEGRATION.md`.
+
+Prioritize historically inventoried mechanics with original art/code. Implement
+only H-010-style locked planting plots, provisional common-coin/level/prerequisite
+rules, protected purchase intent, atomic local unlock/ledger/receipt, compact
+adjacent composition, tests and simulations. Independent G1.4 scene/provider/save.
+Counts/prices are DEV hypotheses, not verified historical maxima. Preserve XP
+rules and all earlier art/audio review flags. Local authority remains untrusted.
+No G1.5/G2, social/theft/friends, animal production, premium, payments or modern
+expansions. G1.4 experience remains pending human approval.
+
 ## ADR-017 — Authorize G1.3 local economy and crop progression only
 
 Status: explicitly authorized by director on 2026-10-24 after functional G1.1/G1.2
