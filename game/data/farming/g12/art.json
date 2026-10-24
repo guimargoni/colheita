@@ -1,0 +1,9 @@
+{
+  "status":"ART_REVIEW_NOT_RELEASE_APPROVED",
+  "weeds":{"rect":[16,190,385,425],"size":[18,20],"pivot":[9,18]},
+  "pests":{"rect":[454,218,350,374],"size":[18,20],"pivot":[9,18]},
+  "common":{"rect":[857,173,365,436],"size":[18,22],"pivot":[9,20]},
+  "fast":{"rect":[16,685,374,445],"size":[18,22],"pivot":[9,20]},
+  "super":{"rect":[432,685,378,445],"size":[18,22],"pivot":[9,20]},
+  "love":{"rect":[851,685,380,445],"size":[18,22],"pivot":[9,20]}
+}

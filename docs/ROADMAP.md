@@ -92,6 +92,13 @@ This does not authorize G1.2/G1.3/G2. Await human validation of this slice.
 - inventory;
 - animation/audio feedback.
 
+Explicit director authorization 2026-10-24 (ADR-015), following human validation
+of G1.1: optional watering, recoverable weeds/pests, local functional fertilizers,
+one-use Super protection, contextual growth card, persistence and profile simulations.
+Love is reserved, no friends or purchases. Independent `scenes/farm/g12/farm.tscn`;
+`G12_TEST_GUIDE.md` includes a Windows test launcher. Stop at G1.2; experience
+awaits human approval. G1.3/G2 remain unstarted.
+
 ### G1.3 Economy
 - seed shop;
 - sell from inventory;

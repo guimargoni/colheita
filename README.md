@@ -1,5 +1,11 @@
 # ColheitaFeliz — codename
 
+G1.2: double-click **JOGAR_G12_TESTE.cmd** to play the isolated accelerated care
+scene (requires installed Godot 4 stable). [How to play](docs/G12_TEST_GUIDE.md),
+[technical report](docs/G12_TECHNICAL_REPORT.md), [balance](docs/G12_BALANCE.md),
+[art/audio review](docs/G12_ART_AND_AUDIO.md). HTML galleries contain screenshots,
+not the interactive game. G1.1 and all previous scenes/saves remain preserved.
+
 G1.1 local development: open `game/scenes/farm/g11/farm.tscn` and press F6 for
 three crops, timestamp growth, saved seeds/products and direct harvest.
 [Manual tests](docs/G11_TEST_GUIDE.md), [architecture and limitations](docs/G11_ARCHITECTURE.md),

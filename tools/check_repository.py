@@ -22,12 +22,16 @@ if pilot_path.exists():
 g06_path = ROOT/'docs/g06_assets_manifest.json'
 if g06_path.exists():
     runtime['assets'].extend(json.loads(g06_path.read_text(encoding='utf-8'))['assets'])
+g12_path = ROOT/'docs/g12_assets_manifest.json'
+if g12_path.exists():
+    runtime['assets'].extend(json.loads(g12_path.read_text(encoding='utf-8'))['assets'])
 allowed = set()
 for asset in runtime['assets']:
     path = asset['file_path']
     is_pilot = path.startswith('game/assets/art/g05r_pilot/')
     is_g06 = path.startswith('game/assets/art/g06/')
-    check((path.startswith('game/assets/art/g05/') or is_pilot or is_g06) and '..' not in Path(path).parts, 'Invalid runtime path')
+    is_g12 = path.startswith('game/assets/art/g12/')
+    check((path.startswith('game/assets/art/g05/') or is_pilot or is_g06 or is_g12) and '..' not in Path(path).parts, 'Invalid runtime path')
     statuses = ['ART_REVIEW','FINAL_CANDIDATE'] if is_pilot else ['ART_REVIEW']
     check(asset['status'] in statuses and not asset['release_approved'], 'Unexpected art promotion')
     check(asset['origin'].startswith('Original AI-assisted'), 'Original provenance required')

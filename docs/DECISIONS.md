@@ -1,5 +1,24 @@
 # Architecture & Product Decisions
 
+## ADR-015 — G1.2 care systems and discoverable contextual growth
+
+Status: explicitly authorized 2026-10-24 after director validated G1.1; experience pending.
+
+Implement owner-local watering, bounded scheduled weeds/pests, recovery, three
+functional fertilizers and the reserved disabled Fertilizer of Love. Add a single
+contextual timer near the selected plot, hover/hold access and direct care gestures.
+Preserve all G1.1 code/scenes/saves with an independent schema2/provider/scene.
+Local DEV authority remains untrusted; future server owns time, stock, rewards,
+RNG and social authorization. No G1.3/G2, premium currency, purchases, friends,
+theft, expansion or definitive economy. No push.
+
+Provisional moderate consequence: up to 6% recoverable time delay from one weed
+and one pest occurrence per cycle, no death or loss of yield. Dryness has no
+punishment; water benefits are bounded. Fertilizer limits/prices are not final;
+fixture stocks are finite, no grants on restart. Super needs explicit one-use
+arming; Love stays nonapplicable until social authorization exists. Record actual
+three-profile simulations and art/audio debt; technical PASS cannot approve UX/art.
+
 ## ADR-014 — Authorize G1.1 local development farming only
 
 Status: explicitly authorized by director, 2026-10-24; human validation pending.

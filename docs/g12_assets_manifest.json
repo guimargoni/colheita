@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "g12.care.atlas.v1",
+      "file_path": "game/assets/art/g12/care_atlas_v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "1859f6dcab871b2114e116429e7d70268126e3b8a24a4f3d27a89226a9b07ce0",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; own crop atlas used as style reference only",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; specific model identifier not exposed",
+      "created": "2026-10-24",
+      "license_record": "docs/G12_ART_AND_AUDIO.md",
+      "prompt": "docs/G12_PROMPTS.json#care_atlas",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    }
+  ]
+}

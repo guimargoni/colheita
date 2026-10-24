@@ -1,0 +1,6 @@
+{
+  "remove_weeds":{"path":"","review_status":"NOT_PRODUCED","commercial_embedding":false,"bus":"SFX","direction":"Folhagem arrancada gentil, terra leve; 120-220 ms"},
+  "remove_pests":{"path":"","review_status":"NOT_PRODUCED","commercial_embedding":false,"bus":"SFX","direction":"Sopro e folhas, sem spray agressivo; 120-250 ms"},
+  "fertilize":{"path":"","review_status":"NOT_PRODUCED","commercial_embedding":false,"bus":"SFX","direction":"Granulos de terra e brilho suave; 180-320 ms"},
+  "ready":{"path":"","review_status":"NOT_PRODUCED","commercial_embedding":false,"bus":"SFX","direction":"Acento opcional suave, nunca loop ou requisito de leitura"}
+}

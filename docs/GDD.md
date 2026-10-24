@@ -1,6 +1,12 @@
 # Game Design Document — ColheitaFeliz (Codename)
 
 Status: living document  
+
+G1.2 addendum (2026-10-24, ADR-015): director validated G1.1 and authorizes care
+only. Optional water benefit, bounded recoverable weed/pest delays, local fertilizer
+stock/limits and contextual growth information. No crop death or yield destruction
+for absence. Schemas/parameters are development hypotheses; Love/social/purchases
+remain disabled. Details in `G12_TECHNICAL_REPORT.md` and `G12_BALANCE.md`.
 Version: 0.1 — foundation
 
 G1.1 development addendum, 2026-10-24 (ADR-014): director authorizes a local-only
