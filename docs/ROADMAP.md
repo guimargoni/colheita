@@ -98,8 +98,8 @@ one-use Super protection, contextual growth card, persistence and profile simula
 Love is reserved, no friends or purchases. Independent `scenes/farm/g12/farm.tscn`;
 `G12_TEST_GUIDE.md` includes a Windows test launcher. G1.2 mechanics were human
 validated on 2026-10-24; see `G12_HUMAN_APPROVAL.md`. Artistic finish, final audio,
-physical mobile testing and online security remain pending. Stop at G1.2.
-G1.3/G2 remain unstarted; this acceptance does not authorize a new gate.
+physical mobile testing and online security remain pending. That acceptance alone
+did not authorize a new gate; the subsequent G1.3 brief is recorded separately below.
 
 ### G1.3 Economy
 - seed shop;
@@ -108,6 +108,13 @@ G1.3/G2 remain unstarted; this acceptance does not authorize a new gate.
 - XP/levels;
 - unlock rules;
 - transaction feedback.
+
+Director authorization 2026-10-24, ADR-017: independent local G1.3 scene/provider/
+schema 3, configurable seed shop, manual product sale, coin ledger, harvest XP,
+levels and crop unlocks. Provisional balance simulations, real PC/portrait captures
+and test launcher: `G13_TEST_GUIDE.md`. Previous scenes/saves and approved G1.2
+milestone remain untouched. G1.3 experience awaits human approval; art/audio,
+physical mobile and online security remain pending. Stop at G1.3; no G1.4/G2.
 
 ### G1.4 Land expansion
 - locked plots/areas;

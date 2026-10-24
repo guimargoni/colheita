@@ -1,5 +1,16 @@
 # Game Design Document — ColheitaFeliz (Codename)
 
+G1.3 addendum (2026-10-24, ADR-017): after functional G1.1/G1.2 acceptance,
+the director authorizes a local development economy only. Independent scene/save:
+buy seeds → plant/care → harvest to inventory/XP → deliberately sell → reinvest.
+Prices, harvest XP, thresholds and existing-crop unlocks are editable provisional
+data (`data/farming/g13/economy.json`). No XP for spending; no automatic sale in
+the game. Local coin ledger/receipts persist atomically with inventory/progression.
+No payments, premium, ads, expansion, animal production or social play. Previous
+stop boundaries remain historical; this brief authorizes G1.3 only. Art/audio,
+physical device and online security approval remain separate and pending.
+See `G13_TECHNICAL_REPORT.md` and `G13_BALANCE.md`; await human G1.3 experience review.
+
 Status: living document  
 
 G1.2 addendum (2026-10-24, ADR-015): director validated G1.1 and authorizes care

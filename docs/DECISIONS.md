@@ -1,5 +1,29 @@
 # Architecture & Product Decisions
 
+## ADR-017 — Authorize G1.3 local economy and crop progression only
+
+Status: explicitly authorized by director on 2026-10-24 after functional G1.1/G1.2
+acceptance. G1.3 experience remains PENDING HUMAN APPROVAL.
+
+The new G1.3 brief supersedes previous stop-at-G1.2 instructions solely for this
+local development slice. Add configurable seed purchase, deliberate product sale,
+coin ledger, harvest XP, levels and existing-crop unlocks. Keep G1.2 milestone/tag,
+all earlier code/scenes/art and saves intact. Independent schema 3/provider/scene,
+branch `feature/g1-3-economy-progression`, no automatic migration or push.
+
+The client sends quantities/item IDs and operation IDs, never trusted prices,
+coin deltas or XP. Commit wallet, inventories, progression, ledger and idempotency
+receipts together through the existing single-writer local store. Local DEV remains
+untrusted; no claim of online security or importable authoritative offline wealth.
+No production backend/database changes, so no migration is introduced.
+
+Economy values are provisional, simulated at 5/20/60 minutes/day. Existing-crop
+unlocks only; animals/buildings/decorations/processing/land remain planned data.
+No G1.4/G2, expansion, payments, premium, ads, visits, theft or animal production.
+Artistic finish, final audio, physical mobile and online security remain pending.
+Implementation and evaluation: `G13_TECHNICAL_REPORT.md`, `G13_TEST_GUIDE.md` and
+`G13_BALANCE.md`. Stop for human evaluation after this gate.
+
 ## ADR-016 — Preserve human-approved G1.2 mechanics milestone
 
 Status: accepted by explicit director instruction, 2026-10-24.

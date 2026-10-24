@@ -1,0 +1,14 @@
+"""Actual economy scene captures; no retouching or synthetic mockups."""
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+out = ROOT/'.local/g13'
+html = ['''<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>G1.3 — Economia</title><style>body{font:18px system-ui;background:#fff2d5;color:#203d4a;margin:24px}section{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0;max-width:48%}img{max-width:100%;max-height:85vh}h2{margin-top:40px}</style><h1>G1.3 — Economia</h1><p>Capturas reais do Godot; imagens nao interativas. Para JOGAR, execute JOGAR_G13_TESTE.cmd na raiz do repositorio ou abra farm/g13/farm.tscn e pressione F6.</p><p>Relogio controlado e fixture isolada: nao altera saves do jogador. Sprites e FX em revisao; audio final ausente.</p>''']
+for res in ['1920x1080','1080x1920']:
+    html.append(f'<h2>{res}</h2><section>')
+    for name,label in [('farm','Fazenda e HUD'),('shop_locked','Loja e bloqueios por nível'),('purchase','Compra múltipla'),('inventory','Produtos guardados e venda'),('sale','Venda e saldo'),('shop_unlocked','Cultura desbloqueada'),('level_up','Nível e XP'),('history','Histórico econômico')]:
+        html.append(f'<figure><img loading="lazy" src="captures/g13_{res}_{name}.png"><figcaption>{label}</figcaption></figure>')
+    html.append('</section>')
+html.append('</html>')
+(out/'index.html').write_text('\n'.join(html),encoding='utf-8')
+print('Gallery: '+str(out/'index.html'))
