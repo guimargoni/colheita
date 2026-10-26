@@ -1,3 +1,11 @@
+# Direção vigente — 2D estilizada · Fazenda Viva
+
+2026-10-26, decisão expressa do diretor na missão autônoma (ADR-021). Pixel art deixa de ser o padrão final. Arte 2D ilustrada, clean, acolhedora e legível; volumes simples, perspectiva consistente, luz superior esquerda e cores naturais. Código serve para movimento, shaders e FX, não para substituir os sprites principais. UI nativa premium, alvos grandes, sem confirmações rotineiras. Revisão por família de assets, origem/licença e teste em dispositivos continuam necessários.
+
+Os capítulos abaixo são HISTÓRICO preservado dos gates e não impõem nearest, densidade pixel ou estilo ao produto integrado. A aprovação da nova direção não aprova automaticamente cada PNG/áudio. Escala, footprint, pivô e hit map continuam separados.
+
+---
+
 # Art Bible — Cozy Pixel Art · Fazenda Viva
 
 **Atualização G0.6, 2026-10-23:** o diretor aprovou conceitualmente esta direção

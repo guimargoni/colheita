@@ -250,3 +250,8 @@ Status: escopo expressamente autorizado pelo diretor em 2026-10-26; direção pe
 Após G1.5, o diretor autoriza exclusivamente `G1.V — Fazenda Viva`, branch `experiment/g1v-visual-gamefeel`. Duas apresentações compartilham cenário, sprites e serviços G1.5. A moderniza pixel art; B experimenta UI híbrida e luz suave. Tween, shader, pequenos ícones nativos e partículas procedurais são apresentação, sem novas regras de jogo. A Art Bible permanece intacta e não há aprovação artística automática.
 
 Cena e saves próprios; nenhum runtime anterior, regra econômica, layout ou save principal é substituído. Fixture demonstrativa progride por comandos do serviço sem conceder recursos por efeitos. Preferências e métricas locais não são infraestrutura de produção. Arte segue com seus status anteriores; slots sem masters aprovados ficam silenciosos. G1.4/G1.5 mantêm suas pendências humanas anteriores. Não autoriza G1.6, novos animais, backend, tecnologia nova ou migração da arte global.
+
+## ADR-021 — Missão autônoma de produto integrado
+Status: autorizado pelo diretor, 2026-10-26.
+
+A missão anexada substitui os limites de parada anteriores para esta branch: integrar fazenda e social sem solicitar aprovação a cada incremento. Adota oficialmente 2D estilizado, abandonando pixel art como padrão final. A documentação histórica e implementações anteriores são preservadas; não há aceite retroativo de assets ou gates. Especificação vinculante: `INTEGRATED_PRODUCT_SPEC.md`. Sem push, publicação ou contratação. Credenciais ausentes não bloqueiam trabalho local independente; nenhuma simulação pode ser descrita como social online concluído.
