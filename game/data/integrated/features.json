@@ -1,0 +1,121 @@
+{
+  "version": "integrated.features.v1",
+  "balance_status": "PROVISIONAL_APPROXIMATION",
+  "feed_price": 2,
+  "max_objects": 24,
+  "producers": {
+    "chicken": {
+      "name": "Galinha",
+      "product": "egg",
+      "product_name": "Ovo",
+      "price": 35,
+      "level": 2,
+      "duration": 300,
+      "yield_quantity": 2,
+      "feed": 1,
+      "sell": 4,
+      "xp": 2,
+      "historical": "H-013/H-015; approximate values; shared feed abstraction"
+    },
+    "hive": {
+      "name": "Colmeia",
+      "product": "honey",
+      "product_name": "Mel",
+      "price": 90,
+      "level": 3,
+      "duration": 900,
+      "yield_quantity": 2,
+      "feed": 1,
+      "sell": 9,
+      "xp": 4,
+      "historical": "H-013/H-015; approximate values; shared feed abstraction"
+    },
+    "cow": {
+      "name": "Vaca",
+      "product": "milk",
+      "product_name": "Leite",
+      "price": 140,
+      "level": 4,
+      "duration": 600,
+      "yield_quantity": 2,
+      "feed": 2,
+      "sell": 10,
+      "xp": 4,
+      "historical": "H-013/H-015; approximate values; shared feed abstraction"
+    },
+    "sheep": {
+      "name": "Ovelha",
+      "product": "wool",
+      "product_name": "Lã",
+      "price": 180,
+      "level": 4,
+      "duration": 900,
+      "yield_quantity": 2,
+      "feed": 2,
+      "sell": 12,
+      "xp": 5,
+      "historical": "H-013/H-015; approximate values; shared feed abstraction"
+    }
+  },
+  "decorations": {
+    "flowerpot": {
+      "name": "Floreira",
+      "price": 8,
+      "level": 1
+    },
+    "bench": {
+      "name": "Banco",
+      "price": 25,
+      "level": 2
+    },
+    "fence": {
+      "name": "Cerca",
+      "price": 6,
+      "level": 1
+    },
+    "path": {
+      "name": "Caminho",
+      "price": 3,
+      "level": 1
+    },
+    "well": {
+      "name": "Poço",
+      "price": 50,
+      "level": 3
+    }
+  },
+  "buildings": {
+    "house": {
+      "name": "Residência",
+      "price": 80,
+      "level": 3,
+      "max": 2
+    },
+    "bouquet_workshop": {
+      "name": "Ateliê de buquês",
+      "price": 65,
+      "level": 2,
+      "max": 1
+    }
+  },
+  "bouquet": {
+    "roses": 3,
+    "sell": 18
+  },
+  "guardian": {
+    "price": 45,
+    "level": 2,
+    "feed": 1,
+    "duration": 3600
+  },
+  "achievements": {
+    "first_production": {
+      "name": "Primeira produção",
+      "xp": 3
+    },
+    "first_decoration": {
+      "name": "Meu cantinho",
+      "xp": 2
+    }
+  }
+}

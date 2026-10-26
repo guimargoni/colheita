@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "balance_status": "PROVISIONAL_G12",
+  "water": {
+    "reduction_fraction": 0.05,
+    "max_acceleration": 0.1
+  },
+  "acceleration": {
+    "max_total_fraction": 0.5,
+    "minimum_remaining_seconds": 10
+  },
+  "nuisances": {
+    "weeds": {
+      "probability": 0.25,
+      "at_fraction": 0.2,
+      "delay_fraction": 0.03
+    },
+    "pests": {
+      "probability": 0.15,
+      "at_fraction": 0.35,
+      "delay_fraction": 0.03
+    }
+  },
+  "max_nuisance_delay": 0.06,
+  "crops": {
+    "crop.carrot": {
+      "hydration_seconds": 180,
+      "water_cooldown": 60,
+      "max_water_uses": 1
+    },
+    "crop.strawberry": {
+      "hydration_seconds": 1800,
+      "water_cooldown": 300,
+      "max_water_uses": 1
+    },
+    "crop.wheat": {
+      "hydration_seconds": 21600,
+      "water_cooldown": 3600,
+      "max_water_uses": 2
+    },
+    "crop.bean": {
+      "hydration_seconds": 1200,
+      "water_cooldown": 300,
+      "max_water_uses": 1
+    },
+    "crop.rose": {
+      "hydration_seconds": 2400,
+      "water_cooldown": 300,
+      "max_water_uses": 1
+    },
+    "crop.haunted_pumpkin": {
+      "hydration_seconds": 7200,
+      "water_cooldown": 300,
+      "max_water_uses": 1
+    },
+    "crop.apple": {
+      "hydration_seconds": 2400,
+      "water_cooldown": 600,
+      "max_water_uses": 1
+    }
+  }
+}
