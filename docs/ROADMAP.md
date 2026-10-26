@@ -268,3 +268,7 @@ Do not start the next gate while the current gate has blocker defects.
 ## Registro de execução G1.5 — 2026-10-26
 
 Autorização exclusiva conforme ADR-019, sem inferir aprovação humana do G1.4. Cena isolada, catálogo histórico ampliado, feijão multicolheita, flores e evento original demonstrativo implementados. **G1.5 técnico: PASS; G1.5 experiência: PENDING HUMAN APPROVAL.** Relatórios `G15_TECHNICAL_REPORT.md`, `G15_ART_REPORT.md`, `G15_BALANCE.md` e roteiro `G15_TEST_GUIDE.md`. Não iniciar G1.6 ou G2 automaticamente. G1.4 mantém aprovação humana formal pendente.
+
+## G1.V — Fazenda Viva: experimento visual autorizado em 2026-10-26
+
+Rodada lateral de apresentação, conforme ADR-020, sem avanço de mecânicas. Cena independente `scenes/farm/g1v/farm.tscn`, mesma lógica G1.5, saves exclusivos, apresentações A/B, feedback não bloqueante, movimento reduzido e intensidade. Relatórios `G1V_VISUAL_COMPARISON.md`, `G1V_TECHNICAL_REPORT.md`, `G1V_PERFORMANCE.md`; guia `G1V_TEST_GUIDE.md`. Direção visual: PENDING HUMAN DECISION. Não avançar para G1.6 nem promover alteração da Art Bible por este experimento.

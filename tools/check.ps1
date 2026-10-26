@@ -19,6 +19,7 @@ try {
         @("--headless", "--path", "game", "--script", "res://tests/economy_tests.gd"),
         @("--headless", "--path", "game", "--script", "res://tests/land_tests.gd"),
         @("--headless", "--path", "game", "--script", "res://tests/cultures_tests.gd"),
+        @("--headless", "--path", "game", "--script", "res://tests/living_farm_tests.gd"),
         @("--headless", "--path", "game", "--quit-after", "3")
     )
     foreach ($step in $steps) {

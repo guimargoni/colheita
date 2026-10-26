@@ -242,3 +242,11 @@ Status: accepted scope; final direction pending creative director, 2026-10-21
 The director explicitly authorized G0.3 as an A/B comparison after technically accepting G0.1/G0.2. The earlier G0.1/G0.2 boundary is historical; it does not imply G0.3 approval. A uses a consistent 2:1 isometric ground projection; B uses a front-facing oblique projection. Both use the same small fixture and original procedural placeholders, without importing unresolved-license packs. A shared renderer permits a controlled projection comparison; it is not a committed production art pipeline.
 
 The menu/HUD, preview panels, camera, decorative animation and plot inspection exist only for art-direction evaluation. No authoritative economy, planting, inventory, animal production, multiplayer, monetization or event implementation is authorized. Audio is deferred. G0.3 stays unapproved until the director evaluates composition/readability on desktop and portrait and chooses a direction or requests changes. No G1 work is started.
+
+## ADR-020 — G1.V: experimento reversível de apresentação e game feel
+
+Status: escopo expressamente autorizado pelo diretor em 2026-10-26; direção pendente de decisão humana.
+
+Após G1.5, o diretor autoriza exclusivamente `G1.V — Fazenda Viva`, branch `experiment/g1v-visual-gamefeel`. Duas apresentações compartilham cenário, sprites e serviços G1.5. A moderniza pixel art; B experimenta UI híbrida e luz suave. Tween, shader, pequenos ícones nativos e partículas procedurais são apresentação, sem novas regras de jogo. A Art Bible permanece intacta e não há aprovação artística automática.
+
+Cena e saves próprios; nenhum runtime anterior, regra econômica, layout ou save principal é substituído. Fixture demonstrativa progride por comandos do serviço sem conceder recursos por efeitos. Preferências e métricas locais não são infraestrutura de produção. Arte segue com seus status anteriores; slots sem masters aprovados ficam silenciosos. G1.4/G1.5 mantêm suas pendências humanas anteriores. Não autoriza G1.6, novos animais, backend, tecnologia nova ou migração da arte global.

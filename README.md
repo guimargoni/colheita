@@ -122,3 +122,9 @@ Para jogar no Windows, execute `JOGAR_G15_TESTE.cmd` (Godot, tempo acelerado, sa
 [Guia de teste](docs/G15_TEST_GUIDE.md) · [Relatório técnico](docs/G15_TECHNICAL_REPORT.md) · [Catálogo histórico](docs/G15_HISTORICAL_CATALOG.md) · [Balanceamento](docs/G15_BALANCE.md) · [Arte](docs/G15_ART_REPORT.md).
 
 Capturas locais: `.local/g15/index.html`. Aprovação da experiência pendente; G1.4 continua aguardando sua validação humana formal.
+
+## G1.V — Fazenda Viva
+
+Execute `JOGAR_G1V_TESTE.cmd` para a demonstração visual com save isolado e cena já preparada. Use **A / B** para comparar apresentações e **Ajustes** para intensidade/movimento reduzido. Não altera os saves G1.1–G1.5.
+
+[Como jogar](docs/G1V_TEST_GUIDE.md) · [Comparação visual](docs/G1V_VISUAL_COMPARISON.md) · [Relatório técnico](docs/G1V_TECHNICAL_REPORT.md) · [Desempenho](docs/G1V_PERFORMANCE.md). Capturas e GIFs reais locais em `.local/g1v/index.html`; direção pendente de decisão humana.
