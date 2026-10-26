@@ -1,5 +1,16 @@
 # Game Design Document — ColheitaFeliz (Codename)
 
+G1.4 addendum (delivery closed 2026-10-26, ADR-018): prioritize historically
+inventoried mechanics before modern systems, with original code/art. G1.3 was
+functionally accepted. G1.4 adds common-coin/level/sequential plot unlocks in an
+isolated local scene/save. Four initial plus four purchasable plots are a DEV
+sample, not historical/final counts. Purchases require explicit confirmation;
+when no productive resources remain, preserve enough coins for a starting seed.
+Rules and costs are provisional in `data/farming/g14/land.json`. Prior gates and
+XP rules stay intact. See `G14_TECHNICAL_REPORT.md` and imported historical audit.
+G1.4 experience, final art/audio, physical mobile and online security remain
+pending. No G1.5/G2, premium, social or animal production is authorized.
+
 G1.3 addendum (2026-10-24, ADR-017): after functional G1.1/G1.2 acceptance,
 the director authorizes a local development economy only. Independent scene/save:
 buy seeds → plant/care → harvest to inventory/XP → deliberately sell → reinvest.

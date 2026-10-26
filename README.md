@@ -1,12 +1,19 @@
 # ColheitaFeliz — codename
 
+G1.4: dê dois cliques em **JOGAR_G14_TESTE.cmd** para jogar o teste 60×.
+Toque nos terrenos com **+** para revisar e confirmar uma expansão.
+[Guia](docs/G14_TEST_GUIDE.md), [relatório](docs/G14_TECHNICAL_REPORT.md),
+[balanceamento](docs/G14_BALANCE.md) e [integração histórica](docs/G14_HISTORICAL_INTEGRATION.md).
+G1.3 aceito funcionalmente; G1.4 aguarda avaliação humana. Arte, áudio final,
+celular físico e segurança online continuam pendentes. Parar no G1.4.
+
 G1.3: double-click **JOGAR_G13_TESTE.cmd** for the isolated accelerated economy
 scene (installed Godot 4 stable required). Buy seeds in **Loja**, harvest into stock
 and XP, deliberately sell in **Inventário**; **Menu** shows the economic ledger.
 [How to play](docs/G13_TEST_GUIDE.md), [technical report](docs/G13_TECHNICAL_REPORT.md),
 [provisional balance and simulations](docs/G13_BALANCE.md).
-G1.3 experience awaits human approval; art/audio, physical mobile and online
-security remain pending. No G1.4/G2. Previous scenes/saves remain preserved.
+G1.3 functionality was subsequently accepted by the director in the G1.4 brief.
+Art/audio, physical mobile and online security remain pending. Previous scenes/saves remain preserved.
 
 G1.2: double-click **JOGAR_G12_TESTE.cmd** to play the isolated accelerated care
 scene (requires installed Godot 4 stable). [How to play](docs/G12_TEST_GUIDE.md),

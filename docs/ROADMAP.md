@@ -113,13 +113,20 @@ Director authorization 2026-10-24, ADR-017: independent local G1.3 scene/provide
 schema 3, configurable seed shop, manual product sale, coin ledger, harvest XP,
 levels and crop unlocks. Provisional balance simulations, real PC/portrait captures
 and test launcher: `G13_TEST_GUIDE.md`. Previous scenes/saves and approved G1.2
-milestone remain untouched. G1.3 experience awaits human approval; art/audio,
-physical mobile and online security remain pending. Stop at G1.3; no G1.4/G2.
+milestone remain untouched. G1.3 functionality was accepted in the subsequent
+G1.4 brief (ADR-018); art/audio, physical mobile and online security remain pending.
 
 ### G1.4 Land expansion
 - locked plots/areas;
 - unlock purchase/requirements;
 - persistence.
+
+G1.4 delivery, 2026-10-26 (ADR-018): independent schema 4/scene/provider,
+coin/level/prerequisite rules, protected confirmation, persistent unlock ledger,
+compact adjacent plots, tests, simulations and PC/portrait captures. Historical
+audit/pillars integrated selectively from `origin/foundation/game-design` at
+`1d1dd8e`. See `G14_TEST_GUIDE.md` and `G14_TECHNICAL_REPORT.md`.
+G1.4 technical PASS; experience PENDING HUMAN APPROVAL. Stop; no G1.5/G2.
 
 **G1 exit criterion:** the game is fun enough as a tiny solo farm for 15–20 minutes.
 

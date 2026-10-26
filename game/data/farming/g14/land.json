@@ -1,0 +1,133 @@
+{
+  "version": "g14.land.v1",
+  "status": "PROVISIONAL_SAMPLE_NOT_HISTORICAL_COUNTS_OR_PRICES",
+  "farm_id": "farm.g14.local.dev",
+  "owner_id": "owner.local.dev",
+  "footprint": [
+    2,
+    2
+  ],
+  "minimum_reinvestment_coins": 2,
+  "plots": [
+    {
+      "id": "plot.home.a",
+      "grid": [
+        0,
+        0
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 1",
+      "label": "1"
+    },
+    {
+      "id": "plot.home.b",
+      "grid": [
+        2,
+        0
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 2",
+      "label": "2"
+    },
+    {
+      "id": "plot.home.c",
+      "grid": [
+        0,
+        2
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 3",
+      "label": "3"
+    },
+    {
+      "id": "plot.home.d",
+      "grid": [
+        2,
+        2
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 4",
+      "label": "4"
+    },
+    {
+      "id": "plot.expand.1",
+      "grid": [
+        4,
+        0
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 40,
+      "level": 2,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 5",
+      "label": "5"
+    },
+    {
+      "id": "plot.expand.2",
+      "grid": [
+        4,
+        2
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 90,
+      "level": 3,
+      "requires": "plot.expand.1",
+      "conditions": [],
+      "name": "Terreno 6",
+      "label": "6"
+    },
+    {
+      "id": "plot.expand.3",
+      "grid": [
+        0,
+        4
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 180,
+      "level": 4,
+      "requires": "plot.expand.2",
+      "conditions": [],
+      "name": "Terreno 7",
+      "label": "7"
+    },
+    {
+      "id": "plot.expand.4",
+      "grid": [
+        2,
+        4
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 320,
+      "level": 5,
+      "requires": "plot.expand.3",
+      "conditions": [],
+      "name": "Terreno 8",
+      "label": "8"
+    }
+  ]
+}
