@@ -1,5 +1,25 @@
 # Architecture & Product Decisions
 
+## ADR-019 — G1.5 historical crops, bounded regrowth and original seasonal example
+
+Status: explicitly authorized 2026-10-26. G1.4 human approval remains pending;
+this instruction authorizes only G1.5 on its technical base `a27e6a8`.
+
+Preserve previous providers/scenes/saves. Add three quality-tested crops to the
+playable catalog: bean (three harvests), red rose, original haunted pumpkin.
+Document a wider sourced historical catalog, separating evidence from provisional
+prices/times and original modern examples. No new land rules, social/flowers gifts,
+bouquet factory, popularity, animal production, monetization, G1.6 or G2.
+
+Each harvest leg is a new idempotent cycle in one atomic snapshot; regrowth starts
+at actual collection, not prior maturity. Care/modifier caps reset per leg; stocks
+never refill. Freeze cycle count/regrowth policy at planting. A local calendar
+window and lifetime acquisition cap govern special-seed purchases; purchased seeds,
+plants and products survive event end. No online event authority is claimed.
+Copy-only migration of schemas 1–4 must preserve original IDs/layout, inventory,
+coins, XP, plots and timers without retrospective rewards, writing a separate file.
+New art is original AI-assisted ART_REVIEW, not approved release content.
+
 ## ADR-018 — Historical integration and G1.4 land expansion only
 
 Status: explicitly authorized 2026-10-24; director accepts G1.3 functionality.

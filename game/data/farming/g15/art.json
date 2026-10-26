@@ -1,0 +1,231 @@
+{
+  "status": "ART_REVIEW",
+  "release_approved": false,
+  "texture": "res://assets/art/g15/cultures_v1.png",
+  "sprites": {
+    "bean_seed": {
+      "rect": [
+        100,
+        278,
+        200,
+        137
+      ],
+      "size": [
+        15,
+        10
+      ],
+      "pivot": [
+        7,
+        9
+      ]
+    },
+    "bean_growing": {
+      "rect": [
+        444,
+        99,
+        207,
+        315
+      ],
+      "size": [
+        16,
+        24
+      ],
+      "pivot": [
+        8,
+        23
+      ]
+    },
+    "bean_mature": {
+      "rect": [
+        732,
+        61,
+        324,
+        354
+      ],
+      "size": [
+        24,
+        27
+      ],
+      "pivot": [
+        12,
+        26
+      ]
+    },
+    "bean_regrow": {
+      "rect": [
+        1146,
+        117,
+        216,
+        298
+      ],
+      "size": [
+        16,
+        22
+      ],
+      "pivot": [
+        8,
+        21
+      ]
+    },
+    "rose_seed": {
+      "rect": [
+        94,
+        579,
+        189,
+        155
+      ],
+      "size": [
+        17,
+        14
+      ],
+      "pivot": [
+        8,
+        13
+      ]
+    },
+    "rose_growing": {
+      "rect": [
+        393,
+        469,
+        301,
+        265
+      ],
+      "size": [
+        27,
+        24
+      ],
+      "pivot": [
+        13,
+        23
+      ]
+    },
+    "rose_mature": {
+      "rect": [
+        724,
+        457,
+        333,
+        277
+      ],
+      "size": [
+        30,
+        25
+      ],
+      "pivot": [
+        15,
+        24
+      ]
+    },
+    "rose_mature_b": {
+      "rect": [
+        1090,
+        465,
+        327,
+        269
+      ],
+      "size": [
+        29,
+        24
+      ],
+      "pivot": [
+        14,
+        23
+      ]
+    },
+    "haunted_pumpkin_seed": {
+      "rect": [
+        64,
+        899,
+        242,
+        122
+      ],
+      "size": [
+        28,
+        14
+      ],
+      "pivot": [
+        14,
+        13
+      ]
+    },
+    "haunted_pumpkin_growing": {
+      "rect": [
+        382,
+        809,
+        315,
+        215
+      ],
+      "size": [
+        36,
+        24
+      ],
+      "pivot": [
+        18,
+        23
+      ]
+    },
+    "haunted_pumpkin_mature": {
+      "rect": [
+        724,
+        777,
+        340,
+        254
+      ],
+      "size": [
+        39,
+        29
+      ],
+      "pivot": [
+        19,
+        28
+      ]
+    },
+    "haunted_pumpkin_mature_b": {
+      "rect": [
+        1089,
+        777,
+        338,
+        254
+      ],
+      "size": [
+        39,
+        29
+      ],
+      "pivot": [
+        19,
+        28
+      ]
+    }
+  },
+  "sockets": {
+    "crop.bean": [
+      [
+        0,
+        0
+      ]
+    ],
+    "crop.rose": [
+      [
+        0,
+        0
+      ]
+    ],
+    "crop.haunted_pumpkin": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "mature_animation": {
+    "crop.haunted_pumpkin": {
+      "keys": [
+        "haunted_pumpkin_mature",
+        "haunted_pumpkin_mature_b"
+      ],
+      "durations": [
+        2.6,
+        0.45
+      ]
+    }
+  }
+}

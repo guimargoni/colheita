@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "balance_status": "PROVISIONAL_NO_PURCHASES",
+  "items": [
+    {
+      "id": "fertilizer.common",
+      "name": "Comum",
+      "reduction_fraction": 0.1,
+      "initial_quantity": 8,
+      "compatible_crops": [
+        "crop.carrot",
+        "crop.strawberry",
+        "crop.wheat",
+        "crop.bean",
+        "crop.rose",
+        "crop.haunted_pumpkin"
+      ],
+      "max_uses_per_cycle": 2,
+      "scope": "owner",
+      "rare": false,
+      "origin": "development_fixture_once",
+      "icon": "common",
+      "fx": "fertilize"
+    },
+    {
+      "id": "fertilizer.fast",
+      "name": "Rápido",
+      "reduction_fraction": 0.2,
+      "initial_quantity": 4,
+      "compatible_crops": [
+        "crop.carrot",
+        "crop.strawberry",
+        "crop.wheat",
+        "crop.bean",
+        "crop.rose",
+        "crop.haunted_pumpkin"
+      ],
+      "max_uses_per_cycle": 1,
+      "scope": "owner",
+      "rare": false,
+      "origin": "development_fixture_once",
+      "icon": "fast",
+      "fx": "fertilize"
+    },
+    {
+      "id": "fertilizer.super",
+      "name": "Superfertilizante",
+      "reduction_fraction": 0.3,
+      "initial_quantity": 1,
+      "compatible_crops": [
+        "crop.carrot",
+        "crop.strawberry"
+      ],
+      "max_uses_per_cycle": 1,
+      "scope": "owner",
+      "rare": true,
+      "origin": "development_fixture_once_not_premium",
+      "icon": "super",
+      "fx": "fertilize"
+    },
+    {
+      "id": "fertilizer.social",
+      "name": "Fertilizante do Amor",
+      "reduction_fraction": 0.1,
+      "initial_quantity": 0,
+      "compatible_crops": [
+        "crop.carrot",
+        "crop.strawberry",
+        "crop.wheat"
+      ],
+      "max_uses_per_cycle": 1,
+      "scope": "friend_future",
+      "rare": false,
+      "origin": "NOT_GRANTED_SOCIAL_NOT_IMPLEMENTED",
+      "icon": "love",
+      "fx": "fertilize"
+    }
+  ]
+}

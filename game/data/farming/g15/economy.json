@@ -1,0 +1,99 @@
+{
+  "version": "g15.economy.v1",
+  "status": "PROVISIONAL_NOT_FOR_RELEASE",
+  "initial_coins": 40,
+  "max_quantity": 999,
+  "max_value": 1000000000,
+  "initial_seeds": {
+    "crop.carrot": 4,
+    "crop.strawberry": 0,
+    "crop.wheat": 0,
+    "crop.bean": 0,
+    "crop.rose": 0,
+    "crop.haunted_pumpkin": 0
+  },
+  "xp_thresholds": [
+    0,
+    8,
+    32,
+    80,
+    180,
+    360
+  ],
+  "crops": {
+    "crop.carrot": {
+      "seed_price": 2,
+      "sell_value": 3,
+      "harvest_xp": 1,
+      "unlock_level": 1,
+      "shop_stock": 1000
+    },
+    "crop.strawberry": {
+      "seed_price": 5,
+      "sell_value": 5,
+      "harvest_xp": 4,
+      "unlock_level": 2,
+      "shop_stock": 1000
+    },
+    "crop.wheat": {
+      "seed_price": 8,
+      "sell_value": 8,
+      "harvest_xp": 12,
+      "unlock_level": 3,
+      "shop_stock": 1000
+    },
+    "crop.bean": {
+      "seed_price": 12,
+      "sell_value": 4,
+      "harvest_xp": 3,
+      "unlock_level": 3,
+      "shop_stock": 1000
+    },
+    "crop.rose": {
+      "seed_price": 6,
+      "sell_value": 5,
+      "harvest_xp": 4,
+      "unlock_level": 2,
+      "shop_stock": 1000
+    },
+    "crop.haunted_pumpkin": {
+      "seed_price": 10,
+      "sell_value": 12,
+      "harvest_xp": 7,
+      "unlock_level": 2,
+      "shop_stock": 8
+    }
+  },
+  "planned_unlocks": [
+    {
+      "id": "animal.production",
+      "category": "animals",
+      "status": "PLANNED",
+      "level": null
+    },
+    {
+      "id": "building.production",
+      "category": "buildings",
+      "status": "PLANNED",
+      "level": null
+    },
+    {
+      "id": "decoration.collection",
+      "category": "decorations",
+      "status": "PLANNED",
+      "level": null
+    },
+    {
+      "id": "system.processing",
+      "category": "production",
+      "status": "PLANNED",
+      "level": null
+    },
+    {
+      "id": "land.expansion",
+      "category": "land",
+      "status": "PLANNED",
+      "level": null
+    }
+  ]
+}

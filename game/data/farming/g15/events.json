@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "events": {
+    "event.cozy.harvest.g15.demo": {
+      "name": "Colheita das Lanternas · demonstração original",
+      "start": 1792972800,
+      "end": 1793664000,
+      "crop_id": "crop.haunted_pumpkin",
+      "max_acquired": 8,
+      "after_end": "owned_seeds_plantable_crops_finish_products_retained",
+      "classification": "ORIGINAL_NOT_HISTORICAL"
+    }
+  }
+}

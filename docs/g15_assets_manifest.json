@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "g15.cultures.atlas.v1",
+      "file_path": "game/assets/art/g15/cultures_v1.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "f8d1ff0444897ef852cc70d30deda7ac7ba44c3c3a80b2485939cea6e7da4d03",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted output; own crop atlas used as style reference only",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; specific model identifier not exposed",
+      "created": "2026-10-26",
+      "license_record": "docs/G15_ART_REPORT.md",
+      "prompt": "docs/G15_PROMPTS.json#cultures_atlas",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS"
+    }
+  ]
+}

@@ -114,3 +114,11 @@ accepted; artistic finish pending human approval. F5 and prior scenes are preser
 The three original archives remain byte-identical. Their presence in repository history predates this audit and carries redistribution risk. Extraction and contact sheets stay local and ignored; no third-party art is in game/assets/.
 
 G0.3 is prepared for the creative director, not approved. G1 has not started. See [ROADMAP.md](docs/ROADMAP.md); no later gate is authorized by this delivery.
+
+## G1.5 — culturas históricas e multicolheita
+
+Para jogar no Windows, execute `JOGAR_G15_TESTE.cmd` (Godot, tempo acelerado, save independente). Alternativa: abra `game/scenes/farm/g15/farm.tscn` e pressione F6.
+
+[Guia de teste](docs/G15_TEST_GUIDE.md) · [Relatório técnico](docs/G15_TECHNICAL_REPORT.md) · [Catálogo histórico](docs/G15_HISTORICAL_CATALOG.md) · [Balanceamento](docs/G15_BALANCE.md) · [Arte](docs/G15_ART_REPORT.md).
+
+Capturas locais: `.local/g15/index.html`. Aprovação da experiência pendente; G1.4 continua aguardando sua validação humana formal.

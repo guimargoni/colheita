@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "balance_status": "PROVISIONAL_G15",
+  "crops": [
+    {
+      "id": "crop.carrot",
+      "name": "Cenoura",
+      "seed_price": 2,
+      "growth_seconds": 120,
+      "yield_quantity": 2,
+      "sell_value": 3,
+      "xp": 1,
+      "unlock_level": 1,
+      "care": {
+        "required": false,
+        "water_supported_future": true
+      },
+      "fertilizers": [
+        "fertilizer.common",
+        "fertilizer.fast",
+        "fertilizer.super",
+        "fertilizer.social"
+      ],
+      "stages": [
+        {
+          "at": 0.0,
+          "key": "carrot_seed"
+        },
+        {
+          "at": 0.35,
+          "key": "carrot_growing"
+        },
+        {
+          "at": 1.0,
+          "key": "carrot_mature"
+        }
+      ],
+      "art": {
+        "texture": "res://assets/art/g05r_pilot/crops_fx_v1.png",
+        "status": "ART_REVIEW"
+      },
+      "category": "vegetable",
+      "harvest_count": 1,
+      "regrowth_seconds": 0,
+      "seasonality": null,
+      "history": {
+        "classification": "LEGACY_G11_PROVISIONAL",
+        "source": "G11_CONTENT_AND_ART.md",
+        "confidence": "not asserted by G15"
+      }
+    },
+    {
+      "id": "crop.strawberry",
+      "name": "Morango",
+      "seed_price": 5,
+      "growth_seconds": 900,
+      "yield_quantity": 3,
+      "sell_value": 5,
+      "xp": 4,
+      "unlock_level": 2,
+      "care": {
+        "required": false,
+        "water_supported_future": true
+      },
+      "fertilizers": [
+        "fertilizer.common",
+        "fertilizer.fast",
+        "fertilizer.super",
+        "fertilizer.social"
+      ],
+      "stages": [
+        {
+          "at": 0.0,
+          "key": "strawberry_seed"
+        },
+        {
+          "at": 0.4,
+          "key": "strawberry_seed"
+        },
+        {
+          "at": 1.0,
+          "key": "strawberry_mature"
+        }
+      ],
+      "art": {
+        "texture": "res://assets/art/g05r_pilot/crops_fx_v1.png",
+        "status": "ART_REVIEW",
+        "missing": "Separate growing strawberry drawing"
+      },
+      "category": "fruit",
+      "harvest_count": 1,
+      "regrowth_seconds": 0,
+      "seasonality": null,
+      "history": {
+        "classification": "LEGACY_G11_PROVISIONAL",
+        "source": "G11_CONTENT_AND_ART.md",
+        "confidence": "not asserted by G15"
+      }
+    },
+    {
+      "id": "crop.wheat",
+      "name": "Trigo",
+      "seed_price": 8,
+      "growth_seconds": 7200,
+      "yield_quantity": 4,
+      "sell_value": 8,
+      "xp": 12,
+      "unlock_level": 3,
+      "care": {
+        "required": false,
+        "water_supported_future": true
+      },
+      "fertilizers": [
+        "fertilizer.common",
+        "fertilizer.fast",
+        "fertilizer.social"
+      ],
+      "stages": [
+        {
+          "at": 0.0,
+          "key": "carrot_seed"
+        },
+        {
+          "at": 0.3,
+          "key": "carrot_growing"
+        },
+        {
+          "at": 1.0,
+          "key": "carrot_growing"
+        }
+      ],
+      "art": {
+        "texture": "res://assets/art/g05r_pilot/crops_fx_v1.png",
+        "status": "PLACEHOLDER",
+        "missing": "Original wheat seedling, growing ears and ripe golden ears; temporary carrot foliage reuse"
+      },
+      "category": "cereal",
+      "harvest_count": 1,
+      "regrowth_seconds": 0,
+      "seasonality": null,
+      "history": {
+        "classification": "LEGACY_G11_PROVISIONAL",
+        "source": "G11_CONTENT_AND_ART.md",
+        "confidence": "not asserted by G15"
+      }
+    },
+    {
+      "id": "crop.bean",
+      "name": "Feijão",
+      "category": "vegetable",
+      "seed_price": 12,
+      "growth_seconds": 600,
+      "yield_quantity": 3,
+      "sell_value": 4,
+      "xp": 3,
+      "unlock_level": 3,
+      "care": {
+        "required": false
+      },
+      "fertilizers": [
+        "fertilizer.common",
+        "fertilizer.fast"
+      ],
+      "stages": [
+        {
+          "at": 0,
+          "key": "bean_seed"
+        },
+        {
+          "at": 0.4,
+          "key": "bean_growing"
+        },
+        {
+          "at": 1,
+          "key": "bean_mature"
+        }
+      ],
+      "regrowth_stages": [
+        {
+          "at": 0,
+          "key": "bean_regrow"
+        },
+        {
+          "at": 0.6,
+          "key": "bean_growing"
+        },
+        {
+          "at": 1,
+          "key": "bean_mature"
+        }
+      ],
+      "harvest_count": 3,
+      "regrowth_seconds": 300,
+      "seasonality": null,
+      "product_uses": [
+        "sell",
+        "future_recipes"
+      ],
+      "art": {
+        "texture": "res://assets/art/g15/cultures_v1.png",
+        "status": "ART_REVIEW"
+      },
+      "history": {
+        "classification": "HISTORICAL_SPECIES_PROVISIONAL_RULES",
+        "source": "S5",
+        "confidence": "M",
+        "numbers": "PROVISIONAL_G15_NOT_HISTORICAL"
+      }
+    },
+    {
+      "id": "crop.rose",
+      "name": "Rosa vermelha",
+      "category": "flower",
+      "seed_price": 6,
+      "growth_seconds": 1200,
+      "yield_quantity": 3,
+      "sell_value": 5,
+      "xp": 4,
+      "unlock_level": 2,
+      "care": {
+        "required": false
+      },
+      "fertilizers": [
+        "fertilizer.common",
+        "fertilizer.fast"
+      ],
+      "stages": [
+        {
+          "at": 0,
+          "key": "rose_seed"
+        },
+        {
+          "at": 0.4,
+          "key": "rose_growing"
+        },
+        {
+          "at": 1,
+          "key": "rose_mature"
+        }
+      ],
+      "regrowth_stages": [],
+      "harvest_count": 1,
+      "regrowth_seconds": 0,
+      "seasonality": null,
+      "product_uses": [
+        "sell",
+        "gift_future"
+      ],
+      "art": {
+        "texture": "res://assets/art/g15/cultures_v1.png",
+        "status": "ART_REVIEW"
+      },
+      "history": {
+        "classification": "HISTORICAL_SPECIES_PROVISIONAL_RULES",
+        "source": "S3/S5",
+        "confidence": "M",
+        "numbers": "PROVISIONAL_G15_NOT_HISTORICAL"
+      }
+    },
+    {
+      "id": "crop.haunted_pumpkin",
+      "name": "Abóbora Amaldiçoada",
+      "category": "special",
+      "seed_price": 10,
+      "growth_seconds": 3600,
+      "yield_quantity": 2,
+      "sell_value": 12,
+      "xp": 7,
+      "unlock_level": 2,
+      "care": {
+        "required": false
+      },
+      "fertilizers": [
+        "fertilizer.common",
+        "fertilizer.fast"
+      ],
+      "stages": [
+        {
+          "at": 0,
+          "key": "haunted_pumpkin_seed"
+        },
+        {
+          "at": 0.4,
+          "key": "haunted_pumpkin_growing"
+        },
+        {
+          "at": 1,
+          "key": "haunted_pumpkin_mature"
+        }
+      ],
+      "regrowth_stages": [],
+      "harvest_count": 1,
+      "regrowth_seconds": 0,
+      "seasonality": "event.cozy.harvest.g15.demo",
+      "product_uses": [
+        "sell",
+        "future_recipes"
+      ],
+      "art": {
+        "texture": "res://assets/art/g15/cultures_v1.png",
+        "status": "ART_REVIEW"
+      },
+      "history": {
+        "classification": "ORIGINAL_DEMONSTRATION",
+        "source": null,
+        "confidence": "ORIGINAL",
+        "numbers": "PROVISIONAL_G15_NOT_HISTORICAL"
+      }
+    }
+  ]
+}

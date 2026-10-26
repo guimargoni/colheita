@@ -417,3 +417,7 @@ The project is succeeding when:
 - theft feels funny/risky, not unfair;
 - new players understand the loop without external instructions;
 - the codebase allows new crops/items/events mostly through content data rather than bespoke code.
+
+## Registro G1.5 — 2026-10-26
+
+Incremento isolado autorizado: feijão de três colheitas, rosa armazenável/vendável e uma abóbora sazonal original demonstrativa. Configuração, estágios e recompensas em `game/data/farming/g15/`; novos valores explicitamente provisórios. Recuperação inicia ao colher; sem recompensas automáticas durante ausência. Evento encerra compras, preservando itens adquiridos. Presentes florais permanecem somente preparação de dados. Nenhuma alteração de balanceamento ou expansão G1.4. Fontes e diferenças de versões: `G15_HISTORICAL_CATALOG.md`; decisões: ADR-019. Experiência e arte aguardam avaliação humana.
