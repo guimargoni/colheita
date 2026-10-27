@@ -9,6 +9,16 @@ static func valid(f: Dictionary, config: Dictionary) -> bool:
 		if not f.get(key) is Dictionary: return false
 	if f.producers.size()>12 or f.decorations.size()>int(config.max_objects): return false
 	if not f.guardian.get("owned") is bool or not E.integer(f.guardian.get("fed_until"),9000000000000): return false
+	var products: Array = ["bouquet"]
+	for rule in config.producers.values(): products.append(rule.product)
+	for product in f.goods:
+		if product not in products: return false
+	for kind in f.buildings:
+		if not config.buildings.has(kind) or not E.integer(f.buildings[kind],int(config.buildings[kind].max)): return false
+	if f.buildings.get("house",0)<1: return false
+	for kind in f.achievements:
+		if not config.achievements.has(kind) or f.achievements[kind]!=true: return false
+	if not f.guardian.owned and f.guardian.fed_until!=0: return false
 	for quantity in f.goods.values():
 		if not E.integer(quantity,1000000): return false
 	for p in f.producers.values():

@@ -68,7 +68,7 @@ func load_farm(fixture: Dictionary) -> bool:
 		if not store.commit(extended,int(candidate.revision)):
 			error = store.error; return false
 		candidate = extended
-	if not Features.valid(candidate.features,features_config):
+	if not candidate.features is Dictionary or not Features.valid(candidate.features,features_config):
 		error = "invalid_features"; return false
 	state = candidate
 	return true
@@ -254,6 +254,8 @@ func execute(command: Dictionary) -> Dictionary:
 	if not error.is_empty(): return fail(error)
 	if not command.get("request_id") is String or command.request_id.is_empty() or command.request_id.length()>128 or command.request_id=="genesis" or not command.get("type") is String: return fail("invalid_command")
 	if command.get("actor_id",state.owner_id)!=state.owner_id: return fail("foreign_actor")
+	for field in ["kind","id"]:
+		if not command.get(field,"") is String or command.get(field,"").length()>128: return fail("invalid_feature_identifier")
 	var fingerprint := JSON.stringify(["integrated.features.v1",command.type,command.get("id",""),command.get("kind",""),command.get("quantity",1),command.get("cycle"),command.get("slot")])
 	if state.receipts.has(command.request_id):
 		var receipt: Dictionary = state.receipts[command.request_id]

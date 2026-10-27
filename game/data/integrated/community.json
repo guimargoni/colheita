@@ -1,0 +1,12 @@
+{
+  "id": "event.community.garden.v1",
+  "name": "Jardim compartilhado",
+  "classification": "ORIGINAL_MODERNIZATION",
+  "starts_at": "2026-10-26T00:00:00",
+  "ends_at": "2026-12-01T00:00:00",
+  "goal": 5,
+  "donation_product": "crop.carrot",
+  "max_per_player": 10,
+  "reward_seed": "crop.rose",
+  "reward_quantity": 1
+}

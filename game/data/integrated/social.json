@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "classification": "ORIGINAL_ANTI_ABUSE_RULES",
+  "theft_cooldown_seconds": 60,
+  "thefts_per_pair_per_day": 3,
+  "max_theft_fraction": 0.25,
+  "protected_minimum": 1,
+  "gifts_per_pair_per_day": 3,
+  "helps_per_day": 20,
+  "animal_helps_per_day": 10,
+  "mischief_per_day": 3,
+  "invite_lifetime_seconds": 604800
+}
