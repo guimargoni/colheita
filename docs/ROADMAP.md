@@ -1,5 +1,8 @@
 # Development Roadmap
 
+Atualização 2026-10-28 (ADR-021): missão autônoma autorizou integrar os pilares em uma versão principal, sem aprovações por subsistema. Checkpoint técnico local jogável em INTEGRATED_DELIVERY.md. Não equivale a aprovação artística, beta público ou release; gates históricos e suas validações abaixo continuam preservados.
+
+
 This roadmap is gate-based. A gate ends in a playable build and human acceptance, not merely merged code.
 
 ## Phase 0 — Foundation

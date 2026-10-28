@@ -1,5 +1,5 @@
 extends Control
-## G1.V isolated presentation experiment; unchanged G1.5 domain and service.
+## Integrated client; domain authority is supplied by the local or remote adapter.
 
 const Service = preload("res://scripts/services/integrated/farm_service.gd")
 const Clock = preload("res://scripts/services/cultures/culture_clock.gd")

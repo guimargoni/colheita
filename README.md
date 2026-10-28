@@ -1,3 +1,19 @@
+# ColheitaFeliz — versão integrada local
+
+Dê dois cliques em **JOGAR_COLHEITAFELIZ.cmd**. Godot 4.x estável necessário.
+Para experimentar duas contas e tempo acelerado: **JOGAR_COLHEITAFELIZ.cmd -TwoPlayers -Fast**.
+
+[Como jogar, testar o social e limitações](docs/INTEGRATED_DELIVERY.md).
+[Balanceamento provisório](docs/INTEGRATED_BALANCE.md).
+[Especificação vinculante](docs/INTEGRATED_PRODUCT_SPEC.md).
+
+Uma cena principal reúne fazenda, animais, produção, decoração e social com servidor local separado.
+Arte 2D estilizada original em revisão; operação pública, áudio final e celular físico pendentes.
+Galeria `.local/integrated/index.html` mostra capturas reais, não o jogo interativo.
+
+<details>
+<summary>Histórico dos gates e instruções anteriores, preservados para referência</summary>
+
 # ColheitaFeliz — codename
 
 G1.4: dê dois cliques em **JOGAR_G14_TESTE.cmd** para jogar o teste 60×.
@@ -128,3 +144,5 @@ Capturas locais: `.local/g15/index.html`. Aprovação da experiência pendente; 
 Execute `JOGAR_G1V_TESTE.cmd` para a demonstração visual com save isolado e cena já preparada. Use **A / B** para comparar apresentações e **Ajustes** para intensidade/movimento reduzido. Não altera os saves G1.1–G1.5.
 
 [Como jogar](docs/G1V_TEST_GUIDE.md) · [Comparação visual](docs/G1V_VISUAL_COMPARISON.md) · [Relatório técnico](docs/G1V_TECHNICAL_REPORT.md) · [Desempenho](docs/G1V_PERFORMANCE.md). Capturas e GIFs reais locais em `.local/g1v/index.html`; direção pendente de decisão humana.
+
+</details>

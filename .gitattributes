@@ -2,3 +2,5 @@
 *.png -text
 *.rar -text
 *.zip -text
+# Preserve third-party license bytes, including their original line endings.
+docs/licenses/Kenney_*_LICENSE.txt -text -whitespace

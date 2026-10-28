@@ -1,5 +1,8 @@
 # Game Design Document — ColheitaFeliz (Codename)
 
+Estado atual (2026-10-28, ADR-021): a missão autônoma autoriza uma versão integrada. Direção oficial 2D estilizada acolhedora. Agricultura, produção e social local compartilham um domínio; regras novas e limites estão em INTEGRATED_PRODUCT_SPEC.md e INTEGRATED_DELIVERY.md. Adendos e aprovações anteriores abaixo são históricos, não instruções para abrir cenas isoladas.
+
+
 G1.4 addendum (delivery closed 2026-10-26, ADR-018): prioritize historically
 inventoried mechanics before modern systems, with original code/art. G1.3 was
 functionally accepted. G1.4 adds common-coin/level/sequential plot unlocks in an

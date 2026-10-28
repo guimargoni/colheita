@@ -86,7 +86,7 @@ for path in tracked:
     check(not path.startswith(('.local/','assets_source/','game/config/local.cfg')), 'Private work tracked: '+path)
 # Inspect current first-party text, including not-yet-tracked files. No secret values printed.
 patterns = [r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----', r'(?<![A-Z0-9])AKIA[A-Z0-9]{16}', r'gh[pousr]_[A-Za-z0-9]{30,}', r'sbp_[a-f0-9]{40}']
-for parent in ['game','tools','docs','.github']:
+for parent in ['game','backend','tools','docs','.github']:
     for p in (ROOT/parent).rglob('*'):
         if not p.is_file() or '.godot' in p.parts or p.suffix not in ['.gd','.tscn','.godot','.cfg','.py','.ps1','.md','.yml','.csv','.json']: continue
         content=p.read_text(encoding='utf-8-sig')

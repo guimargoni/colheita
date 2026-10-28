@@ -1,5 +1,8 @@
 # Technical Architecture
 
+Estado atual (ADR-021): cena principal `game/scenes/main/farm.tscn`, apresentação 2D estilizada, domínio `scripts/domain/integrated`, serviço integrado e adapters local/remoto. Servidor Godot headless loopback aplica a economia e operações entre contas em um único escritor. Este backend DEV não substitui Supabase/Postgres/Auth/TLS para publicação. Ver backend/local/README.md e INTEGRATED_DELIVERY.md. Arquiteturas dos gates abaixo permanecem como histórico.
+
+
 ## 1. Chosen stack
 
 ### Client
