@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "checked": "2026-10-26",
+  "assets": [
+    {
+      "path": "game/assets/audio/integrated/click_001.ogg",
+      "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/pluck_001.ogg",
+      "sha256": "be97ec4893a02d6eccfb678daa76c83e34cb2583b834ec2593d2641def739fa4",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/drop_002.ogg",
+      "sha256": "4ac4d1cef7e936965cbf795852ca2020300b9e2ba7daa59f2bf4f1f7bf416218",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/confirmation_001.ogg",
+      "sha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/confirmation_002.ogg",
+      "sha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/confirmation_004.ogg",
+      "sha256": "568967a3d9f8a8f6af54ea01729c4882284308f2a27d78c07ffd7ee0d6951661",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/glass_001.ogg",
+      "sha256": "183eebee20eb0a532b0b85104d139cbf2673eb66d95c3cc733ac9ea98362e7e8",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/close_001.ogg",
+      "sha256": "44af8249b933e0fd35ec957a638bb1a0b01f85b53fbe9674bf77bd3ca3168ef4",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_interface_LICENSE.txt",
+      "source": "https://kenney.nl/assets/interface-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/footstep_grass_000.ogg",
+      "sha256": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_impact_LICENSE.txt",
+      "source": "https://kenney.nl/assets/impact-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    },
+    {
+      "path": "game/assets/audio/integrated/footstep_grass_001.ogg",
+      "sha256": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_file": "docs/licenses/Kenney_impact_LICENSE.txt",
+      "source": "https://kenney.nl/assets/impact-sounds",
+      "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE"
+    }
+  ]
+}

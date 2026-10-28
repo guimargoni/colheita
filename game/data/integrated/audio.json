@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "status": "LICENSE_VERIFIED_ARTISTIC_CANDIDATE",
+  "cues": {
+    "button": "click_001",
+    "plant": "footstep_grass_000",
+    "harvest": "pluck_001",
+    "water": "drop_002",
+    "fertilize": "confirmation_001",
+    "buy_seeds": "confirmation_002",
+    "sell_products": "glass_001",
+    "unlock_plot": "confirmation_004",
+    "level_up": "confirmation_004",
+    "remove_weeds": "footstep_grass_001",
+    "remove_pests": "drop_002",
+    "interface": "close_001"
+  }
+}

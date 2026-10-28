@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Colheita - Foundation"
-run/main_scene="res://scenes/art/art_sample.tscn"
+run/main_scene="res://scenes/main/farm.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [autoload]

@@ -28,13 +28,20 @@ if g12_path.exists():
 g15_path = ROOT/'docs/g15_assets_manifest.json'
 if g15_path.exists():
     runtime['assets'].extend(json.loads(g15_path.read_text(encoding='utf-8'))['assets'])
+integrated_path = ROOT/'docs/integrated_assets_manifest.json'
+if integrated_path.exists():
+    runtime['assets'].extend(json.loads(integrated_path.read_text(encoding='utf-8'))['assets'])
 allowed = set()
+if (ROOT/'docs/integrated_audio_manifest.json').exists():
+    for audio in json.loads((ROOT/'docs/integrated_audio_manifest.json').read_text(encoding='utf-8'))['assets']:
+        check(audio['path'].startswith('game/assets/audio/integrated/') and '..' not in Path(audio['path']).parts, 'Invalid audio path')
+        allowed.update([audio['path'],audio['path']+'.import'])
 for asset in runtime['assets']:
     path = asset['file_path']
     is_pilot = path.startswith('game/assets/art/g05r_pilot/')
     is_g06 = path.startswith('game/assets/art/g06/')
     is_g12 = path.startswith('game/assets/art/g12/')
-    is_g15 = path.startswith('game/assets/art/g15/')
+    is_g15 = path.startswith('game/assets/art/g15/') or path.startswith('game/assets/art/integrated/')
     check((path.startswith('game/assets/art/g05/') or is_pilot or is_g06 or is_g12 or is_g15) and '..' not in Path(path).parts, 'Invalid runtime path')
     statuses = ['ART_REVIEW','FINAL_CANDIDATE'] if is_pilot else ['ART_REVIEW']
     check(asset['status'] in statuses and not asset['release_approved'], 'Unexpected art promotion')
@@ -85,6 +92,16 @@ for parent in ['game','tools','docs','.github']:
         content=p.read_text(encoding='utf-8-sig')
         for pattern in patterns: check(not re.search(pattern,content), 'Potential secret in '+str(p.relative_to(ROOT)))
         check(not any(line.endswith((' ','\t')) for line in content.splitlines()) or p.suffix=='.md', 'Trailing whitespace: '+str(p.relative_to(ROOT)))
+# Explicitly inventory the licensed integrated audio; no unknown SFX may enter runtime.
+audio_manifest = ROOT/'docs/integrated_audio_manifest.json'
+if audio_manifest.exists():
+    audio_assets = json.loads(audio_manifest.read_text(encoding='utf-8'))['assets']
+    for row in audio_assets:
+        target = ROOT/row['path']
+        check(row['license']=='CC0-1.0' and (ROOT/row['license_file']).is_file(), 'Audio license missing')
+        check(target.is_file() and hashlib.sha256(target.read_bytes()).hexdigest()==row['sha256'], 'Audio integrity mismatch')
+
+
 if errors:
     print('\n'.join(sorted(set(errors))))
     raise SystemExit(1)

@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "integrated.environment_v1.png",
+      "file_path": "game/assets/art/integrated/environment_v1.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "977a1f2fe28713963f9b0e288bbb63a58d013fbca8e277afec16f8f11190ef3e",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted 2D illustration; no original-game content",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; specific model identifier not exposed",
+      "created": "2026-10-26",
+      "license_record": "docs/INTEGRATED_ART_PROVENANCE.md",
+      "prompt": "docs/INTEGRATED_ART_PROMPTS.json#environment",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "source_original": "C:\\Users\\guilh\\.codex\\generated_images\\01a15fca-1b40-7bf0-9361-e1db11aceaf7\\exec-f9d839dd-9a29-4a5e-a27a-749201cb493d.png"
+    },
+    {
+      "id": "integrated.crops_v1.png",
+      "file_path": "game/assets/art/integrated/crops_v1.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "4786830f2771a2f9faaac025e554cabfea5720b9d57493b3914389b33228cf5a",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted 2D illustration; no original-game content",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; specific model identifier not exposed",
+      "created": "2026-10-26",
+      "license_record": "docs/INTEGRATED_ART_PROVENANCE.md",
+      "prompt": "docs/INTEGRATED_ART_PROMPTS.json#crops",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "source_original": "C:\\Users\\guilh\\.codex\\generated_images\\01a15fca-1b40-7bf0-9361-e1db11aceaf7\\exec-2aa6a53a-53d6-4e38-bc03-4f66205600ab.png"
+    },
+    {
+      "id": "integrated.meadow_v1.png",
+      "file_path": "game/assets/art/integrated/meadow_v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2ab3bd9aa60288c53aab9af3b47c57aed160a95c8ac99f31314ad01364c10f8d",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted 2D illustration; no original-game content",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; specific model identifier not exposed",
+      "created": "2026-10-26",
+      "license_record": "docs/INTEGRATED_ART_PROVENANCE.md",
+      "prompt": "docs/INTEGRATED_ART_PROMPTS.json#ground",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "source_original": "C:\\Users\\guilh\\.codex\\generated_images\\01a15fca-1b40-7bf0-9361-e1db11aceaf7\\exec-6971dcd0-185b-4305-b9a4-13101ba502b6.png"
+    },
+    {
+      "id": "integrated.animals.v1",
+      "file_path": "game/assets/art/integrated/animals_v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "56c227c7520048e2a1b5afc5336956fc0e608f159a6eddd247ea9b67df1f284c",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted 2D illustration; no original-game content",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; specific model identifier not exposed",
+      "created": "2026-10-26",
+      "license_record": "docs/INTEGRATED_ART_PROVENANCE.md",
+      "prompt": "docs/INTEGRATED_ART_PROMPTS.json#animals_alpha_edit",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "source_original": "C:\\Users\\guilh\\.codex\\generated_images\\01a15fca-1b40-7bf0-9361-e1db11aceaf7\\exec-0272eff0-440b-4133-aa2d-17d6326c3f56.png"
+    },
+    {
+      "id": "integrated.decor.v1",
+      "file_path": "game/assets/art/integrated/decor_v1.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "e21aa0aa735797a5e86f99021d0178c021e7b0665df3bd3491cdb6100df47aa8",
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted 2D illustration; no original-game content",
+      "author": "OpenAI image_gen output for project owner; AI origin disclosed",
+      "tool": "Built-in image_gen; specific model identifier not exposed",
+      "created": "2026-10-26",
+      "license_record": "docs/INTEGRATED_ART_PROVENANCE.md",
+      "prompt": "docs/INTEGRATED_ART_PROMPTS.json#decor",
+      "commercial_use_allowed": "SUBJECT_TO_SERVICE_TERMS_AND_RELEASE_REVIEW",
+      "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
+      "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
+      "source_original": "C:\\Users\\guilh\\.codex\\generated_images\\01a15fca-1b40-7bf0-9361-e1db11aceaf7\\exec-04f21d07-3a87-4ab8-9fed-c498b0a8b8a9.png"
+    }
+  ]
+}
