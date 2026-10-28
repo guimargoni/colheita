@@ -23,6 +23,7 @@ try {
         @("--headless", "--path", "game", "--script", "res://tests/integrated_farm_tests.gd"),
         @("--headless", "--path", "game", "--script", "res://tests/integrated_migration_disk_tests.gd"),
         @("--headless", "--path", "game", "--script", "res://tests/integrated_ui_tests.gd"),
+        @("--headless", "--path", "game", "--script", "res://tests/appearance_tests.gd"),
         @("--headless", "--path", "game", "--quit-after", "3")
     )
     foreach ($step in $steps) {

@@ -1,5 +1,9 @@
 # ColheitaFeliz — versão integrada local
 
+**Fundação visual v2:** padrão/Halloween, skin da casa, HUD ilustrado e capacidade de 16 parcelas.
+Troque em **Ajustes → Aparência**. [Guia, compatibilidade e avaliação humana](docs/VISUAL_V2_REPORT.md).
+Capturas e vídeos reais em `.local/visual_v2/index.html` (evidência, não jogo).
+
 Dê dois cliques em **JOGAR_COLHEITAFELIZ.cmd**. Godot 4.x estável necessário.
 Para experimentar duas contas e tempo acelerado: **JOGAR_COLHEITAFELIZ.cmd -TwoPlayers -Fast**.
 

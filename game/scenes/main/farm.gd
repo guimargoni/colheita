@@ -8,6 +8,7 @@ const Presenter = preload("res://scripts/ui/cultures/culture_presenter.gd")
 const ToolsPanel = preload("res://scripts/ui/care/care_tools_panel.gd")
 const Tooltip = preload("res://scripts/ui/care/care_tooltip.gd")
 var startup_error: bool = false
+var preferences_path: String = "user://integrated_preferences.cfg"
 var context_card: PanelContainer
 var context_id: int = -1
 var context_age: float = 0
@@ -559,7 +560,7 @@ func _exit_tree() -> void:
 
 func load_preferences() -> void:
 	var config := ConfigFile.new()
-	if config.load("user://integrated_preferences.cfg")!=OK: return
+	if config.load(preferences_path)!=OK: return
 	world.appearance.set_theme(str(config.get_value("appearance","theme","standard")))
 	var saved_skins = config.get_value("appearance","skins",{})
 	if saved_skins is Dictionary:
@@ -577,7 +578,7 @@ func save_preferences() -> void:
 	config.set_value("visual","intensity",world.intensity)
 	config.set_value("visual","reduced",not world.motion)
 	config.set_value("audio","gain",audio.gain)
-	config.save("user://integrated_preferences.cfg")
+	config.save(preferences_path)
 
 func open_credits() -> void:
 	var body: VBoxContainer = economy_ui.shell("Autoria e créditos")

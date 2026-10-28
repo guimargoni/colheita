@@ -1,3 +1,31 @@
+# Checkpoint atual — fundação visual integrada v2
+
+2026-10-28. Missão ativa: reestruturação visual anexada em `a00ab4f8-402b-4aa8-9195-5fc877e73f8a/Texto colado.txt`. Branch `feature/integrated-visual-foundation`, baseada em `faa22bf` da integrada. Sem outra cena experimental. Especificação `docs/VISUAL_V2_SPEC.md`, entrega/classificações/checklist `docs/VISUAL_V2_REPORT.md`.
+
+Implementado: resolvedor e pacote visual versionado, contratos por família, dois temas, skin azul da casa, novos edifícios com duas faces, ícones ilustrados, HUD compacto, cards/UI nativos, cuidados compactos, social por abas, mapa de posicionamento de decoração, iluminação/AnimationPlayer/shader, clips por espécie/segundos, estrela de maturidade estática, feedback não autoritativo. Capacidade 16/quatro iniciais, migração aditiva/atômica/idempotente local e no início do servidor. Arte nova original em revisão, sem treinamento ou substituição dos PNGs anteriores.
+
+Commits: `5a82a22` capacidade/migração; `2285850` apresentação modular/temas/UI. Próximo commit registra testes, relatórios, launcher e este checkpoint; hash final no git log. Branch integrada de referência preservada. Sem conflitos, push, publicação, cache/extração/saves/credenciais/capturas versionados.
+
+Evidência final: regressões completas PASS; domínio248, UI104, aparência122 (IO real de preferências isoladas, regiões de atlas, temas/skin/fallback, cultivo/colheita sem FX/replay, falha de migração, preservação de oito parcelas e relógio30/60/120). Social final126 (API81, reinício18, concorrência9, dois processos6+7, UI remota5) incluindo visita após tema/skin. Logs `.local/integrated/visual_final_checks.log` e `visual_social_final.log`. Captura real: dez PNGs, dois clips96frames; `.local/visual_v2/index.html`, `pc_motion.avi`, `mobile_motion.avi`, previewsGIF. AVI Motion-JPEG,24fps nominais, sem áudio; estrutura RIFF validada, não declarar playback em dispositivo físico. Capturas inspecionadas; corrigidos overflow da loja e callback de ícone removido antes da conclusão.
+
+Benchmark PC RX7600/Compatibility: seis casos240frames, intensidades0/0.65/1, duas resoluções; ~180fps, p95 entre8.202 e9.600ms. Resultado `.local/visual_v2/performance.json`. Não é medição isolada de GPU, rede, celular ou teste prolongado. Políticas/licenças e diff whitespace verificados.
+
+Comandos executados (Godot: `C:/Users/guilh/Downloads/Godot_v4.7.2-stable_win64.exe/Godot_v4.7.2-stable_win64_console.exe`; Python: `C:/Users/guilh/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`):
+
+- `tools/check.ps1 -Godot CAMINHO -Python CAMINHO` antes e depois das mudanças.
+- `tools/check_social.ps1 -Godot CAMINHO -Python CAMINHO` antes e depois.
+- Godot `--headless --path game --editor --quit`, `--script res://tests/integrated_ui_tests.gd`, `integrated_farm_tests.gd` e `appearance_tests.gd` durante correções.
+- `tools/capture_visual_v2.ps1 -Godot CAMINHO -Python CAMINHO` (renderer real, GIF/AVI sem retoque).
+- Godot `--path game --rendering-method gl_compatibility --script res://tests/benchmark_visual_v2.gd`.
+- Python `tools/check_repository.py`; `git diff --check`, `git diff --cached --check`, status/log e preservação dos arquivos históricos.
+
+Para retomar: não refazer a arquitetura ou criar outra demo. Usar JOGAR_COLHEITAFELIZ.cmd, Ajustes → Aparência; social `-TwoPlayers -Fast`. Próxima avaliação é artística/usabilidade integral, com checklist no relatório. Pendências reais: animação final específica de alimentação/caminhada e rigs por partes (clips atuais são prototipagem de três poses); ícones de cuidados/fertilizantes; terreno modular sazonal; revisão de recortes/sombras/contato; mix/música final. Ver ASSET_ACQUISITION_LIST.md. Personalização cosmética ainda é local, não aparência autoritativa compartilhada do dono. Pesca só planejada; não implementar sem nova missão.
+
+Celular físico e infraestrutura pública continuam sem validação/acesso nesta entrega. Não confundir contratos/testes com qualidade artística aprovada. Regras/custos novos provisórios; não alegar números históricos confirmados. Não há solicitação de nova aprovação por componente. Objetivos locais executáveis entregues; aprovação estética, produção de materiais finais e teste físico permanecem separados.
+
+<details>
+<summary>Checkpoint anterior da missão integrada, preservado como histórico</summary>
+
 # Execução autônoma — checkpoint recuperável
 
 Atualizado em 2026-10-28. Branch `feature/integrated-farm-product`, base `46615cc`. Missão vinculante: `docs/INTEGRATED_PRODUCT_SPEC.md`; guia e limites completos: `docs/INTEGRATED_DELIVERY.md`. Não declarar missão integral/publicação concluída.
@@ -37,3 +65,5 @@ Arte 2D original integrada: cinco PNGs, prompts completos, hashes, ART_REVIEW. �
 5. Produzir música/ambiência/vozes e animações finais; revisar recortes/contato dos sprites, terreno de expansão modular e clearance de lançamento. Não há pack de licença pendente incorporado como autorizado.
 
 Não pedir segredos em texto, publicar, contratar nem avançar alegando produto de produção concluído. O núcleo integrado é jogável localmente; infraestrutura pública, acabamento final e inventário histórico integral continuam pendentes.
+
+</details>

@@ -23,7 +23,9 @@ func run() -> void:
 			var at: Vector2 = scene.container.position+scene.world.position+scene.world.plot_center(id)*scene.zoom
 			check(scene.hit_at(at)==id,"Smooth renderer hit map aligned")
 		scene.economy_ui.open_shop(); await process_frame
+		await create_timer(0.25).timeout
 		check(scene.panel.size.x<=scene.logical.x,"Shop fits")
+		check(scene.panel.position.y>=0 and scene.panel.position.y+scene.panel.size.y<=scene.logical.y,"Shop remains vertically bounded after card layout")
 		scene.economy_ui.open_inventory(); await process_frame
 		check(scene.panel!=null,"Inventory opens with all categories")
 		scene.open_farm_hub(); await process_frame

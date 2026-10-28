@@ -1,5 +1,7 @@
 # Development Roadmap
 
+Fundação visual v2 (2026-10-28): reestruturação sobre a cena integrada autorizada, sem experimento independente. Temas/skins, UI, perspectiva e capacidade ampliada sob avaliação artística; ver VISUAL_V2_REPORT.md. Pesca registrada como expansão futura em FISHING_PLAN.md; não implementar neste marco. Gates históricos não foram retroativamente aprovados.
+
 Atualização 2026-10-28 (ADR-021): missão autônoma autorizou integrar os pilares em uma versão principal, sem aprovações por subsistema. Checkpoint técnico local jogável em INTEGRATED_DELIVERY.md. Não equivale a aprovação artística, beta público ou release; gates históricos e suas validações abaixo continuam preservados.
 
 

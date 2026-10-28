@@ -1,5 +1,7 @@
 # Technical Architecture
 
+Fundação visual v2: pacote `data/visual/v2/appearance.json`, resolvedor puro em `scripts/visual/appearance/resolver.gd`, renderizadores de culturas/animais, clips por segundos, iluminação AnimationPlayer e componentes `ui/integrated/game_kit.gd`. Tema/skin são preferências locais separadas dos estados econômicos. Migração de capacidade em `domain/integrated/land_extension.gd`; backend persiste no início. Nenhum sprite/arquivo vira ID econômico. Contratos e limitações em VISUAL_V2_REPORT.md.
+
 Estado atual (ADR-021): cena principal `game/scenes/main/farm.tscn`, apresentação 2D estilizada, domínio `scripts/domain/integrated`, serviço integrado e adapters local/remoto. Servidor Godot headless loopback aplica a economia e operações entre contas em um único escritor. Este backend DEV não substitui Supabase/Postgres/Auth/TLS para publicação. Ver backend/local/README.md e INTEGRATED_DELIVERY.md. Arquiteturas dos gates abaixo permanecem como histórico.
 
 

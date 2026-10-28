@@ -255,3 +255,11 @@ Cena e saves próprios; nenhum runtime anterior, regra econômica, layout ou sav
 Status: autorizado pelo diretor, 2026-10-26.
 
 A missão anexada substitui os limites de parada anteriores para esta branch: integrar fazenda e social sem solicitar aprovação a cada incremento. Adota oficialmente 2D estilizado, abandonando pixel art como padrão final. A documentação histórica e implementações anteriores são preservadas; não há aceite retroativo de assets ou gates. Especificação vinculante: `INTEGRATED_PRODUCT_SPEC.md`. Sem push, publicação ou contratação. Credenciais ausentes não bloqueiam trabalho local independente; nenhuma simulação pode ser descrita como social online concluído.
+
+## ADR-022 — Fundação visual sobre a versão integrada
+
+Status: missão expressamente autorizada em 2026-10-28; aparência final pendente de avaliação humana.
+
+Branch `feature/integrated-visual-foundation`, base integrada `faa22bf`. Mantém entrada principal, mecânicas e sistemas sociais, separando resolução de aparência, temas/skins, animação e feedback. Padrão e Halloween são cosméticos locais demonstrativos, independentes do calendário e da economia; skin azul da casa preserva envelope/contato. Não há cosmético pago ou skin sincronizada entre contas nesta entrega.
+
+Capacidade provisória de 16 parcelas/quatro iniciais: migração aditiva conserva os oito IDs/coordenadas/custos anteriores, saldo/ciclos/recibos. Cenas e saves históricos permanecem. `VISUAL_V2_SPEC.md` e `VISUAL_V2_REPORT.md` registram contratos, testes e limites; assets novos continuam ART_REVIEW. Pesca fica oficialmente planejada em `FISHING_PLAN.md`, sem implementação neste trabalho. Nada autoriza publicação, treinamento com packs alheios ou promoção automática de qualidade artística.

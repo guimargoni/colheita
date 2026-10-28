@@ -1,5 +1,7 @@
 # Game Design Document — ColheitaFeliz (Codename)
 
+Atualização visual v2 (2026-10-28): a missão autoriza dois temas cosméticos e skin individual local, sem efeito na economia/eventos. Capacidade provisória passa a 16 parcelas/quatro iniciais, conservando IDs/custos antigos e migração aditiva; ver VISUAL_V2_REPORT.md. Pesca é expansão oficialmente planejada em FISHING_PLAN.md, sem implementação neste trabalho. Não há nova aprovação artística presumida.
+
 Estado atual (2026-10-28, ADR-021): a missão autônoma autoriza uma versão integrada. Direção oficial 2D estilizada acolhedora. Agricultura, produção e social local compartilham um domínio; regras novas e limites estão em INTEGRATED_PRODUCT_SPEC.md e INTEGRATED_DELIVERY.md. Adendos e aprovações anteriores abaixo são históricos, não instruções para abrir cenas isoladas.
 
 

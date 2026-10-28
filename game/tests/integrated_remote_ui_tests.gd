@@ -25,6 +25,10 @@ func run() -> void:
 	var scene = load("res://scenes/main/farm.tscn").instantiate()
 	scene.injected_service = one; viewport.add_child(scene)
 	await process_frame
+	var before: Dictionary = one.snapshot()
+	scene.world.set_theme("halloween")
+	scene.world.set_skin("building.house","house.sky")
+	check(before==one.snapshot(),"Remote appearance preserves authoritative economy")
 	scene.open_social(); await process_frame
 	check(scene.panel!=null,"Native social panel opens")
 	scene.social_panel.visit(two.player.id); await process_frame
