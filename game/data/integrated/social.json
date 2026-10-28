@@ -9,5 +9,6 @@
   "helps_per_day": 20,
   "animal_helps_per_day": 10,
   "mischief_per_day": 3,
-  "invite_lifetime_seconds": 604800
+  "invite_lifetime_seconds": 604800,
+  "minimum_theft_target_level": 2
 }

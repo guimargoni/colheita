@@ -1,5 +1,5 @@
 """Real loopback integration tests. Never logs or commits account credentials."""
-import argparse,json,secrets,socket,time
+import argparse,json,secrets,socket,time,urllib.request
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--port',type=int,default=16662);a=p.parse_args()
 serial=0;checks=0
@@ -28,12 +28,16 @@ id1,id2=r1['player']['id'],r2['player']['id']; ck(id1!=id2,'distinct identities'
 ck(rpc('0'*64,'snapshot')['error']=='unauthorized','bad token denied')
 ck(not rpc(t1,'visit',{'target':id2})['ok'],'nonfriend cannot visit')
 ck(rpc(t1,'discover',{'query':'QA'})['ok'],'independent discovery')
+ck(rpc(t1,'friend_request',{'target':id2})['ok'],'create cancelable request')
+ck(not rpc(t2,'friend_cancel',{'target':id1})['ok'],'only sender can cancel request')
+ck(rpc(t1,'friend_cancel',{'target':id2})['ok'],'sender cancels request')
 code=rpc(t1,'invite_create',request_id='invite.first')['code']
 ck(rpc(t1,'invite_revoke',{'code':code})['ok'],'invite revoke')
 ck(not rpc(t2,'invite_redeem',{'code':code})['ok'],'revoked invite cannot be redeemed')
-code=rpc(t1,'invite_create')['code']
-ck(rpc(t2,'invite_redeem',{'code':'colheita://invite/'+code},'redeem.same')['ok'],'redeem link creates pending request')
-ck(rpc(t2,'invite_redeem',{'code':'colheita://invite/'+code},'redeem.same').get('replayed'),'invite retry replays')
+invitation=rpc(t1,'invite_create');code=invitation['code']
+ck(urllib.request.urlopen(invitation['link'],timeout=4).status==200,'actual browser invitation page')
+ck(rpc(t2,'invite_redeem',{'code':invitation['link']},'redeem.same')['ok'],'redeem link creates pending request')
+ck(rpc(t2,'invite_redeem',{'code':invitation['link']},'redeem.same').get('replayed'),'invite retry replays')
 ck(not rpc(t2,'visit',{'target':id1})['ok'],'request is not friendship until accepted')
 ck(rpc(t1,'friend_accept',{'target':id2})['ok'],'owner accepts friendship')
 visit=rpc(t2,'visit',{'target':id1});ck(visit['ok'] and 'receipts' not in visit and 'tokens' not in visit and 'inventory' not in visit,'visit omits private inventory and credentials')
@@ -53,6 +57,7 @@ for batch in range(3):
   ck(rpc(t2,'help',{'target':id1,'plot_id':plots[0],'action':'water'},'help.first').get('replayed'),'help replay')
   ck(not rpc(t2,'mischief',{'target':id1,'plot_id':plots[1]})['ok'],'mischief opt-out enforced')
  time.sleep(2.3)
+ if batch==0:ck(rpc(t2,'steal',{'target':id1,'plot_id':plots[0]})['error']=='beginner_protected','beginner farms protected')
  for plot,cycle in zip(plots,cycles):ck(farm(t1,'harvest',plot_id=plot,cycle_id=cycle)['ok'],'server readiness/harvest')
  ck(farm(t1,'sell_products',items={'crop.carrot':8})['ok'],'actual earned revenue')
 ck(snap(t1)['economy']['xp']==12,'no XP from social or purchasing')

@@ -26,6 +26,7 @@ static func valid(f: Dictionary, config: Dictionary) -> bool:
 	var taken: Array = []
 	for d in f.decorations.values():
 		if not d is Dictionary or not config.decorations.has(d.get("kind")) or not E.integer(d.get("slot"),SLOTS.size()-1) or d.slot in taken: return false
+		if not E.integer(d.get("orientation",0),1): return false
 		taken.append(d.slot)
 	return true
 static func apply(state: Dictionary, c: Dictionary, config: Dictionary, economy: Dictionary, now: float) -> Dictionary:
@@ -43,6 +44,10 @@ static func apply(state: Dictionary, c: Dictionary, config: Dictionary, economy:
 			var rule: Dictionary = config.producers[kind]
 			if state.economy.level<rule.level: return {"ok":false,"error":"level_locked"}
 			if f.producers.size()>=12: return {"ok":false,"error":"capacity"}
+			var same_kind: int = 0
+			for producer in f.producers.values():
+				if producer.kind==kind: same_kind += 1
+			if same_kind>=int(rule.get("max_per_farm",1)): return {"ok":false,"error":"producer_already_owned"}
 			cost = int(rule.price)
 			id = "producer."+str(int(f.next_object)); f.next_object += 1
 			f.producers[id] = {"kind":kind,"cycle":0,"ready_at":0}
@@ -88,6 +93,9 @@ static func apply(state: Dictionary, c: Dictionary, config: Dictionary, economy:
 			for key in f.decorations:
 				if key!=id and f.decorations[key].slot==c.slot: return {"ok":false,"error":"slot_occupied"}
 			f.decorations[id].slot = int(c.slot)
+		"rotate_decoration":
+			if not f.decorations.has(id) or f.decorations[id].kind!="fence": return {"ok":false,"error":"rotation_unavailable"}
+			f.decorations[id].orientation = 1-int(f.decorations[id].get("orientation",0))
 		"build":
 			if not config.buildings.has(kind) or state.economy.level<config.buildings[kind].level: return {"ok":false,"error":"building_locked"}
 			if f.buildings.get(kind,0)>=config.buildings[kind].max: return {"ok":false,"error":"building_complete"}

@@ -161,14 +161,22 @@ func social(actor: String, method: String,args: Dictionary) -> Dictionary:
 			var code: Variant = args.get("code","")
 			if not code is String: return denied("invalid_invite")
 			code = code.trim_prefix("colheita://invite/")
+			if code.begins_with("http://") or code.begins_with("https://"): code = code.trim_suffix("/").get_slice("/",code.trim_suffix("/").get_slice_count("/")-1)
 			if not work.invites.has(code) or work.invites[code].revoked or work.invites[code].expires<Time.get_unix_time_from_system(): return denied("invite_expired_or_revoked")
 			target = work.invites[code].owner
 			if not peer_allowed(actor,target): return denied("interaction_denied")
 			if work.friends[actor].has(target): return denied("already_friends")
+			if work.requests.has(actor+"/"+target): return denied("request_pending")
+			if not cap(actor+"/friend_requests",1,20): return denied("friend_request_limit")
 			work.requests[actor+"/"+target] = {"from":actor,"to":target}
 		"friend_request":
 			if not peer_allowed(actor,target) or work.friends[actor].has(target): return denied("interaction_denied")
+			if work.requests.has(actor+"/"+target): return denied("request_pending")
+			if not cap(actor+"/friend_requests",1,20): return denied("friend_request_limit")
 			work.requests[actor+"/"+target] = {"from":actor,"to":target}
+		"friend_cancel":
+			if not work.requests.has(actor+"/"+target): return denied("request_unavailable")
+			work.requests.erase(actor+"/"+target)
 		"friend_accept","friend_reject":
 			var id: String = target+"/"+actor
 			if not peer_allowed(actor,target) or not work.requests.has(id): return denied("request_unavailable")
@@ -258,6 +266,7 @@ func farm_social(actor: String,target: String,method: String,args: Dictionary) -
 		other.state.revision += 1; work.farms[target] = other.state
 		activity(actor,target,"mischief",kind)
 		return {"ok":true,"action":"mischief"}
+	if other.state.economy.level<int(social_config.minimum_theft_target_level): return denied("beginner_protected")
 	var crop: Dictionary = other.catalog.entries[plot.crop_id]
 	if other.Repeat.view(plot,crop,now()).state!="mature": return denied("not_mature")
 	if now()-float(work.last_theft.get(actor,0))<float(social_config.theft_cooldown_seconds): return denied("theft_cooldown")
