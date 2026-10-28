@@ -41,7 +41,7 @@ for asset in runtime['assets']:
     is_pilot = path.startswith('game/assets/art/g05r_pilot/')
     is_g06 = path.startswith('game/assets/art/g06/')
     is_g12 = path.startswith('game/assets/art/g12/')
-    is_g15 = path.startswith('game/assets/art/g15/') or path.startswith('game/assets/art/integrated/')
+    is_g15 = path.startswith('game/assets/art/g15/') or path.startswith('game/assets/art/integrated/') or path.startswith('game/assets/art/visual_v2/')
     check((path.startswith('game/assets/art/g05/') or is_pilot or is_g06 or is_g12 or is_g15) and '..' not in Path(path).parts, 'Invalid runtime path')
     statuses = ['ART_REVIEW','FINAL_CANDIDATE'] if is_pilot else ['ART_REVIEW']
     check(asset['status'] in statuses and not asset['release_approved'], 'Unexpected art promotion')

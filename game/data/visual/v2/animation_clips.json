@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "status": "ART_REVIEW_NOT_FINAL_LOCOMOTION",
+  "animals": {
+    "chicken": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "durations": [
+          1.1,
+          0.15,
+          0.6,
+          0.2
+        ]
+      },
+      "feed": {
+        "frames": [
+          1,
+          2,
+          1
+        ],
+        "durations": [
+          0.3,
+          0.3,
+          0.2
+        ]
+      },
+      "collect": {
+        "frames": [
+          2,
+          0,
+          1
+        ],
+        "durations": [
+          0.2,
+          0.4,
+          0.2
+        ]
+      },
+      "move": {
+        "fallback": "idle",
+        "status": "PENDING_AUTHORED_WALK"
+      },
+      "ready": {
+        "fallback": "idle"
+      },
+      "react": {
+        "fallback": "idle"
+      }
+    },
+    "cow": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "durations": [
+          2.5,
+          0.35,
+          1.8,
+          0.5
+        ]
+      },
+      "feed": {
+        "frames": [
+          1,
+          2,
+          1
+        ],
+        "durations": [
+          0.3,
+          0.3,
+          0.2
+        ]
+      },
+      "collect": {
+        "frames": [
+          2,
+          0,
+          1
+        ],
+        "durations": [
+          0.2,
+          0.4,
+          0.2
+        ]
+      },
+      "move": {
+        "fallback": "idle",
+        "status": "PENDING_AUTHORED_WALK"
+      },
+      "ready": {
+        "fallback": "idle"
+      },
+      "react": {
+        "fallback": "idle"
+      }
+    },
+    "sheep": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "durations": [
+          1.8,
+          0.22,
+          1.1,
+          0.35
+        ]
+      },
+      "feed": {
+        "frames": [
+          1,
+          2,
+          1
+        ],
+        "durations": [
+          0.3,
+          0.3,
+          0.2
+        ]
+      },
+      "collect": {
+        "frames": [
+          2,
+          0,
+          1
+        ],
+        "durations": [
+          0.2,
+          0.4,
+          0.2
+        ]
+      },
+      "move": {
+        "fallback": "idle",
+        "status": "PENDING_AUTHORED_WALK"
+      },
+      "ready": {
+        "fallback": "idle"
+      },
+      "react": {
+        "fallback": "idle"
+      }
+    },
+    "dog": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "durations": [
+          2.1,
+          0.3,
+          1.5,
+          0.2
+        ]
+      },
+      "feed": {
+        "frames": [
+          1,
+          2,
+          1
+        ],
+        "durations": [
+          0.3,
+          0.3,
+          0.2
+        ]
+      },
+      "collect": {
+        "frames": [
+          2,
+          0,
+          1
+        ],
+        "durations": [
+          0.2,
+          0.4,
+          0.2
+        ]
+      },
+      "move": {
+        "fallback": "idle",
+        "status": "PENDING_AUTHORED_WALK"
+      },
+      "ready": {
+        "fallback": "idle"
+      },
+      "react": {
+        "fallback": "idle"
+      }
+    }
+  }
+}

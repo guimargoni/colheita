@@ -19,7 +19,7 @@ var refresh_age: float = 0
 var stroke_intent: String = ""
 const Gesture = preload("res://scripts/prototype/garden_gesture.gd")
 const View = preload("res://scripts/visual/integrated/farm_view.gd")
-const Kit = preload("res://scripts/ui/g1v/living_kit.gd")
+const Kit = preload("res://scripts/ui/integrated/game_kit.gd")
 const Audio = preload("res://scripts/ui/integrated/audio.gd")
 const EconomyUI = preload("res://scripts/ui/integrated/farm_ui.gd")
 const LandUI = preload("res://scripts/ui/land/land_ui.gd")
@@ -131,6 +131,7 @@ func _process(delta: float) -> void:
 		if not service.error.is_empty():
 			status.text = "Reconectando ao servidor local…" if service.has_method("social") else "Não foi possível abrir o save. Reinicie pelo launcher."
 	economy_ui.tick(delta)
+	economy_ui.fit_open_panel()
 	gesture.tick(delta)
 	if is_instance_valid(accent):
 		accent_age += delta
@@ -352,10 +353,16 @@ func reload_save() -> void:
 	status.text = tr("Save reaberto") if service.error.is_empty() else tr("Falha no save")+": "+service.error
 
 func open_care_tools() -> void:
-	cancel_input()
-	close_studio()
-	panel = ToolsPanel.create(kit,logical,service,select_care,close_studio)
-	panel.add_theme_stylebox_override("panel",kit.surface(Kit.PAPER))
+	var body: VBoxContainer = economy_ui.shell("Cuidar da plantação")
+	var row := HBoxContainer.new(); body.add_child(row)
+	kit.illustration(row,kit.item_icon("Cuidados"),96)
+	economy_ui.button(row,"Regar",select_care.bind("water"))
+	for entry in [["Remover ervas","remove_weeds"],["Remover pragas","remove_pests"]]:
+		economy_ui.button(body,entry[0],select_care.bind(entry[1]))
+	for id in service.items:
+		var item: Dictionary = service.items[id]
+		var count: int = int(service.state.inventory.fertilizers.get(id,0))
+		economy_ui.button(body,item.name+" · "+str(count)+(" · 1 aplicação" if item.rare else ""),select_care.bind(id),id=="fertilizer.social" or count<1)
 
 func select_care(tool: String) -> void:
 	cancel_input()
@@ -409,35 +416,40 @@ func layout() -> void:
 	kit.intensity = world.intensity
 	world.hybrid = kit.hybrid
 	container.material.set_shader_parameter("hybrid",kit.hybrid)
+	kit.appearance = world.appearance
+	kit.accent = world.appearance.palette("accent")
+	kit.paper = world.appearance.palette("paper")
 	var header := Panel.new()
-	header.position = Vector2(24,24)
-	header.size = Vector2(1032 if portrait else 660,136 if portrait else 112)
+	header.position = Vector2(24,20); header.size = Vector2(680 if portrait else 560,100)
 	header.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	header.add_theme_stylebox_override("panel",kit.surface(Color("244f47")))
+	header.add_theme_stylebox_override("panel",kit.surface(kit.accent))
 	hud.add_child(header)
 	economy_ui.build_header()
-	seed_label = kit.label(demo.tool_summary(),Rect2(44,166 if portrait else 148,900,42),26 if portrait else 23)
-	kit.label("COLHEITA  /  "+(str(service.player.name) if service.has_method("social") else "minha fazenda")+(" · DEV 60×" if fast else ""),Rect2(44,214 if portrait else 26,990 if portrait else 1000,38),22,Kit.INK)
-	if not portrait:
-		# Keep the edition title outside the wallet surface.
-		hud.get_child(hud.get_child_count()-1).position = Vector2(720,30)
-	kit.button("Loja",Rect2(24 if portrait else logical.x-350,logical.y-288 if portrait else 24,220 if portrait else 150,96 if portrait else 72),economy_ui.open_shop)
-	kit.button("Fazenda",Rect2(262 if portrait else logical.x-182,logical.y-288 if portrait else 24,220 if portrait else 150,96 if portrait else 72),open_farm_hub)
-	kit.button("Ajustes",Rect2(500 if portrait else logical.x-350,logical.y-288 if portrait else 112,250 if portrait else 318,96 if portrait else 64),open_studio)
-	kit.button("Amigos",Rect2(768 if portrait else logical.x-350,logical.y-288 if portrait else 192,288 if portrait else 150,96 if portrait else 64),open_social)
-	var y: float = logical.y-160 if portrait else logical.y-100
-	var width: float = 244 if portrait else 210
-	var x: float = 24 if portrait else (logical.x-4*(width+18))/2
+	seed_label = kit.label(demo.tool_summary(),Rect2(40,128,740,34),22)
+	seed_label.visible = false
+	var side: float = 104 if portrait else 88
+	var x: float = logical.x-side-24
+	for entry in [["Loja",economy_ui.open_shop],["Fazenda",open_farm_hub],["Amigos",open_social],["Ajustes",open_studio]]:
+		kit.dock(entry[0],Rect2(x,24 if portrait else 20,side,100 if portrait else 88),entry[1])
+		x -= side+12
+	# In portrait secondary actions sit on a compact right rail, freeing the farm.
+	if portrait:
+		var n: int = 0
+		for child in hud.get_children():
+			if child is Button:
+				child.position = Vector2(logical.x-128,144+n*116); n += 1
+	var y: float = logical.y-128 if portrait else logical.y-112
+	var width: float = 140 if portrait else 110
+	x = (logical.x-4*(width+14))/2
 	for entry in [["Semear","seed"],["Cuidados","care_menu"],["Câmera","camera"]]:
-		kit.button(entry[0],Rect2(x,y,width,124 if portrait else 76),choose.bind(entry[1]),demo.tool==entry[1])
-		x += width+18
-	kit.button("Inventário",Rect2(x,y,width,124 if portrait else 76),open_inventory)
-	status = kit.label("Plante, cuide e colha · cada terreno importa",Rect2(44,logical.y-360 if portrait else logical.y-148,990 if portrait else 900,48),24 if portrait else 22)
+		kit.dock(entry[0],Rect2(x,y,width,108 if portrait else 96),choose.bind(entry[1]),demo.tool==entry[1])
+		x += width+14
+	kit.dock("Inventário",Rect2(x,y,width,108 if portrait else 96),open_inventory)
+	status = kit.label("",Rect2(40,logical.y-178 if portrait else logical.y-152,logical.x-80,40),22)
 	status.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
-	metrics_label = kit.label("",Rect2(44,logical.y-410 if portrait else logical.y-194,990,40),20,Color("3f6054"))
-	metrics_label.visible = show_metrics
-	var top: float = 230 if portrait else 132
-	var footer: float = 250 if portrait else 84
+	metrics_label = kit.label("",Rect2(40,160,800,32),18,Color("3f6054")); metrics_label.visible = show_metrics
+	var top: float = 130
+	var footer: float = 144 if portrait else 126
 	area = Rect2(Vector2(0,top)*ui_scale,Vector2(logical.x,logical.y-top-footer)*ui_scale)
 	context_card = Tooltip.new()
 	context_card.add_theme_stylebox_override("panel",kit.surface(Kit.PAPER))
@@ -527,7 +539,7 @@ func feature_action(type: String, args: Dictionary = {}) -> Dictionary:
 	var result: Dictionary = service.execute(args)
 	if result.ok:
 		demo.refresh()
-		if type in ["producer_feed","producer_collect"]: world.producer_feedback(str(args.get("id","")))
+		if type in ["producer_feed","producer_collect"]: world.producer_feedback(str(args.get("id","")),"feed" if type=="producer_feed" else "collect")
 		status.text = "Ação salva"
 		economy_ui.note = "Ação salva"
 		economy_ui.burst("+%d XP"%int(result.xp) if result.get("xp",0)>0 else "Pronto!")
@@ -548,6 +560,10 @@ func _exit_tree() -> void:
 func load_preferences() -> void:
 	var config := ConfigFile.new()
 	if config.load("user://integrated_preferences.cfg")!=OK: return
+	world.appearance.set_theme(str(config.get_value("appearance","theme","standard")))
+	var saved_skins = config.get_value("appearance","skins",{})
+	if saved_skins is Dictionary:
+		for entity in saved_skins: world.appearance.set_skin(entity,str(saved_skins[entity]))
 	var value = config.get_value("visual","intensity",0.65)
 	if (value is int or value is float) and is_finite(float(value)): world.intensity = clampf(float(value),0,1)
 	var reduced = config.get_value("visual","reduced",false)
@@ -556,6 +572,8 @@ func load_preferences() -> void:
 	if (value is int or value is float) and is_finite(float(value)): audio.gain = clampf(float(value),0,1)
 func save_preferences() -> void:
 	var config := ConfigFile.new()
+	config.set_value("appearance","theme",world.appearance.theme)
+	config.set_value("appearance","skins",world.appearance.skins)
 	config.set_value("visual","intensity",world.intensity)
 	config.set_value("visual","reduced",not world.motion)
 	config.set_value("audio","gain",audio.gain)
@@ -566,3 +584,18 @@ func open_credits() -> void:
 	economy_ui.label(body,"Arte 2D original produzida com assistência de IA para este projeto. Sprites e animações continuam em revisão artística.")
 	economy_ui.label(body,"Efeitos sonoros: Kenney · Interface Sounds e Impact Sounds · licença CC0 1.0. Obrigado, Kenney!")
 	economy_ui.label(body,"Música e ambiência finais ainda não produzidas. Codinome Colheita; identidade comercial sujeita a revisão.")
+
+func open_appearance() -> void:
+	var body: VBoxContainer = economy_ui.shell("Ateliê de aparências")
+	for id in world.appearance.pack.themes:
+		economy_ui.button(body,world.appearance.pack.themes[id].name+(" · ativo" if world.appearance.theme==id else ""),change_theme.bind(id))
+	economy_ui.label(body,"Sua casa · cosmético local, sem custo ou efeito na produção")
+	var row := HBoxContainer.new(); body.add_child(row)
+	kit.illustration(row,world.appearance.preview("environment.house","building.house"),160)
+	economy_ui.button(body,"Telhado terracota",change_house_skin.bind(""))
+	economy_ui.button(body,"Telhado azul",change_house_skin.bind("house.sky"))
+	economy_ui.label(body,"Halloween é visual. Não altera calendário, recompensas, compras ou visitas.")
+func change_theme(id: String) -> void:
+	cancel_input(); world.set_theme(id); save_preferences(); layout(); open_appearance()
+func change_house_skin(id: String) -> void:
+	cancel_input(); world.set_skin("building.house",id); save_preferences(); layout(); open_appearance()

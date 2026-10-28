@@ -24,11 +24,12 @@ func open(section: String = "Animais") -> void:
 		button(body,"Comprar 5 alimentos · %d moedas"%(int(config.feed_price)*5),act.bind("buy_feed",{"quantity":5}))
 		for kind in config.producers:
 			var rule: Dictionary = config.producers[kind]
-			ui.label(body,"%s · %d moedas · nível %d · %d s · %s"%[rule.name,int(rule.price),int(rule.level),int(rule.duration),rule.product_name])
+			var card: VBoxContainer = ui.item_card(body,scene.world.appearance.preview("environment."+kind),rule.name)
+			ui.label(card,"%d moedas · nível %d"%[int(rule.price),int(rule.level)])
 			var owned: int = 0
 			for producer in f.producers.values():
 				if producer.kind==kind: owned += 1
-			button(body,"Adquirir "+rule.name,act.bind("buy_producer",{"kind":kind}),s.economy.level<rule.level or owned>=int(rule.get("max_per_farm",1)))
+			button(card,"Adquirir "+rule.name,act.bind("buy_producer",{"kind":kind}),s.economy.level<rule.level or owned>=int(rule.get("max_per_farm",1)))
 		for id in f.producers:
 			var producer: Dictionary = f.producers[id]
 			var rule: Dictionary = config.producers[producer.kind]
@@ -59,7 +60,8 @@ func open(section: String = "Animais") -> void:
 		ui.label(body,"Escolha um item e depois um lugar na borda da propriedade. Os espaços são exclusivos e persistentes.")
 		for kind in config.decorations:
 			var rule: Dictionary = config.decorations[kind]
-			button(body,"%s · %d moedas"%[rule.name,int(rule.price)],place_options.bind(kind,""),s.economy.level<rule.level)
+			var card: VBoxContainer = ui.item_card(body,scene.world.appearance.preview("environment.well" if kind=="well" else "decor."+kind),rule.name)
+			button(card,"%d moedas"%int(rule.price),place_options.bind(kind,""),s.economy.level<rule.level)
 		for id in f.decorations:
 			var item: Dictionary = f.decorations[id]
 			button(body,"Mover %s · posição %d"%[config.decorations[item.kind].name,int(item.slot)+1],place_options.bind(item.kind,id))
@@ -67,8 +69,9 @@ func open(section: String = "Animais") -> void:
 	elif section=="Construções":
 		for kind in config.buildings:
 			var rule: Dictionary = config.buildings[kind]
-			ui.label(body,"%s · etapa %d/%d"%[rule.name,int(f.buildings.get(kind,0)),int(rule.max)])
-			button(body,"Construir / melhorar · %d moedas"%int(rule.price),act.bind("build",{"kind":kind}),s.economy.level<rule.level or f.buildings.get(kind,0)>=rule.max)
+			var card: VBoxContainer = ui.item_card(body,scene.world.appearance.preview("environment.house" if kind=="house" else "decor.workshop","building."+kind),rule.name)
+			ui.label(card,"Etapa %d/%d"%[int(f.buildings.get(kind,0)),int(rule.max)])
+			button(card,"Construir / melhorar · %d moedas"%int(rule.price),act.bind("build",{"kind":kind}),s.economy.level<rule.level or f.buildings.get(kind,0)>=rule.max)
 		ui.label(body,"Buquê: 3 rosas guardadas · precisa de ateliê. Produtos podem ser vendidos ou presenteados.")
 		button(body,"Montar buquê",act.bind("craft_bouquet"))
 		if f.goods.get("bouquet",0)>0: button(body,"Vender 1 buquê · +%d moedas"%int(config.bouquet.sell),act.bind("sell_goods",{"kind":"bouquet","quantity":1}))
@@ -78,13 +81,28 @@ func open(section: String = "Animais") -> void:
 	elif section=="Social":
 		scene.open_social()
 func place_options(kind: String, id: String) -> void:
+	var ui: RefCounted = scene.economy_ui
 	var body: VBoxContainer = scene.economy_ui.shell("Escolher lugar · "+scene.service.features_config.decorations[kind].name)
 	var slots: Array = preload("res://scripts/domain/integrated/features.gd").SLOTS
+	ui.label(body,"Escolha uma posição livre no mapa. A compra será salva imediatamente.")
+	var board := Control.new(); board.custom_minimum_size = Vector2(820,440); body.add_child(board)
+	var container := SubViewportContainer.new(); container.size = Vector2(820,440)
+	container.mouse_filter = Control.MOUSE_FILTER_IGNORE; board.add_child(container)
+	var viewport := SubViewport.new(); viewport.size = Vector2i(820,440); viewport.disable_3d = true
+	viewport.render_target_update_mode = SubViewport.UPDATE_ALWAYS; container.add_child(viewport)
+	var preview := preload("res://scripts/visual/integrated/farm_view.gd").new()
+	preview.demo = scene.demo; preview.definition = preview.definition.duplicate(true); preview.configure(); preview.appearance = scene.world.appearance
+	preview.definition.plot_positions = scene.demo.plots.map(func(p: Dictionary) -> Array: return p.grid)
+	preview.scale = Vector2.ONE*1.35; preview.position = Vector2(410,210); preview.motion = false
+	viewport.add_child(preview)
 	for slot in range(slots.size()):
 		var occupied: bool = false
 		for item in scene.service.state.features.decorations.values():
 			if item.slot==slot: occupied = true
-		button(body,"Posição %d · (%d, %d)"%[slot+1,int(slots[slot][0]),int(slots[slot][1])],act.bind("buy_decoration" if id.is_empty() else "move_decoration",{"kind":kind,"id":id,"slot":slot}),occupied)
+		var point: Vector2 = preview.project(Vector2(slots[slot][0],slots[slot][1]))*1.35+preview.position
+		var b: Button = scene.kit.button(str(slot+1),Rect2(point-Vector2(25,25),Vector2(50,50)),act.bind("buy_decoration" if id.is_empty() else "move_decoration",{"kind":kind,"id":id,"slot":slot}),false,board)
+		b.disabled = occupied; b.tooltip_text = "Ocupado" if occupied else "Colocar aqui"
+
 
 
 func producer_action(id: String) -> void:

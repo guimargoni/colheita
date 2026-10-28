@@ -146,7 +146,7 @@
     },
     {
       "id": "crop.bean",
-      "name": "FeijÃ£o",
+      "name": "Feijão",
       "category": "vegetable",
       "seed_price": 12,
       "growth_seconds": 600,
@@ -259,7 +259,7 @@
     },
     {
       "id": "crop.haunted_pumpkin",
-      "name": "AbÃ³bora AmaldiÃ§oada",
+      "name": "Abóbora Amaldiçoada",
       "category": "special",
       "seed_price": 10,
       "growth_seconds": 3600,

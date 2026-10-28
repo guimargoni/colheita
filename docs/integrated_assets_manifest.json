@@ -105,6 +105,34 @@
       "redistribution_allowed": "ORIGINAL_OUTPUT_EMBEDDING_SUBJECT_TO_TERMS",
       "modification_allowed": "SUBJECT_TO_SERVICE_TERMS",
       "source_original": "C:\\Users\\guilh\\.codex\\generated_images\\01a15fca-1b40-7bf0-9361-e1db11aceaf7\\exec-04f21d07-3a87-4ab8-9fed-c498b0a8b8a9.png"
+    },
+    {
+      "id": "visual.v2.world",
+      "file_path": "game/assets/art/visual_v2/world_v2.png",
+      "sha256": "a4b1e653544c7bdbfacd0000f5fb207ffc7344a1335cdc1f1a2a729780fb0ae5",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted illustration; built-in image_gen",
+      "license_record": "docs/INTEGRATED_ART_PROVENANCE.md",
+      "prompt": "docs/VISUAL_V2_PROMPTS.json#world"
+    },
+    {
+      "id": "visual.v2.icons",
+      "file_path": "game/assets/art/visual_v2/icons_v2.png",
+      "sha256": "47dde99a0c42be9d106d4b2a3965bd7e4c98ee38e9beafed137200de293b6be0",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "ART_REVIEW",
+      "release_approved": false,
+      "origin": "Original AI-assisted illustration; built-in image_gen",
+      "license_record": "docs/INTEGRATED_ART_PROVENANCE.md",
+      "prompt": "docs/VISUAL_V2_PROMPTS.json#icons"
     }
   ]
 }

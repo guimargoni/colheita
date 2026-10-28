@@ -1,0 +1,1881 @@
+{
+  "version": "farm.appearance.v2",
+  "assets": {
+    "environment.house": {
+      "rect": [
+        0,
+        0,
+        377,
+        400
+      ],
+      "size": [
+        115,
+        122
+      ],
+      "pivot": [
+        57.5,
+        120
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.house.legacy",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.tree": {
+      "rect": [
+        407,
+        0,
+        365,
+        398
+      ],
+      "size": [
+        68,
+        78
+      ],
+      "pivot": [
+        34.0,
+        76
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.pine": {
+      "rect": [
+        787,
+        0,
+        310,
+        398
+      ],
+      "size": [
+        48,
+        78
+      ],
+      "pivot": [
+        24.0,
+        76
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.bush": {
+      "rect": [
+        1097,
+        119,
+        351,
+        280
+      ],
+      "size": [
+        35,
+        28
+      ],
+      "pivot": [
+        17.5,
+        26
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.coop": {
+      "rect": [
+        1100,
+        0,
+        348,
+        405
+      ],
+      "size": [
+        65,
+        76
+      ],
+      "pivot": [
+        32.5,
+        74
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.cow": {
+      "rect": [
+        402,
+        399,
+        362,
+        314
+      ],
+      "size": [
+        42,
+        38
+      ],
+      "pivot": [
+        21.0,
+        36
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.hive": {
+      "rect": [
+        781,
+        398,
+        318,
+        320
+      ],
+      "size": [
+        42,
+        43
+      ],
+      "pivot": [
+        21.0,
+        41
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.sheep": {
+      "rect": [
+        1108,
+        408,
+        340,
+        302
+      ],
+      "size": [
+        37,
+        33
+      ],
+      "pivot": [
+        18.5,
+        31
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.chicken": {
+      "rect": [
+        35,
+        718,
+        296,
+        338
+      ],
+      "size": [
+        23,
+        25
+      ],
+      "pivot": [
+        11.5,
+        23
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.dog": {
+      "rect": [
+        350,
+        707,
+        357,
+        350
+      ],
+      "size": [
+        30,
+        31
+      ],
+      "pivot": [
+        15.0,
+        29
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.bouquet": {
+      "rect": [
+        731,
+        728,
+        368,
+        330
+      ],
+      "size": [
+        27,
+        28
+      ],
+      "pivot": [
+        13.5,
+        26
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.well": {
+      "rect": [
+        1115,
+        710,
+        333,
+        357
+      ],
+      "size": [
+        40,
+        45
+      ],
+      "pivot": [
+        20.0,
+        43
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.bee": {
+      "rect": [
+        1031,
+        416,
+        41,
+        43
+      ],
+      "size": [
+        8,
+        8
+      ],
+      "pivot": [
+        4,
+        4
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.carrot_mature": {
+      "rect": [
+        25,
+        0,
+        418,
+        250
+      ],
+      "size": [
+        32,
+        30
+      ],
+      "pivot": [
+        16.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.strawberry_mature": {
+      "rect": [
+        443,
+        13,
+        432,
+        233
+      ],
+      "size": [
+        32,
+        30
+      ],
+      "pivot": [
+        16.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.wheat_mature": {
+      "rect": [
+        942,
+        0,
+        376,
+        250
+      ],
+      "size": [
+        32,
+        30
+      ],
+      "pivot": [
+        16.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.bean_mature": {
+      "rect": [
+        1360,
+        8,
+        384,
+        242
+      ],
+      "size": [
+        32,
+        30
+      ],
+      "pivot": [
+        16.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.rose_mature": {
+      "rect": [
+        31,
+        250,
+        388,
+        250
+      ],
+      "size": [
+        32,
+        30
+      ],
+      "pivot": [
+        16.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.pumpkin_mature": {
+      "rect": [
+        450,
+        264,
+        431,
+        224
+      ],
+      "size": [
+        32,
+        30
+      ],
+      "pivot": [
+        16.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.apple_mature": {
+      "rect": [
+        896,
+        250,
+        433,
+        250
+      ],
+      "size": [
+        40,
+        42
+      ],
+      "pivot": [
+        20.0,
+        40
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.seed": {
+      "rect": [
+        1331,
+        250,
+        302,
+        250
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.carrot_growing": {
+      "rect": [
+        124,
+        500,
+        319,
+        167
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.strawberry_growing": {
+      "rect": [
+        443,
+        501,
+        408,
+        163
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.wheat_growing": {
+      "rect": [
+        896,
+        500,
+        416,
+        167
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.bean_growing": {
+      "rect": [
+        1380,
+        500,
+        368,
+        167
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.rose_growing": {
+      "rect": [
+        113,
+        667,
+        330,
+        196
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.pumpkin_growing": {
+      "rect": [
+        443,
+        672,
+        428,
+        199
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.apple_growing": {
+      "rect": [
+        900,
+        667,
+        390,
+        220
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "crops.soil": {
+      "rect": [
+        1346,
+        667,
+        352,
+        202
+      ],
+      "size": [
+        64,
+        33
+      ],
+      "pivot": [
+        32,
+        16
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "center"
+    },
+    "decor.bench": {
+      "rect": [
+        20,
+        46,
+        444,
+        375
+      ],
+      "size": [
+        46,
+        34
+      ],
+      "pivot": [
+        23.0,
+        32
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "decor.fence": {
+      "rect": [
+        480,
+        46,
+        402,
+        367
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "pivot": [
+        20.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "decor.fence_y": {
+      "rect": [
+        935,
+        45,
+        410,
+        372
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "pivot": [
+        20.0,
+        28
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "decor.flowerpot": {
+      "rect": [
+        1380,
+        40,
+        390,
+        384
+      ],
+      "size": [
+        22,
+        24
+      ],
+      "pivot": [
+        11.0,
+        22
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "decor.path": {
+      "rect": [
+        16,
+        533,
+        452,
+        303
+      ],
+      "size": [
+        22,
+        12
+      ],
+      "pivot": [
+        11,
+        6
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "center"
+    },
+    "decor.workshop": {
+      "rect": [
+        745,
+        0,
+        355,
+        420
+      ],
+      "size": [
+        75,
+        89
+      ],
+      "pivot": [
+        37.5,
+        87
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "decor.arch": {
+      "rect": [
+        975,
+        427,
+        430,
+        438
+      ],
+      "size": [
+        48,
+        58
+      ],
+      "pivot": [
+        24.0,
+        56
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "decor.lamp": {
+      "rect": [
+        1428,
+        449,
+        302,
+        415
+      ],
+      "size": [
+        22,
+        39
+      ],
+      "pivot": [
+        11.0,
+        37
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.house.legacy": {
+      "rect": [
+        0,
+        0,
+        424,
+        394
+      ],
+      "size": [
+        108,
+        108
+      ],
+      "pivot": [
+        54.0,
+        106
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "house.sky": {
+      "rect": [
+        378,
+        0,
+        366,
+        400
+      ],
+      "size": [
+        115,
+        122
+      ],
+      "pivot": [
+        57.5,
+        120
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "decor.workshop.legacy": {
+      "rect": [
+        484,
+        426,
+        484,
+        440
+      ],
+      "size": [
+        70,
+        65
+      ],
+      "pivot": [
+        35.0,
+        63
+      ],
+      "texture": "res://assets/art/integrated/decor_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "environment.coop.legacy": {
+      "rect": [
+        0,
+        397,
+        402,
+        318
+      ],
+      "size": [
+        63,
+        48
+      ],
+      "pivot": [
+        31.5,
+        46
+      ],
+      "texture": "res://assets/art/integrated/environment_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "halloween.tree": {
+      "rect": [
+        0,
+        400,
+        378,
+        388
+      ],
+      "size": [
+        68,
+        78
+      ],
+      "pivot": [
+        34.0,
+        76
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "halloween.pine": {
+      "rect": [
+        380,
+        400,
+        360,
+        388
+      ],
+      "size": [
+        48,
+        78
+      ],
+      "pivot": [
+        24.0,
+        76
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "halloween.bush": {
+      "rect": [
+        744,
+        430,
+        354,
+        352
+      ],
+      "size": [
+        35,
+        28
+      ],
+      "pivot": [
+        17.5,
+        26
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "halloween.pumpkins": {
+      "rect": [
+        1100,
+        460,
+        348,
+        330
+      ],
+      "size": [
+        30,
+        28
+      ],
+      "pivot": [
+        15.0,
+        26
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "halloween.soil": {
+      "rect": [
+        0,
+        806,
+        398,
+        240
+      ],
+      "size": [
+        64,
+        33
+      ],
+      "pivot": [
+        32,
+        16
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "center"
+    },
+    "halloween.path": {
+      "rect": [
+        400,
+        806,
+        350,
+        238
+      ],
+      "size": [
+        22,
+        12
+      ],
+      "pivot": [
+        11,
+        6
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "center"
+    },
+    "halloween.lamp": {
+      "rect": [
+        800,
+        785,
+        225,
+        290
+      ],
+      "size": [
+        22,
+        39
+      ],
+      "pivot": [
+        11.0,
+        37
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "halloween.fence": {
+      "rect": [
+        1100,
+        806,
+        348,
+        254
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "pivot": [
+        20.0,
+        28
+      ],
+      "texture": "res://assets/art/visual_v2/world_v2.png",
+      "fallback": "environment.bush",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.chicken.frame.0": {
+      "rect": [
+        264,
+        7,
+        223,
+        240
+      ],
+      "size": [
+        23,
+        25
+      ],
+      "pivot": [
+        11.5,
+        23
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.chicken.frame.1": {
+      "rect": [
+        662,
+        31,
+        239,
+        216
+      ],
+      "size": [
+        23,
+        25
+      ],
+      "pivot": [
+        11.5,
+        23
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.chicken.frame.2": {
+      "rect": [
+        1063,
+        7,
+        212,
+        239
+      ],
+      "size": [
+        23,
+        25
+      ],
+      "pivot": [
+        11.5,
+        23
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.cow.frame.0": {
+      "rect": [
+        206,
+        246,
+        324,
+        264
+      ],
+      "size": [
+        42,
+        38
+      ],
+      "pivot": [
+        21.0,
+        36
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.cow.frame.1": {
+      "rect": [
+        615,
+        246,
+        321,
+        264
+      ],
+      "size": [
+        42,
+        38
+      ],
+      "pivot": [
+        21.0,
+        36
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.cow.frame.2": {
+      "rect": [
+        1015,
+        278,
+        348,
+        235
+      ],
+      "size": [
+        42,
+        38
+      ],
+      "pivot": [
+        21.0,
+        36
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.sheep.frame.0": {
+      "rect": [
+        222,
+        517,
+        268,
+        240
+      ],
+      "size": [
+        37,
+        33
+      ],
+      "pivot": [
+        18.5,
+        31
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.sheep.frame.1": {
+      "rect": [
+        629,
+        518,
+        275,
+        239
+      ],
+      "size": [
+        37,
+        33
+      ],
+      "pivot": [
+        18.5,
+        31
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.sheep.frame.2": {
+      "rect": [
+        1050,
+        512,
+        277,
+        245
+      ],
+      "size": [
+        37,
+        33
+      ],
+      "pivot": [
+        18.5,
+        31
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.dog.frame.0": {
+      "rect": [
+        209,
+        756,
+        262,
+        258
+      ],
+      "size": [
+        30,
+        31
+      ],
+      "pivot": [
+        15.0,
+        29
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.dog.frame.1": {
+      "rect": [
+        618,
+        756,
+        266,
+        258
+      ],
+      "size": [
+        30,
+        31
+      ],
+      "pivot": [
+        15.0,
+        29
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "animal.dog.frame.2": {
+      "rect": [
+        1059,
+        756,
+        260,
+        259
+      ],
+      "size": [
+        30,
+        31
+      ],
+      "pivot": [
+        15.0,
+        29
+      ],
+      "texture": "res://assets/art/integrated/animals_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact"
+    },
+    "ui.coin": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        50,
+        24,
+        325,
+        250
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.star": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        460,
+        30,
+        250,
+        237
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Loja": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        799,
+        15,
+        301,
+        259
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Invent\u00e1rio": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        1195,
+        5,
+        282,
+        264
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Semear": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        80,
+        284,
+        270,
+        244
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Cuidados": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        411,
+        277,
+        331,
+        245
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Decora\u00e7\u00e3o": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        794,
+        276,
+        311,
+        251
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Amigos": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        1149,
+        275,
+        380,
+        254
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Ajustes": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        77,
+        536,
+        270,
+        227
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.C\u00e2mera": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        398,
+        530,
+        350,
+        239
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.Fazenda": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        778,
+        527,
+        365,
+        240
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "",
+      "status": "ART_REVIEW"
+    },
+    "ui.Apar\u00eancia": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        1198,
+        538,
+        310,
+        225
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.egg": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        45,
+        779,
+        330,
+        230
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.honey": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        456,
+        769,
+        250,
+        234
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.milk": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        856,
+        768,
+        200,
+        239
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "ui.bouquet": {
+      "texture": "res://assets/art/visual_v2/icons_v2.png",
+      "rect": [
+        1180,
+        764,
+        350,
+        250
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "pivot": [
+        32,
+        32
+      ],
+      "anchor": "center",
+      "fallback": "ui.Fazenda",
+      "status": "ART_REVIEW"
+    },
+    "culture.crop.carrot": {
+      "rect": [
+        124,
+        500,
+        319,
+        167
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact",
+      "states": {
+        "seed": "crops.seed",
+        "growing": "crops.carrot_growing",
+        "mature": "crops.carrot_mature",
+        "regrowth": "crops.carrot_growing"
+      }
+    },
+    "culture.crop.strawberry": {
+      "rect": [
+        443,
+        501,
+        408,
+        163
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact",
+      "states": {
+        "seed": "crops.seed",
+        "growing": "crops.strawberry_growing",
+        "mature": "crops.strawberry_mature",
+        "regrowth": "crops.strawberry_growing"
+      }
+    },
+    "culture.crop.wheat": {
+      "rect": [
+        896,
+        500,
+        416,
+        167
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact",
+      "states": {
+        "seed": "crops.seed",
+        "growing": "crops.wheat_growing",
+        "mature": "crops.wheat_mature",
+        "regrowth": "crops.wheat_growing"
+      }
+    },
+    "culture.crop.bean": {
+      "rect": [
+        1380,
+        500,
+        368,
+        167
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact",
+      "states": {
+        "seed": "crops.seed",
+        "growing": "crops.bean_growing",
+        "mature": "crops.bean_mature",
+        "regrowth": "crops.bean_growing"
+      }
+    },
+    "culture.crop.rose": {
+      "rect": [
+        113,
+        667,
+        330,
+        196
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact",
+      "states": {
+        "seed": "crops.seed",
+        "growing": "crops.rose_growing",
+        "mature": "crops.rose_mature",
+        "regrowth": "crops.rose_growing"
+      }
+    },
+    "culture.crop.haunted_pumpkin": {
+      "rect": [
+        443,
+        672,
+        428,
+        199
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact",
+      "states": {
+        "seed": "crops.seed",
+        "growing": "crops.pumpkin_growing",
+        "mature": "crops.pumpkin_mature",
+        "regrowth": "crops.pumpkin_growing"
+      }
+    },
+    "culture.crop.apple": {
+      "rect": [
+        900,
+        667,
+        390,
+        220
+      ],
+      "size": [
+        23,
+        20
+      ],
+      "pivot": [
+        11.5,
+        18
+      ],
+      "texture": "res://assets/art/integrated/crops_v1.png",
+      "fallback": "",
+      "status": "ART_REVIEW",
+      "anchor": "ground_contact",
+      "states": {
+        "seed": "crops.seed",
+        "growing": "crops.apple_growing",
+        "mature": "crops.apple_mature",
+        "regrowth": "crops.apple_growing"
+      }
+    }
+  },
+  "themes": {
+    "standard": {
+      "name": "Fazenda Viva",
+      "accent": "397b69",
+      "paper": "fff4dc",
+      "ground": "ffffff",
+      "overrides": {}
+    },
+    "halloween": {
+      "name": "Noite de ab\u00f3boras",
+      "accent": "695074",
+      "paper": "fff1d9",
+      "ground": "c9ad8d",
+      "overrides": {
+        "environment.tree": "halloween.tree",
+        "environment.pine": "halloween.pine",
+        "environment.bush": "halloween.bush",
+        "crops.soil": "halloween.soil",
+        "decor.path": "halloween.path",
+        "decor.lamp": "halloween.lamp",
+        "decor.fence": "halloween.fence"
+      }
+    }
+  },
+  "skins": {
+    "house.sky": {
+      "entity": "building.house",
+      "asset": "house.sky",
+      "contract": "building.house.v2",
+      "fallback": "environment.house"
+    }
+  },
+  "contracts": {
+    "culture": {
+      "id": "culture.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "seed",
+        "growing",
+        "mature",
+        "regrowth",
+        "weeds",
+        "pests"
+      ]
+    },
+    "plot": {
+      "id": "plot.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "locked",
+        "empty",
+        "cultivated"
+      ]
+    },
+    "tree": {
+      "id": "tree.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "idle"
+      ]
+    },
+    "vegetation": {
+      "id": "vegetation.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "idle"
+      ]
+    },
+    "building": {
+      "id": "building.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "idle",
+        "upgraded"
+      ]
+    },
+    "animal": {
+      "id": "animal.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "idle",
+        "move",
+        "feed",
+        "react",
+        "ready",
+        "collect"
+      ]
+    },
+    "hive": {
+      "id": "hive.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "idle",
+        "active",
+        "ready"
+      ]
+    },
+    "guardian": {
+      "id": "guardian.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "idle",
+        "guard"
+      ]
+    },
+    "decoration": {
+      "id": "decoration.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "idle"
+      ]
+    },
+    "tool": {
+      "id": "tool.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "normal",
+        "selected"
+      ]
+    },
+    "ui": {
+      "id": "ui.v2",
+      "anchor": "ground_contact",
+      "hit_shape": "domain_footprint",
+      "fallback": "base_family",
+      "states": [
+        "normal",
+        "hover",
+        "pressed",
+        "disabled",
+        "focus"
+      ]
+    }
+  }
+}

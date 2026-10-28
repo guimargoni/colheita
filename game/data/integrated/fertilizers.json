@@ -25,7 +25,7 @@
     },
     {
       "id": "fertilizer.fast",
-      "name": "RÃ¡pido",
+      "name": "Rápido",
       "reduction_fraction": 0.2,
       "initial_quantity": 4,
       "compatible_crops": [
