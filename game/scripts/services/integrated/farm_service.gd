@@ -9,7 +9,7 @@ const Catalog = preload("res://scripts/domain/cultures/culture_catalog.gd")
 const State = preload("res://scripts/domain/integrated/state.gd")
 const Economy = preload("res://scripts/domain/integrated/economy.gd")
 const Land = preload("res://scripts/domain/cultures/culture_land.gd")
-var land_config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/farming/g14/land.json"))
+var land_config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/integrated/land.json"))
 var economy_config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/integrated/economy.json"))
 const Growth = preload("res://scripts/domain/care/care_rules.gd")
 const Inventory = preload("res://scripts/domain/farming/inventory.gd")
@@ -70,6 +70,14 @@ func load_farm(fixture: Dictionary) -> bool:
 		candidate = extended
 	if not candidate.features is Dictionary or not Features.valid(candidate.features,features_config):
 		error = "invalid_features"; return false
+	var extension: Dictionary = preload("res://scripts/domain/integrated/land_extension.gd").extend(candidate)
+	if extension.changed:
+		var next: Dictionary = extension.state
+		if not State.valid(next,catalog,clock.profile,items,economy_config,next.layout):
+			error = "land_extension_invalid"; return false
+		if not store.commit(next,int(candidate.revision)):
+			error = store.error; return false
+		candidate = next; land_config = next.layout
 	state = candidate
 	return true
 

@@ -1,0 +1,254 @@
+{
+  "version": "g14.land.v1",
+  "status": "PROVISIONAL_SAMPLE_NOT_HISTORICAL_COUNTS_OR_PRICES",
+  "farm_id": "farm.g14.local.dev",
+  "owner_id": "owner.local.dev",
+  "footprint": [
+    2,
+    2
+  ],
+  "minimum_reinvestment_coins": 2,
+  "plots": [
+    {
+      "id": "plot.home.a",
+      "grid": [
+        0,
+        0
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 1",
+      "label": "1"
+    },
+    {
+      "id": "plot.home.b",
+      "grid": [
+        2,
+        0
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 2",
+      "label": "2"
+    },
+    {
+      "id": "plot.home.c",
+      "grid": [
+        0,
+        2
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 3",
+      "label": "3"
+    },
+    {
+      "id": "plot.home.d",
+      "grid": [
+        2,
+        2
+      ],
+      "region_id": "home",
+      "initial": true,
+      "price": 0,
+      "level": 1,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 4",
+      "label": "4"
+    },
+    {
+      "id": "plot.expand.1",
+      "grid": [
+        4,
+        0
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 40,
+      "level": 2,
+      "requires": "",
+      "conditions": [],
+      "name": "Terreno 5",
+      "label": "5"
+    },
+    {
+      "id": "plot.expand.2",
+      "grid": [
+        4,
+        2
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 90,
+      "level": 3,
+      "requires": "plot.expand.1",
+      "conditions": [],
+      "name": "Terreno 6",
+      "label": "6"
+    },
+    {
+      "id": "plot.expand.3",
+      "grid": [
+        0,
+        4
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 180,
+      "level": 4,
+      "requires": "plot.expand.2",
+      "conditions": [],
+      "name": "Terreno 7",
+      "label": "7"
+    },
+    {
+      "id": "plot.expand.4",
+      "grid": [
+        2,
+        4
+      ],
+      "region_id": "garden",
+      "initial": false,
+      "price": 320,
+      "level": 5,
+      "requires": "plot.expand.3",
+      "conditions": [],
+      "name": "Terreno 8",
+      "label": "8"
+    },
+    {
+      "id": "plot.expand.5",
+      "grid": [
+        4,
+        4
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 460,
+      "level": 5,
+      "requires": "plot.expand.4",
+      "conditions": [],
+      "name": "Terreno 9",
+      "label": "9"
+    },
+    {
+      "id": "plot.expand.6",
+      "grid": [
+        6,
+        0
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 600,
+      "level": 5,
+      "requires": "plot.expand.5",
+      "conditions": [],
+      "name": "Terreno 10",
+      "label": "10"
+    },
+    {
+      "id": "plot.expand.7",
+      "grid": [
+        6,
+        2
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 740,
+      "level": 6,
+      "requires": "plot.expand.6",
+      "conditions": [],
+      "name": "Terreno 11",
+      "label": "11"
+    },
+    {
+      "id": "plot.expand.8",
+      "grid": [
+        6,
+        4
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 880,
+      "level": 6,
+      "requires": "plot.expand.7",
+      "conditions": [],
+      "name": "Terreno 12",
+      "label": "12"
+    },
+    {
+      "id": "plot.expand.9",
+      "grid": [
+        0,
+        6
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 1020,
+      "level": 6,
+      "requires": "plot.expand.8",
+      "conditions": [],
+      "name": "Terreno 13",
+      "label": "13"
+    },
+    {
+      "id": "plot.expand.10",
+      "grid": [
+        2,
+        6
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 1160,
+      "level": 6,
+      "requires": "plot.expand.9",
+      "conditions": [],
+      "name": "Terreno 14",
+      "label": "14"
+    },
+    {
+      "id": "plot.expand.11",
+      "grid": [
+        4,
+        6
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 1300,
+      "level": 6,
+      "requires": "plot.expand.10",
+      "conditions": [],
+      "name": "Terreno 15",
+      "label": "15"
+    },
+    {
+      "id": "plot.expand.12",
+      "grid": [
+        6,
+        6
+      ],
+      "region_id": "orchard",
+      "initial": false,
+      "price": 1440,
+      "level": 6,
+      "requires": "plot.expand.11",
+      "conditions": [],
+      "name": "Terreno 16",
+      "label": "16"
+    }
+  ],
+  "capacity_revision": 2
+}

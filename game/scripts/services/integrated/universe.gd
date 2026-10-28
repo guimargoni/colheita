@@ -32,6 +32,15 @@ func _init(file: String, multiplier: float = 1) -> void:
 				if not loaded.get(key) is Dictionary: error = "server_store_invalid"; return
 			if not loaded.get("activity") is Array: error = "server_store_invalid"; return
 			data = loaded
+	# Capacity upgrades are authoritative startup migrations, committed before reads.
+	work = data.duplicate(true)
+	var upgraded: bool = false
+	for id in data.farms:
+		var previous_revision: int = int(data.farms[id].revision)
+		var loaded_farm := farm(id)
+		if not loaded_farm.error.is_empty(): error = loaded_farm.error; return
+		upgraded = upgraded or int(loaded_farm.state.revision)!=previous_revision
+	if upgraded: persist()
 func persist() -> bool:
 	var file := FileAccess.open(path+".tmp",FileAccess.WRITE)
 	if file==null: error = "server_write_failed"; return false
